@@ -1,0 +1,37 @@
+[2023-08-01T13:38:57.614+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-08-01T12:00:00+00:00 [queued]>
+[2023-08-01T13:38:57.624+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-08-01T12:00:00+00:00 [queued]>
+[2023-08-01T13:38:57.625+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-08-01T13:38:57.641+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): transform_data> on 2023-08-01 12:00:00+00:00
+[2023-08-01T13:38:57.651+0000] {standard_task_runner.py:57} INFO - Started process 149 to run task
+[2023-08-01T13:38:57.653+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'transform_data', 'scheduled__2023-08-01T12:00:00+00:00', '--job-id', '4775', '--raw', '--subdir', 'DAGS_FOLDER/my_first_dag.py', '--cfg-path', '/tmp/tmp6li4txrh']
+[2023-08-01T13:38:57.655+0000] {standard_task_runner.py:85} INFO - Job 4775: Subtask transform_data
+[2023-08-01T13:38:57.696+0000] {task_command.py:410} INFO - Running <TaskInstance: ETL_Pipeline.transform_data scheduled__2023-08-01T12:00:00+00:00 [running]> on host 794dc2638f7c
+[2023-08-01T13:38:57.772+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2023-08-01T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-01T12:00:00+00:00'
+[2023-08-01T13:38:57.777+0000] {logging_mixin.py:150} WARNING - Scraping Progress:   0%|          | 0/10 [00:00<?, ?it/s]
+[2023-08-01T13:38:58.155+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  10%|#         | 1/10 [00:00<00:03,  2.65it/s]
+[2023-08-01T13:38:58.502+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  20%|##        | 2/10 [00:00<00:02,  2.78it/s]
+[2023-08-01T13:39:00.016+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  30%|###       | 3/10 [00:02<00:06,  1.13it/s]
+[2023-08-01T13:39:03.042+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  40%|####      | 4/10 [00:05<00:10,  1.73s/it]
+[2023-08-01T13:39:04.044+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  50%|#####     | 5/10 [00:06<00:07,  1.47s/it]
+[2023-08-01T13:39:06.780+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  60%|######    | 6/10 [00:09<00:07,  1.90s/it]
+[2023-08-01T13:39:07.380+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  70%|#######   | 7/10 [00:09<00:04,  1.47s/it]
+[2023-08-01T13:39:14.816+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  70%|#######   | 7/10 [00:17<00:07,  2.43s/it]
+[2023-08-01T13:39:14.816+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/my_first_dag.py", line 40, in transform_data
+    data_list.append(scrape_data_from_url(url))
+  File "/opt/airflow/dags/utils/scraper.py", line 8, in scrape_data_from_url
+    article.parse()
+  File "/home/airflow/.local/lib/python3.7/site-packages/newspaper/article.py", line 191, in parse
+    self.throw_if_not_downloaded_verbose()
+  File "/home/airflow/.local/lib/python3.7/site-packages/newspaper/article.py", line 532, in throw_if_not_downloaded_verbose
+    (self.download_exception_msg, self.url))
+newspaper.article.ArticleException: Article `download()` failed with HTTPSConnectionPool(host='www.prothomalo.com', port=443): Read timed out. on URL https://www.prothomalo.com/bangladesh/z1419k2dun
+[2023-08-01T13:39:14.834+0000] {taskinstance.py:1350} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=transform_data, execution_date=20230801T120000, start_date=20230801T133857, end_date=20230801T133914
+[2023-08-01T13:39:14.853+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 4775 for task transform_data (Article `download()` failed with HTTPSConnectionPool(host='www.prothomalo.com', port=443): Read timed out. on URL https://www.prothomalo.com/bangladesh/z1419k2dun; 149)
+[2023-08-01T13:39:14.875+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-08-01T13:39:14.900+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

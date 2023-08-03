@@ -1,0 +1,26 @@
+[2023-08-01T14:34:30.452+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-08-01T14:33:00+00:00 [queued]>
+[2023-08-01T14:34:30.461+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-08-01T14:33:00+00:00 [queued]>
+[2023-08-01T14:34:30.462+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-08-01T14:34:30.476+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): transform_data> on 2023-08-01 14:33:00+00:00
+[2023-08-01T14:34:30.485+0000] {standard_task_runner.py:57} INFO - Started process 1236 to run task
+[2023-08-01T14:34:30.487+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'transform_data', 'scheduled__2023-08-01T14:33:00+00:00', '--job-id', '4808', '--raw', '--subdir', 'DAGS_FOLDER/my_first_dag.py', '--cfg-path', '/tmp/tmpd0hgabgx']
+[2023-08-01T14:34:30.489+0000] {standard_task_runner.py:85} INFO - Job 4808: Subtask transform_data
+[2023-08-01T14:34:30.532+0000] {task_command.py:410} INFO - Running <TaskInstance: ETL_Pipeline.transform_data scheduled__2023-08-01T14:33:00+00:00 [running]> on host 794dc2638f7c
+[2023-08-01T14:34:30.625+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2023-08-01T14:33:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-01T14:33:00+00:00'
+[2023-08-01T14:34:30.631+0000] {logging_mixin.py:150} WARNING - Scraping Progress:   0%|          | 0/10 [00:00<?, ?it/s]
+[2023-08-01T14:34:31.263+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  10%|#         | 1/10 [00:00<00:05,  1.59it/s]
+[2023-08-01T14:34:32.352+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  20%|##        | 2/10 [00:01<00:07,  1.11it/s]
+[2023-08-01T14:34:34.512+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  30%|###       | 3/10 [00:03<00:10,  1.48s/it]
+[2023-08-01T14:34:34.973+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  40%|####      | 4/10 [00:04<00:06,  1.08s/it]
+[2023-08-01T14:34:35.512+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  50%|#####     | 5/10 [00:04<00:04,  1.13it/s]
+[2023-08-01T14:34:35.759+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  60%|######    | 6/10 [00:05<00:02,  1.50it/s]
+[2023-08-01T14:34:36.373+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  70%|#######   | 7/10 [00:05<00:01,  1.54it/s]
+[2023-08-01T14:34:38.827+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  80%|########  | 8/10 [00:08<00:02,  1.22s/it]
+[2023-08-01T14:34:39.741+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  90%|######### | 9/10 [00:09<00:01,  1.13s/it]
+[2023-08-01T14:34:40.893+0000] {logging_mixin.py:150} WARNING - Scraping Progress: 100%|##########| 10/10 [00:10<00:00,  1.13s/it]
+[2023-08-01T14:34:40.893+0000] {logging_mixin.py:150} WARNING - Scraping Progress: 100%|##########| 10/10 [00:10<00:00,  1.03s/it]
+[2023-08-01T14:34:40.897+0000] {my_first_dag.py:45} INFO - Data is scraped and saved as a CSV file.
+[2023-08-01T14:34:40.897+0000] {python.py:183} INFO - Done. Returned value was: dags/data/scraped_data.csv
+[2023-08-01T14:34:40.919+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=transform_data, execution_date=20230801T143300, start_date=20230801T143430, end_date=20230801T143440
+[2023-08-01T14:34:40.951+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-01T14:34:40.977+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check
