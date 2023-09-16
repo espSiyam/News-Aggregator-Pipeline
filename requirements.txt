@@ -1,1 +1,2 @@
 newspaper3k==0.2.8
+tqdm==4.66.1

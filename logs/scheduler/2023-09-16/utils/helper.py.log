@@ -1,0 +1,53 @@
+[2023-09-16T11:44:11.810+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:44:11.811+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/utils/helper.py for tasks to queue
+[2023-09-16T11:44:11.813+0000] {logging_mixin.py:151} INFO - [2023-09-16T11:44:11.813+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:44:13.147+0000] {logging_mixin.py:151} INFO - [2023-09-16T11:44:13.145+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/utils/helper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/utils/helper.py", line 5, in <module>
+    from .scraper import scrape_data_from_url
+ImportError: attempted relative import with no known parent package
+[2023-09-16T11:44:13.147+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:44:13.165+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/utils/helper.py took 1.358 seconds
+[2023-09-16T11:44:43.339+0000] {processor.py:157} INFO - Started process (PID=41) to work on /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:44:43.342+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/utils/helper.py for tasks to queue
+[2023-09-16T11:44:43.346+0000] {logging_mixin.py:151} INFO - [2023-09-16T11:44:43.346+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:44:43.610+0000] {logging_mixin.py:151} INFO - [2023-09-16T11:44:43.609+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/utils/helper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/utils/helper.py", line 5, in <module>
+    from .scraper import scrape_data_from_url
+ImportError: attempted relative import with no known parent package
+[2023-09-16T11:44:43.610+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:44:43.624+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/utils/helper.py took 0.290 seconds
+[2023-09-16T11:44:45.895+0000] {processor.py:157} INFO - Started process (PID=45) to work on /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:44:45.896+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/utils/helper.py for tasks to queue
+[2023-09-16T11:44:45.899+0000] {logging_mixin.py:151} INFO - [2023-09-16T11:44:45.899+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:44:46.259+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:44:46.269+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/utils/helper.py took 0.379 seconds
+[2023-09-16T11:45:16.420+0000] {processor.py:157} INFO - Started process (PID=56) to work on /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:45:16.422+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/utils/helper.py for tasks to queue
+[2023-09-16T11:45:16.422+0000] {logging_mixin.py:151} INFO - [2023-09-16T11:45:16.422+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:45:16.872+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:45:16.881+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/utils/helper.py took 0.463 seconds
+[2023-09-16T11:45:47.031+0000] {processor.py:157} INFO - Started process (PID=67) to work on /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:45:47.033+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/utils/helper.py for tasks to queue
+[2023-09-16T11:45:47.033+0000] {logging_mixin.py:151} INFO - [2023-09-16T11:45:47.033+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:45:47.356+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:45:47.364+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/utils/helper.py took 0.334 seconds
+[2023-09-16T11:46:17.527+0000] {processor.py:157} INFO - Started process (PID=78) to work on /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:46:17.528+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/utils/helper.py for tasks to queue
+[2023-09-16T11:46:17.529+0000] {logging_mixin.py:151} INFO - [2023-09-16T11:46:17.529+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:46:17.879+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:46:17.888+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/utils/helper.py took 0.364 seconds
+[2023-09-16T11:46:48.060+0000] {processor.py:157} INFO - Started process (PID=90) to work on /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:46:48.062+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/utils/helper.py for tasks to queue
+[2023-09-16T11:46:48.063+0000] {logging_mixin.py:151} INFO - [2023-09-16T11:46:48.063+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:46:48.395+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/helper.py
+[2023-09-16T11:46:48.404+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/utils/helper.py took 0.348 seconds

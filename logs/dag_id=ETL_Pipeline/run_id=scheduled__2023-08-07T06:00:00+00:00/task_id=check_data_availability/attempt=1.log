@@ -1,0 +1,17 @@
+[2023-08-07T07:29:01.910+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.check_data_availability scheduled__2023-08-07T06:00:00+00:00 [queued]>
+[2023-08-07T07:29:01.923+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.check_data_availability scheduled__2023-08-07T06:00:00+00:00 [queued]>
+[2023-08-07T07:29:01.923+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-08-07T07:29:01.939+0000] {taskinstance.py:1327} INFO - Executing <Task(BranchPythonOperator): check_data_availability> on 2023-08-07 06:00:00+00:00
+[2023-08-07T07:29:01.948+0000] {standard_task_runner.py:57} INFO - Started process 79 to run task
+[2023-08-07T07:29:01.953+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'check_data_availability', 'scheduled__2023-08-07T06:00:00+00:00', '--job-id', '4991', '--raw', '--subdir', 'DAGS_FOLDER/my_first_dag.py', '--cfg-path', '/tmp/tmpsp0m_bu3']
+[2023-08-07T07:29:01.956+0000] {standard_task_runner.py:85} INFO - Job 4991: Subtask check_data_availability
+[2023-08-07T07:29:02.015+0000] {task_command.py:410} INFO - Running <TaskInstance: ETL_Pipeline.check_data_availability scheduled__2023-08-07T06:00:00+00:00 [running]> on host 48849dae508a
+[2023-08-07T07:29:02.132+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='check_data_availability' AIRFLOW_CTX_EXECUTION_DATE='2023-08-07T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-07T06:00:00+00:00'
+[2023-08-07T07:29:02.138+0000] {my_first_dag.py:54} INFO - Transformed data is available. Proceeding to load data.
+[2023-08-07T07:29:02.138+0000] {python.py:183} INFO - Done. Returned value was: load_data
+[2023-08-07T07:29:02.139+0000] {python.py:216} INFO - Branch callable return load_data
+[2023-08-07T07:29:02.139+0000] {skipmixin.py:164} INFO - Following branch load_data
+[2023-08-07T07:29:02.139+0000] {skipmixin.py:224} INFO - Skipping tasks ['no_data_to_load']
+[2023-08-07T07:29:02.190+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=check_data_availability, execution_date=20230807T060000, start_date=20230807T072901, end_date=20230807T072902
+[2023-08-07T07:29:02.242+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-07T07:29:02.283+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

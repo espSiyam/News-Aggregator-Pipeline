@@ -1,6 +1,4 @@
 import newspaper
-import pandas as pd
-from tqdm import tqdm
 
 def scrape_data_from_url(url):
     article = newspaper.Article(url)
