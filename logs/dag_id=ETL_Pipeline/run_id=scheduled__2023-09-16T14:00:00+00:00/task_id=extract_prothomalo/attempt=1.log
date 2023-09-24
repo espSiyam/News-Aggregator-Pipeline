@@ -1,0 +1,71 @@
+[2023-09-16T15:47:39.994+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-09-16T14:00:00+00:00 [queued]>
+[2023-09-16T15:47:40.006+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-09-16T14:00:00+00:00 [queued]>
+[2023-09-16T15:47:40.007+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-16T15:47:40.031+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_prothomalo> on 2023-09-16 14:00:00+00:00
+[2023-09-16T15:47:40.044+0000] {standard_task_runner.py:57} INFO - Started process 2177 to run task
+[2023-09-16T15:47:40.049+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_prothomalo', 'scheduled__2023-09-16T14:00:00+00:00', '--job-id', '5106', '--raw', '--subdir', 'DAGS_FOLDER/my_first_dag.py', '--cfg-path', '/tmp/tmpwyl21h9x']
+[2023-09-16T15:47:40.052+0000] {standard_task_runner.py:85} INFO - Job 5106: Subtask extract_prothomalo
+[2023-09-16T15:47:40.150+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-09-16T14:00:00+00:00 [running]> on host 900e33937764
+[2023-09-16T15:47:40.276+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_prothomalo' AIRFLOW_CTX_EXECUTION_DATE='2023-09-16T14:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-16T14:00:00+00:00'
+[2023-09-16T15:47:40.285+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/local/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 403, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1053, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fc6a2034ac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.prothomalo.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc6a2034ac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/extract.py", line 25, in parse_from_prothomalo
+    initial_sitemap_soup = fetch_xml_content(PROTHOM_ALO_XML_URL)
+  File "/opt/airflow/dags/utils/extract.py", line 12, in fetch_xml_content
+    response = requests.get(url)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.prothomalo.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc6a2034ac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-09-16T15:47:40.299+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=extract_prothomalo, execution_date=20230916T140000, start_date=20230916T154739, end_date=20230916T154740
+[2023-09-16T15:47:40.318+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 5106 for task extract_prothomalo (HTTPSConnectionPool(host='www.prothomalo.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc6a2034ac0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution')); 2177)
+[2023-09-16T15:47:40.339+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-16T15:47:40.439+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

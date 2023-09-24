@@ -1,0 +1,14 @@
+[2023-09-16T13:00:02.062+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-16T12:00:00+00:00 [queued]>
+[2023-09-16T13:00:02.072+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-16T12:00:00+00:00 [queued]>
+[2023-09-16T13:00:02.072+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-16T13:00:02.091+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-09-16 12:00:00+00:00
+[2023-09-16T13:00:02.098+0000] {standard_task_runner.py:57} INFO - Started process 1341 to run task
+[2023-09-16T13:00:02.103+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-09-16T12:00:00+00:00', '--job-id', '5098', '--raw', '--subdir', 'DAGS_FOLDER/my_first_dag.py', '--cfg-path', '/tmp/tmpxkr12uoo']
+[2023-09-16T13:00:02.112+0000] {standard_task_runner.py:85} INFO - Job 5098: Subtask extract_jugantor
+[2023-09-16T13:00:02.157+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-16T12:00:00+00:00 [running]> on host 900e33937764
+[2023-09-16T13:00:02.244+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-09-16T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-16T12:00:00+00:00'
+[2023-09-16T13:00:03.552+0000] {extract.py:39} INFO - Extracted URLs from Jugantor. Total URLs: 105
+[2023-09-16T13:00:03.553+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-16T13:00:03.559+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20230916T120000, start_date=20230916T130002, end_date=20230916T130003
+[2023-09-16T13:00:03.611+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-16T13:00:03.650+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
