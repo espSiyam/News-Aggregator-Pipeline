@@ -1,0 +1,88 @@
+[2023-09-29T22:00:01.651+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:00:01.659+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:00:01.659+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-29T22:00:01.674+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-09-29 21:00:00+00:00
+[2023-09-29T22:00:01.680+0000] {standard_task_runner.py:57} INFO - Started process 978 to run task
+[2023-09-29T22:00:01.683+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-09-29T21:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/news_aggregator_dag.py', '--cfg-path', '/tmp/tmpfru37sag']
+[2023-09-29T22:00:01.685+0000] {standard_task_runner.py:85} INFO - Job 27: Subtask extract_jugantor
+[2023-09-29T22:00:01.740+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [running]> on host 8b9d74f8b315
+[2023-09-29T22:00:01.933+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-09-29T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-29T21:00:00+00:00'
+[2023-09-29T22:00:01.938+0000] {extract.py:22} ERROR - Could not fetch content due to error: HTTPSConnectionPool(host='www.jugantor.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9112b8a2e0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-09-29T22:00:01.939+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/extract.py", line 43, in parse_from_jugantor
+    all_links = sitemap_soup.find_all('loc')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+[2023-09-29T22:00:01.953+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20230929T210000, start_date=20230929T220001, end_date=20230929T220001
+[2023-09-29T22:00:01.971+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 27 for task extract_jugantor ('NoneType' object has no attribute 'find_all'; 978)
+[2023-09-29T22:00:01.980+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-29T22:00:02.016+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-09-29T22:02:45.056+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:02:45.076+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:02:45.076+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-29T22:02:45.098+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-09-29 21:00:00+00:00
+[2023-09-29T22:02:45.111+0000] {standard_task_runner.py:57} INFO - Started process 1037 to run task
+[2023-09-29T22:02:45.114+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-09-29T21:00:00+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/news_aggregator_dag.py', '--cfg-path', '/tmp/tmp4_0szy7o']
+[2023-09-29T22:02:45.118+0000] {standard_task_runner.py:85} INFO - Job 33: Subtask extract_jugantor
+[2023-09-29T22:02:45.212+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [running]> on host 8b9d74f8b315
+[2023-09-29T22:02:45.351+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-09-29T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-29T21:00:00+00:00'
+[2023-09-29T22:02:45.363+0000] {extract.py:22} ERROR - Could not fetch content due to error: HTTPSConnectionPool(host='www.jugantor.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9112b37820>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-09-29T22:02:45.364+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/extract.py", line 43, in parse_from_jugantor
+    all_links = sitemap_soup.find_all('loc')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+[2023-09-29T22:02:45.376+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20230929T210000, start_date=20230929T220245, end_date=20230929T220245
+[2023-09-29T22:02:45.391+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 33 for task extract_jugantor ('NoneType' object has no attribute 'find_all'; 1037)
+[2023-09-29T22:02:45.460+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-29T22:02:45.497+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-09-29T22:04:05.081+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:04:05.127+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:04:05.127+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-29T22:04:05.175+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-09-29 21:00:00+00:00
+[2023-09-29T22:04:05.184+0000] {standard_task_runner.py:57} INFO - Started process 1067 to run task
+[2023-09-29T22:04:05.201+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-09-29T21:00:00+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/news_aggregator_dag.py', '--cfg-path', '/tmp/tmpvt79q2wu']
+[2023-09-29T22:04:05.211+0000] {standard_task_runner.py:85} INFO - Job 34: Subtask extract_jugantor
+[2023-09-29T22:04:05.353+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [running]> on host 8b9d74f8b315
+[2023-09-29T22:04:05.509+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-09-29T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-29T21:00:00+00:00'
+[2023-09-29T22:04:06.819+0000] {extract.py:48} INFO - Extracted URLs from Jugantor. Total URLs: 105
+[2023-09-29T22:04:06.820+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-29T22:04:06.841+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20230929T210000, start_date=20230929T220405, end_date=20230929T220406
+[2023-09-29T22:04:06.921+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-29T22:04:06.961+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-09-29T22:12:36.579+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:12:36.592+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:12:36.594+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-29T22:12:36.624+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-09-29 21:00:00+00:00
+[2023-09-29T22:12:36.635+0000] {standard_task_runner.py:57} INFO - Started process 1213 to run task
+[2023-09-29T22:12:36.650+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-09-29T21:00:00+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/news_aggregator_dag.py', '--cfg-path', '/tmp/tmperjs5jeu']
+[2023-09-29T22:12:36.653+0000] {standard_task_runner.py:85} INFO - Job 42: Subtask extract_jugantor
+[2023-09-29T22:12:36.725+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [running]> on host 8b9d74f8b315
+[2023-09-29T22:12:36.830+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-09-29T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-29T21:00:00+00:00'
+[2023-09-29T22:12:37.934+0000] {extract.py:48} INFO - Extracted URLs from Jugantor. Total URLs: 105
+[2023-09-29T22:12:37.934+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-29T22:12:37.944+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20230929T210000, start_date=20230929T221236, end_date=20230929T221237
+[2023-09-29T22:12:37.978+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-29T22:12:37.998+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-09-29T22:54:43.083+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:54:43.095+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:54:43.095+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-29T22:54:43.115+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-09-29 21:00:00+00:00
+[2023-09-29T22:54:43.123+0000] {standard_task_runner.py:57} INFO - Started process 144 to run task
+[2023-09-29T22:54:43.133+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-09-29T21:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/news_aggregator_dag.py', '--cfg-path', '/tmp/tmpr2isu9hs']
+[2023-09-29T22:54:43.135+0000] {standard_task_runner.py:85} INFO - Job 5: Subtask extract_jugantor
+[2023-09-29T22:54:43.188+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-09-29T21:00:00+00:00 [running]> on host 4e50881e96f5
+[2023-09-29T22:54:43.302+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-09-29T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-29T21:00:00+00:00'
+[2023-09-29T22:54:44.553+0000] {extract.py:48} INFO - Extracted URLs from Jugantor. Total URLs: 105
+[2023-09-29T22:54:44.553+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-09-29T22:54:44.560+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20230929T210000, start_date=20230929T225443, end_date=20230929T225444
+[2023-09-29T22:54:44.587+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-09-29T22:54:44.609+0000] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check

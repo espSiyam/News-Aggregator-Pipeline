@@ -1,0 +1,23 @@
+[2023-09-29T22:01:56.223+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_kalerkantho manual__2023-09-29T22:01:54.300799+00:00 [queued]>
+[2023-09-29T22:01:56.237+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_kalerkantho manual__2023-09-29T22:01:54.300799+00:00 [queued]>
+[2023-09-29T22:01:56.237+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-29T22:01:56.255+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): extract_kalerkantho> on 2023-09-29 22:01:54.300799+00:00
+[2023-09-29T22:01:56.267+0000] {standard_task_runner.py:57} INFO - Started process 1012 to run task
+[2023-09-29T22:01:56.270+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_kalerkantho', 'manual__2023-09-29T22:01:54.300799+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/news_aggregator_dag.py', '--cfg-path', '/tmp/tmp_v17ypg5']
+[2023-09-29T22:01:56.274+0000] {standard_task_runner.py:85} INFO - Job 30: Subtask extract_kalerkantho
+[2023-09-29T22:01:56.331+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.extract_kalerkantho manual__2023-09-29T22:01:54.300799+00:00 [running]> on host 8b9d74f8b315
+[2023-09-29T22:01:56.426+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_kalerkantho' AIRFLOW_CTX_EXECUTION_DATE='2023-09-29T22:01:54.300799+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-09-29T22:01:54.300799+00:00'
+[2023-09-29T22:01:56.433+0000] {extract.py:22} ERROR - Could not fetch content due to error: HTTPSConnectionPool(host='www.kalerkantho.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f9112b42250>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-09-29T22:01:56.433+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/extract.py", line 52, in parse_from_kalerkantho
+    latest_news_sitemap = sitemap_soup.find_all("loc")[1].text
+AttributeError: 'NoneType' object has no attribute 'find_all'
+[2023-09-29T22:01:56.441+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=extract_kalerkantho, execution_date=20230929T220154, start_date=20230929T220156, end_date=20230929T220156
+[2023-09-29T22:01:56.453+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 30 for task extract_kalerkantho ('NoneType' object has no attribute 'find_all'; 1012)
+[2023-09-29T22:01:56.483+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-29T22:01:56.520+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

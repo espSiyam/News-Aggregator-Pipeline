@@ -13,3 +13,101 @@
 [2023-09-29T20:57:37.670+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:57:37.670+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2023-09-29T20:57:37.689+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:57:37.689+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T20:00:00+00:00, run_after=2023-09-29T21:00:00+00:00
 [2023-09-29T20:57:37.701+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.556 seconds
+[2023-09-29T20:58:07.772+0000] {processor.py:157} INFO - Started process (PID=195) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:58:07.774+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T20:58:07.775+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:58:07.775+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:58:08.292+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:58:08.310+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:58:08.309+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T20:58:08.325+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:58:08.325+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T20:00:00+00:00, run_after=2023-09-29T21:00:00+00:00
+[2023-09-29T20:58:08.338+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.570 seconds
+[2023-09-29T20:58:38.411+0000] {processor.py:157} INFO - Started process (PID=207) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:58:38.413+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T20:58:38.413+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:58:38.413+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:58:38.925+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:58:38.942+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:58:38.941+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T20:58:38.957+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:58:38.957+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T20:00:00+00:00, run_after=2023-09-29T21:00:00+00:00
+[2023-09-29T20:58:38.972+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.565 seconds
+[2023-09-29T20:59:09.066+0000] {processor.py:157} INFO - Started process (PID=218) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:59:09.067+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T20:59:09.067+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:59:09.067+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:59:09.666+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:59:09.694+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:59:09.693+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T20:59:09.716+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:59:09.716+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T20:00:00+00:00, run_after=2023-09-29T21:00:00+00:00
+[2023-09-29T20:59:09.733+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.670 seconds
+[2023-09-29T20:59:39.901+0000] {processor.py:157} INFO - Started process (PID=229) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:59:39.902+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T20:59:39.903+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:59:39.903+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:59:40.660+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:59:40.683+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:59:40.682+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T20:59:40.701+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:59:40.701+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T20:00:00+00:00, run_after=2023-09-29T21:00:00+00:00
+[2023-09-29T20:59:40.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.819 seconds
+[2023-09-29T21:00:10.783+0000] {processor.py:157} INFO - Started process (PID=251) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:00:10.784+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T21:00:10.785+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:00:10.784+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:00:11.271+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:00:11.269+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/news_aggregator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/news_aggregator.py", line 5, in <module>
+    from utils.helper import transform_data
+  File "/opt/airflow/dags/utils/helper.py", line 5, in <module>
+    from utils.scraper import scrape_data_from_url
+  File "/opt/airflow/dags/utils/scraper.py", line 3, in <module>
+    from deep_translator import GoogleTranslator
+ModuleNotFoundError: No module named 'deep_translator'
+[2023-09-29T21:00:11.271+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:00:11.288+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.507 seconds
+[2023-09-29T21:01:46.350+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:01:46.354+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T21:01:46.360+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:01:46.360+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:01:47.704+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:01:47.927+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:01:47.927+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:ETL_Pipeline' as access control is unset.
+[2023-09-29T21:01:47.928+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:01:47.927+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T21:01:47.951+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:01:47.951+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T21:00:00+00:00, run_after=2023-09-29T22:00:00+00:00
+[2023-09-29T21:01:47.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 1.630 seconds
+[2023-09-29T21:02:18.115+0000] {processor.py:157} INFO - Started process (PID=43) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:02:18.116+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T21:02:18.118+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:02:18.117+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:02:18.486+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:02:18.506+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:02:18.505+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T21:02:18.524+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:02:18.524+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T21:00:00+00:00, run_after=2023-09-29T22:00:00+00:00
+[2023-09-29T21:02:18.540+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.427 seconds
+[2023-09-29T21:02:48.688+0000] {processor.py:157} INFO - Started process (PID=54) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:02:48.688+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T21:02:48.690+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:02:48.689+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:02:49.037+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:02:49.054+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:02:49.053+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T21:02:49.070+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:02:49.069+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T21:00:00+00:00, run_after=2023-09-29T22:00:00+00:00
+[2023-09-29T21:02:49.082+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.396 seconds
+[2023-09-29T21:03:19.229+0000] {processor.py:157} INFO - Started process (PID=65) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:03:19.230+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T21:03:19.232+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:03:19.231+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:03:19.557+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:03:19.578+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:03:19.577+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T21:03:19.601+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:03:19.601+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T21:00:00+00:00, run_after=2023-09-29T22:00:00+00:00
+[2023-09-29T21:03:19.623+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.397 seconds
+[2023-09-29T21:03:49.770+0000] {processor.py:157} INFO - Started process (PID=76) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:03:49.771+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T21:03:49.775+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:03:49.775+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:03:50.215+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:03:50.238+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:03:50.238+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T21:03:50.259+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:03:50.259+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T21:00:00+00:00, run_after=2023-09-29T22:00:00+00:00
+[2023-09-29T21:03:50.275+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.507 seconds
+[2023-09-29T21:04:20.402+0000] {processor.py:157} INFO - Started process (PID=87) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:04:20.402+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T21:04:20.404+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:04:20.403+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:04:20.772+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:04:20.795+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:04:20.794+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T21:04:20.816+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:04:20.816+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T21:00:00+00:00, run_after=2023-09-29T22:00:00+00:00
+[2023-09-29T21:04:20.834+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.437 seconds
+[2023-09-29T21:04:50.988+0000] {processor.py:157} INFO - Started process (PID=98) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:04:50.990+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T21:04:50.991+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:04:50.991+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:04:51.407+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T21:04:51.480+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:04:51.480+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:ETL_Pipeline' as access control is unset.
+[2023-09-29T21:04:51.480+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:04:51.480+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T21:04:51.487+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:04:51.487+0000] {dag.py:2937} INFO - Creating ORM DAG for ETL_Pipeline
+[2023-09-29T21:04:51.495+0000] {logging_mixin.py:151} INFO - [2023-09-29T21:04:51.495+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T20:00:00+00:00, run_after=2023-09-29T21:00:00+00:00
+[2023-09-29T21:04:51.513+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.527 seconds

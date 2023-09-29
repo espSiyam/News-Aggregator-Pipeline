@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from utils.extract import parse_from_prothomalo, parse_from_jugantor, parse_from_kalerkantho
-from utils.helper import transform_data
+from utils.helper import transform_data, load_to_gcp
 
 default_args = {
     'owner': 'airflow',
@@ -14,7 +14,7 @@ default_args = {
 dag = DAG(
     'ETL_Pipeline',
     default_args=default_args,
-    schedule_interval='*/60 * * * *',  # Execute every minute
+    schedule_interval='*/60 * * * *', 
     catchup=False
 )
 
@@ -44,7 +44,14 @@ task_transform_data = PythonOperator(
     dag=dag
 )
 
+# Export data to gcp bucket
+load_to_gcp = PythonOperator(
+    task_id='load_to_gcp',
+    python_callable=load_to_gcp,
+    dag=dag
+)
+
 # Set up the dependencies
 [
     task_extract_prothomalo, task_extract_jugantor, task_extract_kalerkantho
-] >> task_transform_data
+] >> task_transform_data >> load_to_gcp

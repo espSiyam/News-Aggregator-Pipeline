@@ -8,3 +8,6 @@ Steps to run the project:
 After changing the requirement.txt:
 1. build the composer: docker-compose build
 2. docker-compose up
+
+
+Note: can't upload data to gcp from airflow directly as it is running on a docker server, we need separate permission apart from the permission we have on our local machine. May be service account may help.
