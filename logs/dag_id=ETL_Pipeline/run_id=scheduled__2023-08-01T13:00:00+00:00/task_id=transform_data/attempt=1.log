@@ -1,36 +1,0 @@
-[2023-08-01T14:18:35.428+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-08-01T13:00:00+00:00 [queued]>
-[2023-08-01T14:18:35.435+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-08-01T13:00:00+00:00 [queued]>
-[2023-08-01T14:18:35.435+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
-[2023-08-01T14:18:35.447+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): transform_data> on 2023-08-01 13:00:00+00:00
-[2023-08-01T14:18:35.453+0000] {standard_task_runner.py:57} INFO - Started process 853 to run task
-[2023-08-01T14:18:35.455+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'transform_data', 'scheduled__2023-08-01T13:00:00+00:00', '--job-id', '4777', '--raw', '--subdir', 'DAGS_FOLDER/my_first_dag.py', '--cfg-path', '/tmp/tmpqvk8ul_e']
-[2023-08-01T14:18:35.457+0000] {standard_task_runner.py:85} INFO - Job 4777: Subtask transform_data
-[2023-08-01T14:18:35.492+0000] {task_command.py:410} INFO - Running <TaskInstance: ETL_Pipeline.transform_data scheduled__2023-08-01T13:00:00+00:00 [running]> on host 794dc2638f7c
-[2023-08-01T14:18:35.561+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2023-08-01T13:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-01T13:00:00+00:00'
-[2023-08-01T14:18:35.566+0000] {logging_mixin.py:150} WARNING - Scraping Progress:   0%|          | 0/10 [00:00<?, ?it/s]
-[2023-08-01T14:18:35.567+0000] {my_first_dag.py:41} INFO - Scraping data from https://www.prothomalo.com/business/egkvb1ptqt
-[2023-08-01T14:18:36.506+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  10%|#         | 1/10 [00:00<00:08,  1.06it/s]
-[2023-08-01T14:18:36.507+0000] {my_first_dag.py:41} INFO - Scraping data from https://www.prothomalo.com/bangladesh/district/qefz6a247a
-[2023-08-01T14:18:37.832+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  20%|##        | 2/10 [00:02<00:09,  1.17s/it]
-[2023-08-01T14:18:37.832+0000] {my_first_dag.py:41} INFO - Scraping data from https://www.prothomalo.com/bangladesh/district/1q7na5tzyc
-[2023-08-01T14:18:38.461+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  30%|###       | 3/10 [00:02<00:06,  1.09it/s]
-[2023-08-01T14:18:38.461+0000] {my_first_dag.py:41} INFO - Scraping data from https://www.prothomalo.com/bangladesh/district/ic7rfnnol0
-[2023-08-01T14:18:40.426+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  40%|####      | 4/10 [00:04<00:08,  1.33s/it]
-[2023-08-01T14:18:40.426+0000] {my_first_dag.py:41} INFO - Scraping data from https://www.prothomalo.com/sports/cricket/arnova38c0
-[2023-08-01T14:18:41.813+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  50%|#####     | 5/10 [00:06<00:06,  1.35s/it]
-[2023-08-01T14:18:41.814+0000] {my_first_dag.py:41} INFO - Scraping data from https://www.prothomalo.com/politics/19nzdnuu8f
-[2023-08-01T14:18:42.788+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  60%|######    | 6/10 [00:07<00:04,  1.22s/it]
-[2023-08-01T14:18:42.788+0000] {my_first_dag.py:41} INFO - Scraping data from https://www.bondhushava.com/activities/r4m2t5lx0m
-[2023-08-01T14:18:44.332+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  70%|#######   | 7/10 [00:08<00:03,  1.33s/it]
-[2023-08-01T14:18:44.332+0000] {my_first_dag.py:41} INFO - Scraping data from https://www.prothomalo.com/bangladesh/z1419k2dun
-[2023-08-01T14:18:45.261+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  80%|########  | 8/10 [00:09<00:02,  1.20s/it]
-[2023-08-01T14:18:45.261+0000] {my_first_dag.py:41} INFO - Scraping data from https://www.prothomalo.com/world/india/htz46ntmej
-[2023-08-01T14:18:46.110+0000] {logging_mixin.py:150} WARNING - Scraping Progress:  90%|######### | 9/10 [00:10<00:01,  1.09s/it]
-[2023-08-01T14:18:46.110+0000] {my_first_dag.py:41} INFO - Scraping data from https://www.prothomalo.com/video/bangladesh/klvtd7jbfa
-[2023-08-01T14:18:47.107+0000] {logging_mixin.py:150} WARNING - Scraping Progress: 100%|##########| 10/10 [00:11<00:00,  1.06s/it]
-[2023-08-01T14:18:47.108+0000] {logging_mixin.py:150} WARNING - Scraping Progress: 100%|##########| 10/10 [00:11<00:00,  1.15s/it]
-[2023-08-01T14:18:47.114+0000] {my_first_dag.py:49} INFO - Data is scraped and saved as a CSV file.
-[2023-08-01T14:18:47.115+0000] {python.py:183} INFO - Done. Returned value was: dags/data/scraped_data.csv
-[2023-08-01T14:18:47.159+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=transform_data, execution_date=20230801T130000, start_date=20230801T141835, end_date=20230801T141847
-[2023-08-01T14:18:47.185+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
-[2023-08-01T14:18:47.226+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check
