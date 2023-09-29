@@ -1,0 +1,15 @@
+[2023-09-29T20:57:06.276+0000] {processor.py:157} INFO - Started process (PID=173) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:57:06.277+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T20:57:06.279+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:57:06.278+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:57:06.940+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:57:07.045+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:57:07.044+0000] {security.py:708} INFO - Not syncing DAG-level permissions for DAG 'DAG:ETL_Pipeline' as access control is unset.
+[2023-09-29T20:57:07.045+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:57:07.045+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T20:57:07.061+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:57:07.061+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T20:00:00+00:00, run_after=2023-09-29T21:00:00+00:00
+[2023-09-29T20:57:07.085+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.812 seconds
+[2023-09-29T20:57:37.149+0000] {processor.py:157} INFO - Started process (PID=184) to work on /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:57:37.150+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator.py for tasks to queue
+[2023-09-29T20:57:37.151+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:57:37.151+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:57:37.650+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator.py
+[2023-09-29T20:57:37.670+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:57:37.670+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T20:57:37.689+0000] {logging_mixin.py:151} INFO - [2023-09-29T20:57:37.689+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T20:00:00+00:00, run_after=2023-09-29T21:00:00+00:00
+[2023-09-29T20:57:37.701+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator.py took 0.556 seconds

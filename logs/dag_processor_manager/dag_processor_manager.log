@@ -1,0 +1,150 @@
+[2023-09-29T20:50:54.500+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-09-29T20:50:54.503+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-09-29T20:50:54.503+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-09-29T20:50:54.504+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2023-09-29T20:50:54.506+0000] {manager.py:762} INFO - There are 2 files in /opt/airflow/dags
+[2023-09-29T20:50:54.889+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/my_first_dag.py     31  0.06s             0           0
+/opt/airflow/dags/utils/helper.py     32  0.05s             0           0
+================================================================================
+[2023-09-29T20:51:25.298+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  2.33s           2023-09-29T20:50:57
+/opt/airflow/dags/my_first_dag.py                           1           0  2.70s           2023-09-29T20:50:57
+================================================================================
+[2023-09-29T20:51:55.841+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  0.38s           2023-09-29T20:51:27
+/opt/airflow/dags/my_first_dag.py                           1           0  0.47s           2023-09-29T20:51:28
+================================================================================
+[2023-09-29T20:52:26.378+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  0.38s           2023-09-29T20:51:58
+/opt/airflow/dags/my_first_dag.py                           1           0  0.40s           2023-09-29T20:51:58
+================================================================================
+[2023-09-29T20:52:56.973+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  0.43s           2023-09-29T20:52:28
+/opt/airflow/dags/my_first_dag.py                           1           0  0.46s           2023-09-29T20:52:29
+================================================================================
+[2023-09-29T20:53:27.498+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  0.37s           2023-09-29T20:52:59
+/opt/airflow/dags/my_first_dag.py                           1           0  0.41s           2023-09-29T20:52:59
+================================================================================
+[2023-09-29T20:53:58.016+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  0.38s           2023-09-29T20:53:29
+/opt/airflow/dags/my_first_dag.py                           1           0  0.41s           2023-09-29T20:53:30
+================================================================================
+[2023-09-29T20:54:28.511+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  0.36s           2023-09-29T20:54:00
+/opt/airflow/dags/my_first_dag.py                           1           0  0.40s           2023-09-29T20:54:00
+================================================================================
+[2023-09-29T20:54:58.589+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  0.42s           2023-09-29T20:54:30
+/opt/airflow/dags/my_first_dag.py                           1           0  0.55s           2023-09-29T20:54:31
+================================================================================
+[2023-09-29T20:55:28.703+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  0.38s           2023-09-29T20:55:01
+/opt/airflow/dags/my_first_dag.py                           1           0  0.52s           2023-09-29T20:55:02
+================================================================================
+[2023-09-29T20:55:55.059+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2023-09-29T20:55:55.064+0000] {manager.py:762} INFO - There are 2 files in /opt/airflow/dags
+[2023-09-29T20:55:59.105+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  0.36s           2023-09-29T20:55:31
+/opt/airflow/dags/my_first_dag.py                           1           0  0.41s           2023-09-29T20:55:33
+================================================================================
+[2023-09-29T20:56:29.723+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  0.48s           2023-09-29T20:56:02
+/opt/airflow/dags/my_first_dag.py                           1           0  0.41s           2023-09-29T20:56:03
+================================================================================
+[2023-09-29T20:57:00.337+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py                           0           0  0.46s           2023-09-29T20:56:33
+/opt/airflow/dags/my_first_dag.py                           1           0  0.50s           2023-09-29T20:56:34
+================================================================================
+[2023-09-29T20:57:04.769+0000] {manager.py:1145} WARNING - Skipping processing of missing file: /opt/airflow/dags/my_first_dag.py
+[2023-09-29T20:57:04.770+0000] {manager.py:1005} WARNING - Stopping processor for /opt/airflow/dags/my_first_dag.py
+[2023-09-29T20:57:04.771+0000] {manager.py:469} INFO - Exiting gracefully upon receiving signal 15
+[2023-09-29T20:57:06.216+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-09-29T20:57:06.217+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-09-29T20:57:06.217+0000] {manager.py:489} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-09-29T20:57:06.217+0000] {manager.py:759} INFO - Searching for files in /opt/airflow/dags
+[2023-09-29T20:57:06.220+0000] {manager.py:762} INFO - There are 2 files in /opt/airflow/dags
+[2023-09-29T20:57:06.297+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/news_aggregator.py    173  0.03s             0           0
+/opt/airflow/dags/utils/helper.py       174  0.02s             0           0
+================================================================================
+[2023-09-29T20:57:37.150+0000] {manager.py:893} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                               PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/utils/helper.py       185  0.01s             0           0  0.69s           2023-09-29T20:57:06
+/opt/airflow/dags/news_aggregator.py    184  0.01s             1           0  0.84s           2023-09-29T20:57:07
+================================================================================
