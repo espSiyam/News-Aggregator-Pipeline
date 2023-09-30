@@ -1628,3 +1628,17 @@ ModuleNotFoundError: No module named 'tqdm'
 [2023-09-29T23:32:12.240+0000] {logging_mixin.py:151} INFO - [2023-09-29T23:32:12.239+0000] {dag.py:2915} INFO - Sync 1 DAGs
 [2023-09-29T23:32:12.263+0000] {logging_mixin.py:151} INFO - [2023-09-29T23:32:12.262+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T23:00:00+00:00, run_after=2023-09-30T00:00:00+00:00
 [2023-09-29T23:32:12.284+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator_dag.py took 0.679 seconds
+[2023-09-29T23:32:42.427+0000] {processor.py:157} INFO - Started process (PID=389) to work on /opt/airflow/dags/news_aggregator_dag.py
+[2023-09-29T23:32:42.428+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator_dag.py for tasks to queue
+[2023-09-29T23:32:42.429+0000] {logging_mixin.py:151} INFO - [2023-09-29T23:32:42.429+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator_dag.py
+[2023-09-29T23:32:42.887+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator_dag.py
+[2023-09-29T23:32:42.908+0000] {logging_mixin.py:151} INFO - [2023-09-29T23:32:42.907+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T23:32:42.928+0000] {logging_mixin.py:151} INFO - [2023-09-29T23:32:42.928+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T23:00:00+00:00, run_after=2023-09-30T00:00:00+00:00
+[2023-09-29T23:32:43.044+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator_dag.py took 0.619 seconds
+[2023-09-29T23:33:13.234+0000] {processor.py:157} INFO - Started process (PID=398) to work on /opt/airflow/dags/news_aggregator_dag.py
+[2023-09-29T23:33:13.235+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/news_aggregator_dag.py for tasks to queue
+[2023-09-29T23:33:13.237+0000] {logging_mixin.py:151} INFO - [2023-09-29T23:33:13.237+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/news_aggregator_dag.py
+[2023-09-29T23:33:13.752+0000] {processor.py:839} INFO - DAG(s) dict_keys(['ETL_Pipeline']) retrieved from /opt/airflow/dags/news_aggregator_dag.py
+[2023-09-29T23:33:13.772+0000] {logging_mixin.py:151} INFO - [2023-09-29T23:33:13.771+0000] {dag.py:2915} INFO - Sync 1 DAGs
+[2023-09-29T23:33:13.791+0000] {logging_mixin.py:151} INFO - [2023-09-29T23:33:13.791+0000] {dag.py:3696} INFO - Setting next_dagrun for ETL_Pipeline to 2023-09-29T23:00:00+00:00, run_after=2023-09-30T00:00:00+00:00
+[2023-09-29T23:33:13.805+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/news_aggregator_dag.py took 0.577 seconds
