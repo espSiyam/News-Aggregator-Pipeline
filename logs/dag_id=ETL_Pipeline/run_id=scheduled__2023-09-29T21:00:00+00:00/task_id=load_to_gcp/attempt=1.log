@@ -1,0 +1,102 @@
+[2023-09-29T22:04:17.399+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:04:17.407+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:04:17.407+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-29T22:04:17.417+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): load_to_gcp> on 2023-09-29 21:00:00+00:00
+[2023-09-29T22:04:17.425+0000] {standard_task_runner.py:57} INFO - Started process 1077 to run task
+[2023-09-29T22:04:17.428+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'load_to_gcp', 'scheduled__2023-09-29T21:00:00+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/news_aggregator_dag.py', '--cfg-path', '/tmp/tmp52l990js']
+[2023-09-29T22:04:17.430+0000] {standard_task_runner.py:85} INFO - Job 38: Subtask load_to_gcp
+[2023-09-29T22:04:17.470+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T21:00:00+00:00 [running]> on host 8b9d74f8b315
+[2023-09-29T22:04:17.531+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='load_to_gcp' AIRFLOW_CTX_EXECUTION_DATE='2023-09-29T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-29T21:00:00+00:00'
+[2023-09-29T22:04:20.543+0000] {_metadata.py:141} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-09-29T22:04:23.547+0000] {_metadata.py:141} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2023-09-29T22:04:26.551+0000] {_metadata.py:141} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2023-09-29T22:04:26.551+0000] {_default.py:340} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-09-29T22:04:26.552+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/helper.py", line 53, in load_to_gcp
+    storage_client = storage.Client(project=GCP_PROJECT_ID)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/storage/client.py", line 173, in __init__
+    super(Client, self).__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 321, in __init__
+    Client.__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 178, in __init__
+    credentials, _ = google.auth.default(scopes=scopes)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 692, in default
+    raise exceptions.DefaultCredentialsError(_CLOUD_SDK_MISSING_CREDENTIALS)
+google.auth.exceptions.DefaultCredentialsError: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[2023-09-29T22:04:26.565+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=load_to_gcp, execution_date=20230929T210000, start_date=20230929T220417, end_date=20230929T220426
+[2023-09-29T22:04:26.579+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 38 for task load_to_gcp (Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.; 1077)
+[2023-09-29T22:04:26.621+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-29T22:04:26.643+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-09-29T22:12:45.770+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:12:45.777+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:12:45.777+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-29T22:12:45.790+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): load_to_gcp> on 2023-09-29 21:00:00+00:00
+[2023-09-29T22:12:45.796+0000] {standard_task_runner.py:57} INFO - Started process 1228 to run task
+[2023-09-29T22:12:45.800+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'load_to_gcp', 'scheduled__2023-09-29T21:00:00+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/news_aggregator_dag.py', '--cfg-path', '/tmp/tmpjwbe0p87']
+[2023-09-29T22:12:45.802+0000] {standard_task_runner.py:85} INFO - Job 44: Subtask load_to_gcp
+[2023-09-29T22:12:45.838+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T21:00:00+00:00 [running]> on host 8b9d74f8b315
+[2023-09-29T22:12:45.899+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='load_to_gcp' AIRFLOW_CTX_EXECUTION_DATE='2023-09-29T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-29T21:00:00+00:00'
+[2023-09-29T22:12:48.904+0000] {_metadata.py:141} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-09-29T22:12:51.906+0000] {_metadata.py:141} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2023-09-29T22:12:54.910+0000] {_metadata.py:141} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2023-09-29T22:12:54.911+0000] {_default.py:340} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-09-29T22:12:54.911+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/helper.py", line 53, in load_to_gcp
+    storage_client = storage.Client(project=GCP_PROJECT_ID)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/storage/client.py", line 173, in __init__
+    super(Client, self).__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 321, in __init__
+    Client.__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 178, in __init__
+    credentials, _ = google.auth.default(scopes=scopes)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 692, in default
+    raise exceptions.DefaultCredentialsError(_CLOUD_SDK_MISSING_CREDENTIALS)
+google.auth.exceptions.DefaultCredentialsError: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[2023-09-29T22:12:54.925+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=load_to_gcp, execution_date=20230929T210000, start_date=20230929T221245, end_date=20230929T221254
+[2023-09-29T22:12:54.939+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 44 for task load_to_gcp (Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.; 1228)
+[2023-09-29T22:12:54.970+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-29T22:12:54.988+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-09-29T22:54:55.378+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:54:55.385+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T21:00:00+00:00 [queued]>
+[2023-09-29T22:54:55.386+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-09-29T22:54:55.398+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): load_to_gcp> on 2023-09-29 21:00:00+00:00
+[2023-09-29T22:54:55.405+0000] {standard_task_runner.py:57} INFO - Started process 151 to run task
+[2023-09-29T22:54:55.410+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'load_to_gcp', 'scheduled__2023-09-29T21:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/news_aggregator_dag.py', '--cfg-path', '/tmp/tmpr8ibdpl1']
+[2023-09-29T22:54:55.412+0000] {standard_task_runner.py:85} INFO - Job 7: Subtask load_to_gcp
+[2023-09-29T22:54:55.455+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T21:00:00+00:00 [running]> on host 4e50881e96f5
+[2023-09-29T22:54:55.557+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='load_to_gcp' AIRFLOW_CTX_EXECUTION_DATE='2023-09-29T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-29T21:00:00+00:00'
+[2023-09-29T22:54:58.567+0000] {_metadata.py:141} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-09-29T22:55:01.570+0000] {_metadata.py:141} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2023-09-29T22:55:04.574+0000] {_metadata.py:141} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2023-09-29T22:55:04.575+0000] {_default.py:340} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-09-29T22:55:04.575+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/helper.py", line 53, in load_to_gcp
+    storage_client = storage.Client(project=GCP_PROJECT_ID)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/storage/client.py", line 173, in __init__
+    super(Client, self).__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 321, in __init__
+    Client.__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 178, in __init__
+    credentials, _ = google.auth.default(scopes=scopes)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 692, in default
+    raise exceptions.DefaultCredentialsError(_CLOUD_SDK_MISSING_CREDENTIALS)
+google.auth.exceptions.DefaultCredentialsError: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[2023-09-29T22:55:04.614+0000] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=load_to_gcp, execution_date=20230929T210000, start_date=20230929T225455, end_date=20230929T225504
+[2023-09-29T22:55:04.630+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 7 for task load_to_gcp (Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.; 151)
+[2023-09-29T22:55:04.641+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-29T22:55:04.651+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

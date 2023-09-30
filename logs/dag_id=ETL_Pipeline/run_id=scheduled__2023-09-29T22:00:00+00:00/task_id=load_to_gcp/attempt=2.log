@@ -1,0 +1,38 @@
+[2023-09-29T23:19:29.239+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T22:00:00+00:00 [queued]>
+[2023-09-29T23:19:29.245+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T22:00:00+00:00 [queued]>
+[2023-09-29T23:19:29.245+0000] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2023-09-29T23:19:29.255+0000] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): load_to_gcp> on 2023-09-29 22:00:00+00:00
+[2023-09-29T23:19:29.261+0000] {standard_task_runner.py:57} INFO - Started process 155 to run task
+[2023-09-29T23:19:29.263+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'load_to_gcp', 'scheduled__2023-09-29T22:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/news_aggregator_dag.py', '--cfg-path', '/tmp/tmpldx4tadm']
+[2023-09-29T23:19:29.267+0000] {standard_task_runner.py:85} INFO - Job 10: Subtask load_to_gcp
+[2023-09-29T23:19:29.304+0000] {task_command.py:415} INFO - Running <TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T22:00:00+00:00 [running]> on host 5815fcc71aa0
+[2023-09-29T23:19:29.359+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='load_to_gcp' AIRFLOW_CTX_EXECUTION_DATE='2023-09-29T22:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-09-29T22:00:00+00:00'
+[2023-09-29T23:19:29.361+0000] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/helper.py", line 56, in load_to_gcp
+    storage_client = storage.Client(project=GCP_PROJECT_ID)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/storage/client.py", line 173, in __init__
+    super(Client, self).__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 321, in __init__
+    Client.__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 178, in __init__
+    credentials, _ = google.auth.default(scopes=scopes)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 659, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 652, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 272, in _get_explicit_environ_credentials
+    credentials, project_id = load_credentials_from_file(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 116, in load_credentials_from_file
+    raise exceptions.DefaultCredentialsError(
+google.auth.exceptions.DefaultCredentialsError: File /home/siyam/Documents/concured-playground-3e0db480e82a.json was not found.
+[2023-09-29T23:19:29.368+0000] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=ETL_Pipeline, task_id=load_to_gcp, execution_date=20230929T220000, start_date=20230929T231929, end_date=20230929T231929
+[2023-09-29T23:19:29.377+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 10 for task load_to_gcp (File /home/siyam/Documents/concured-playground-3e0db480e82a.json was not found.; 155)
+[2023-09-29T23:19:29.395+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-09-29T23:19:29.408+0000] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-09-30T08:11:57.280+0000] {taskinstance.py:1147} INFO - Dependencies not met for <TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-09-29T22:00:00+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2023-09-30T08:11:57.287+0000] {local_task_job_runner.py:154} INFO - Task is not able to be run
