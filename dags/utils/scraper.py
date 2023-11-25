@@ -29,6 +29,7 @@ def scrape_data_from_url(url):
 
         title = article.title
         text = article.meta_description
+        translated_title = GoogleTranslator(source='auto', target='en').translate(title)
         translated_text = GoogleTranslator(source='auto', target='en').translate(text)
         top_image = article.top_image
         category = random.choice(NEWS_CATEGORIES)
@@ -40,6 +41,7 @@ def scrape_data_from_url(url):
             'url': url,
             'title': title,
             'text': text,
+            'translated_title': translated_title,
             'translated_text': translated_text,
             'category': category,
             'main_image': top_image
