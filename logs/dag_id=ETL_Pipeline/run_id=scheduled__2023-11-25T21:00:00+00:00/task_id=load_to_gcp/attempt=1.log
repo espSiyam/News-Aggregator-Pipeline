@@ -1,0 +1,217 @@
+[2023-11-25T22:00:01.169+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:00:01.183+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:00:01.184+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T22:00:01.207+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_to_gcp> on 2023-11-25 21:00:00+00:00
+[2023-11-25T22:00:01.216+0000] {standard_task_runner.py:57} INFO - Started process 1084 to run task
+[2023-11-25T22:00:01.222+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'load_to_gcp', 'scheduled__2023-11-25T21:00:00+00:00', '--job-id', '409', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp_yrix3q_']
+[2023-11-25T22:00:01.225+0000] {standard_task_runner.py:85} INFO - Job 409: Subtask load_to_gcp
+[2023-11-25T22:00:01.324+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T22:00:01.418+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='load_to_gcp' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T21:00:00+00:00'
+[2023-11-25T22:00:01.421+0000] {logging_mixin.py:154} INFO - Current Working Directory: /opt/***
+[2023-11-25T22:00:01.421+0000] {logging_mixin.py:154} INFO - List of Files: ['dags', 'logs', '***-worker.pid', 'plugins', '***.cfg', 'webserver_config.py', 'config', 'requirements.txt']
+[2023-11-25T22:00:01.430+0000] {connection.py:232} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2023-11-25T22:00:01.431+0000] {base.py:73} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2023-11-25T22:00:01.431+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/helper.py", line 90, in load_to_gcp
+    hook.upload(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 530, in upload
+    client = self.get_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 173, in get_conn
+    credentials=self.get_credentials(), client_info=CLIENT_INFO, project=self.project_id
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 296, in get_credentials
+    credentials, _ = self.get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 273, in get_credentials_and_project_id
+    credentials, project_id = get_credentials_and_project_id(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 362, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 235, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_key_path()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 286, in _get_credentials_using_key_path
+    credentials = google.oauth2.service_account.Credentials.from_service_account_file(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/service_account.py", line 260, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/siyam/Documents/protean-music-401611-34ddba62fc5c.json'
+[2023-11-25T22:00:01.441+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=load_to_gcp, execution_date=20231125T210000, start_date=20231125T220001, end_date=20231125T220001
+[2023-11-25T22:00:01.457+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 409 for task load_to_gcp ([Errno 2] No such file or directory: '/home/siyam/Documents/protean-music-401611-34ddba62fc5c.json'; 1084)
+[2023-11-25T22:00:01.477+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-25T22:00:01.508+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T22:05:50.822+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:05:50.827+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:05:50.828+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T22:05:50.838+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_to_gcp> on 2023-11-25 21:00:00+00:00
+[2023-11-25T22:05:50.843+0000] {standard_task_runner.py:57} INFO - Started process 1175 to run task
+[2023-11-25T22:05:50.845+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'load_to_gcp', 'scheduled__2023-11-25T21:00:00+00:00', '--job-id', '410', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp06fbx_r3']
+[2023-11-25T22:05:50.847+0000] {standard_task_runner.py:85} INFO - Job 410: Subtask load_to_gcp
+[2023-11-25T22:05:50.881+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T22:05:50.937+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='load_to_gcp' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T21:00:00+00:00'
+[2023-11-25T22:05:50.938+0000] {logging_mixin.py:154} INFO - GOOGLE_APPLICATION_CREDENTIALS: /home/siyam/Documents/protean-music-401611-34ddba62fc5c.json
+[2023-11-25T22:05:50.938+0000] {logging_mixin.py:154} INFO - Current Working Directory: /opt/***
+[2023-11-25T22:05:50.938+0000] {logging_mixin.py:154} INFO - List of Files: ['dags', 'logs', '***-worker.pid', 'plugins', '***.cfg', 'webserver_config.py', 'config', 'requirements.txt']
+[2023-11-25T22:05:50.945+0000] {connection.py:232} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2023-11-25T22:05:50.946+0000] {base.py:73} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2023-11-25T22:05:50.946+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/helper.py", line 91, in load_to_gcp
+    hook.upload(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 530, in upload
+    client = self.get_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 173, in get_conn
+    credentials=self.get_credentials(), client_info=CLIENT_INFO, project=self.project_id
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 296, in get_credentials
+    credentials, _ = self.get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 273, in get_credentials_and_project_id
+    credentials, project_id = get_credentials_and_project_id(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 362, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 235, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_key_path()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 286, in _get_credentials_using_key_path
+    credentials = google.oauth2.service_account.Credentials.from_service_account_file(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/service_account.py", line 260, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/siyam/Documents/protean-music-401611-34ddba62fc5c.json'
+[2023-11-25T22:05:50.952+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=load_to_gcp, execution_date=20231125T210000, start_date=20231125T220550, end_date=20231125T220550
+[2023-11-25T22:05:50.962+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 410 for task load_to_gcp ([Errno 2] No such file or directory: '/home/siyam/Documents/protean-music-401611-34ddba62fc5c.json'; 1175)
+[2023-11-25T22:05:50.977+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-25T22:05:50.989+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T22:09:57.834+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:09:57.842+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:09:57.843+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T22:09:57.861+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_to_gcp> on 2023-11-25 21:00:00+00:00
+[2023-11-25T22:09:57.867+0000] {standard_task_runner.py:57} INFO - Started process 1243 to run task
+[2023-11-25T22:09:57.869+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'load_to_gcp', 'scheduled__2023-11-25T21:00:00+00:00', '--job-id', '411', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmpa5sy5pem']
+[2023-11-25T22:09:57.871+0000] {standard_task_runner.py:85} INFO - Job 411: Subtask load_to_gcp
+[2023-11-25T22:09:57.927+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T22:09:58.005+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='load_to_gcp' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T21:00:00+00:00'
+[2023-11-25T22:09:58.008+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/helper.py", line 63, in load_to_gcp
+    storage_client = storage.Client(project=GCP_PROJECT_ID)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/storage/client.py", line 172, in __init__
+    super(Client, self).__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 321, in __init__
+    Client.__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 178, in __init__
+    credentials, _ = google.auth.default(scopes=scopes)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 657, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 650, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 270, in _get_explicit_environ_credentials
+    credentials, project_id = load_credentials_from_file(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 114, in load_credentials_from_file
+    raise exceptions.DefaultCredentialsError(
+google.auth.exceptions.DefaultCredentialsError: File /home/siyam/Documents/concured-playground-3e0db480e82a.json was not found.
+[2023-11-25T22:09:58.015+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=load_to_gcp, execution_date=20231125T210000, start_date=20231125T220957, end_date=20231125T220958
+[2023-11-25T22:09:58.027+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 411 for task load_to_gcp (File /home/siyam/Documents/concured-playground-3e0db480e82a.json was not found.; 1243)
+[2023-11-25T22:09:58.043+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-25T22:09:58.055+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T22:11:25.828+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:11:25.833+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:11:25.834+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T22:11:25.845+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_to_gcp> on 2023-11-25 21:00:00+00:00
+[2023-11-25T22:11:25.850+0000] {standard_task_runner.py:57} INFO - Started process 1262 to run task
+[2023-11-25T22:11:25.853+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'load_to_gcp', 'scheduled__2023-11-25T21:00:00+00:00', '--job-id', '412', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmpbe1hio9b']
+[2023-11-25T22:11:25.855+0000] {standard_task_runner.py:85} INFO - Job 412: Subtask load_to_gcp
+[2023-11-25T22:11:25.892+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T22:11:25.949+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='load_to_gcp' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T21:00:00+00:00'
+[2023-11-25T22:11:25.951+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/helper.py", line 63, in load_to_gcp
+    storage_client = storage.Client(project=GCP_PROJECT_ID)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/storage/client.py", line 172, in __init__
+    super(Client, self).__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 321, in __init__
+    Client.__init__(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/cloud/client/__init__.py", line 178, in __init__
+    credentials, _ = google.auth.default(scopes=scopes)
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 657, in default
+    credentials, project_id = checker()
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 650, in <lambda>
+    lambda: _get_explicit_environ_credentials(quota_project_id=quota_project_id),
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 270, in _get_explicit_environ_credentials
+    credentials, project_id = load_credentials_from_file(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_default.py", line 114, in load_credentials_from_file
+    raise exceptions.DefaultCredentialsError(
+google.auth.exceptions.DefaultCredentialsError: File /home/siyam/Documents/news_gcp_project.json was not found.
+[2023-11-25T22:11:25.957+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=load_to_gcp, execution_date=20231125T210000, start_date=20231125T221125, end_date=20231125T221125
+[2023-11-25T22:11:25.966+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 412 for task load_to_gcp (File /home/siyam/Documents/news_gcp_project.json was not found.; 1262)
+[2023-11-25T22:11:25.984+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-25T22:11:25.997+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T22:13:58.217+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:13:58.223+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:13:58.223+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T22:13:58.234+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_to_gcp> on 2023-11-25 21:00:00+00:00
+[2023-11-25T22:13:58.239+0000] {standard_task_runner.py:57} INFO - Started process 1304 to run task
+[2023-11-25T22:13:58.241+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'load_to_gcp', 'scheduled__2023-11-25T21:00:00+00:00', '--job-id', '413', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmphey8ngaq']
+[2023-11-25T22:13:58.243+0000] {standard_task_runner.py:85} INFO - Job 413: Subtask load_to_gcp
+[2023-11-25T22:13:58.275+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T22:13:58.330+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='load_to_gcp' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T21:00:00+00:00'
+[2023-11-25T22:13:58.648+0000] {helper.py:74} INFO - File news_data.csv uploaded to sementic_assignment successfully!
+[2023-11-25T22:13:58.648+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T22:13:58.663+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=load_to_gcp, execution_date=20231125T210000, start_date=20231125T221358, end_date=20231125T221358
+[2023-11-25T22:13:58.694+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T22:13:58.708+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T22:17:33.620+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:17:33.625+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:17:33.626+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T22:17:33.635+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_to_gcp> on 2023-11-25 21:00:00+00:00
+[2023-11-25T22:17:33.640+0000] {standard_task_runner.py:57} INFO - Started process 1362 to run task
+[2023-11-25T22:17:33.642+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'load_to_gcp', 'scheduled__2023-11-25T21:00:00+00:00', '--job-id', '414', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmpsyn8093h']
+[2023-11-25T22:17:33.644+0000] {standard_task_runner.py:85} INFO - Job 414: Subtask load_to_gcp
+[2023-11-25T22:17:33.675+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.load_to_gcp scheduled__2023-11-25T21:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T22:17:33.725+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='load_to_gcp' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T21:00:00+00:00'
+[2023-11-25T22:17:33.731+0000] {connection.py:232} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2023-11-25T22:17:33.732+0000] {base.py:73} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2023-11-25T22:17:33.732+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/helper.py", line 86, in load_to_gcp
+    hook.upload(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 530, in upload
+    client = self.get_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 173, in get_conn
+    credentials=self.get_credentials(), client_info=CLIENT_INFO, project=self.project_id
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 296, in get_credentials
+    credentials, _ = self.get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/common/hooks/base_google.py", line 273, in get_credentials_and_project_id
+    credentials, project_id = get_credentials_and_project_id(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 362, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 235, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_key_path()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 286, in _get_credentials_using_key_path
+    credentials = google.oauth2.service_account.Credentials.from_service_account_file(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/oauth2/service_account.py", line 260, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+  File "/home/airflow/.local/lib/python3.8/site-packages/google/auth/_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/siyam/Desktop/github/4.news_aggregator/dags/utils/news_gcp_project.json'
+[2023-11-25T22:17:33.738+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=load_to_gcp, execution_date=20231125T210000, start_date=20231125T221733, end_date=20231125T221733
+[2023-11-25T22:17:33.747+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 414 for task load_to_gcp ([Errno 2] No such file or directory: '/home/siyam/Desktop/github/4.news_aggregator/dags/utils/news_gcp_project.json'; 1362)
+[2023-11-25T22:17:33.774+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-25T22:17:33.794+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

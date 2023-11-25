@@ -1,3 +1,5 @@
 ./dags/__pycache__
 ./dags/utils/__pycache__
 ./logs
+./dags/data/news_gcp_project.json
+/home/siyam/Desktop/github/4.news_aggregator/dags/data/news_gcp_project.json

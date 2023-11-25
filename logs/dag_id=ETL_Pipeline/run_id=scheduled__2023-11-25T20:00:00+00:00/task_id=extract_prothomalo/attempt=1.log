@@ -1,0 +1,84 @@
+[2023-11-25T21:00:24.915+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:00:24.926+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:00:24.927+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:00:24.959+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_prothomalo> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:00:24.965+0000] {standard_task_runner.py:57} INFO - Started process 71 to run task
+[2023-11-25T21:00:24.976+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_prothomalo', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '376', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmpqznlc5ad']
+[2023-11-25T21:00:24.979+0000] {standard_task_runner.py:85} INFO - Job 376: Subtask extract_prothomalo
+[2023-11-25T21:00:25.043+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:00:25.145+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_prothomalo' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:00:25.772+0000] {extract.py:39} INFO - Extracted URLs from Prothom Alo. Total URLs: 244
+[2023-11-25T21:00:25.773+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:00:25.779+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_prothomalo, execution_date=20231125T200000, start_date=20231125T210024, end_date=20231125T210025
+[2023-11-25T21:00:25.806+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:00:25.822+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T21:03:30.505+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:03:30.518+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:03:30.518+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:03:30.535+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_prothomalo> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:03:30.541+0000] {standard_task_runner.py:57} INFO - Started process 128 to run task
+[2023-11-25T21:03:30.546+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_prothomalo', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '381', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp997j4o5b']
+[2023-11-25T21:03:30.549+0000] {standard_task_runner.py:85} INFO - Job 381: Subtask extract_prothomalo
+[2023-11-25T21:03:30.601+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:03:30.678+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_prothomalo' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:03:31.033+0000] {extract.py:39} INFO - Extracted URLs from Prothom Alo. Total URLs: 244
+[2023-11-25T21:03:31.033+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:03:31.039+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_prothomalo, execution_date=20231125T200000, start_date=20231125T210330, end_date=20231125T210331
+[2023-11-25T21:03:31.081+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:03:31.104+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T21:12:45.315+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:12:45.329+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:12:45.329+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:12:45.346+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_prothomalo> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:12:45.351+0000] {standard_task_runner.py:57} INFO - Started process 290 to run task
+[2023-11-25T21:12:45.354+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_prothomalo', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '387', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmpd1x5f5xw']
+[2023-11-25T21:12:45.355+0000] {standard_task_runner.py:85} INFO - Job 387: Subtask extract_prothomalo
+[2023-11-25T21:12:45.391+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:12:45.445+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_prothomalo' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:12:45.738+0000] {extract.py:39} INFO - Extracted URLs from Prothom Alo. Total URLs: 244
+[2023-11-25T21:12:45.739+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:12:45.745+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_prothomalo, execution_date=20231125T200000, start_date=20231125T211245, end_date=20231125T211245
+[2023-11-25T21:12:45.766+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:12:45.785+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T21:15:14.248+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:15:14.263+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:15:14.263+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:15:14.288+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_prothomalo> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:15:14.296+0000] {standard_task_runner.py:57} INFO - Started process 334 to run task
+[2023-11-25T21:15:14.300+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_prothomalo', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '390', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp0nnwbgc_']
+[2023-11-25T21:15:14.303+0000] {standard_task_runner.py:85} INFO - Job 390: Subtask extract_prothomalo
+[2023-11-25T21:15:14.400+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:15:14.532+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_prothomalo' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:15:14.815+0000] {extract.py:39} INFO - Extracted URLs from Prothom Alo. Total URLs: 244
+[2023-11-25T21:15:14.815+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:15:14.822+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_prothomalo, execution_date=20231125T200000, start_date=20231125T211514, end_date=20231125T211514
+[2023-11-25T21:15:14.861+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:15:14.880+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T21:38:23.677+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:38:23.691+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:38:23.692+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:38:23.716+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_prothomalo> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:38:23.728+0000] {standard_task_runner.py:57} INFO - Started process 710 to run task
+[2023-11-25T21:38:23.741+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_prothomalo', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '395', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp6rc5ix5p']
+[2023-11-25T21:38:23.744+0000] {standard_task_runner.py:85} INFO - Job 395: Subtask extract_prothomalo
+[2023-11-25T21:38:23.846+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:38:23.978+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_prothomalo' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:38:24.328+0000] {extract.py:39} INFO - Extracted URLs from Prothom Alo. Total URLs: 244
+[2023-11-25T21:38:24.328+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:38:24.337+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_prothomalo, execution_date=20231125T200000, start_date=20231125T213823, end_date=20231125T213824
+[2023-11-25T21:38:24.368+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:38:24.383+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T21:41:28.863+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:41:28.876+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:41:28.877+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:41:28.898+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_prothomalo> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:41:28.908+0000] {standard_task_runner.py:57} INFO - Started process 777 to run task
+[2023-11-25T21:41:28.914+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_prothomalo', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '399', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmpv966c5uu']
+[2023-11-25T21:41:28.919+0000] {standard_task_runner.py:85} INFO - Job 399: Subtask extract_prothomalo
+[2023-11-25T21:41:28.976+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:41:29.112+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_prothomalo' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:41:29.427+0000] {extract.py:39} INFO - Extracted URLs from Prothom Alo. Total URLs: 244
+[2023-11-25T21:41:29.428+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:41:29.436+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_prothomalo, execution_date=20231125T200000, start_date=20231125T214128, end_date=20231125T214129
+[2023-11-25T21:41:29.489+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:41:29.514+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

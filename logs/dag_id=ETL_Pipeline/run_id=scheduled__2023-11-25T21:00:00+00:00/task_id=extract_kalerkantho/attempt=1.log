@@ -1,0 +1,14 @@
+[2023-11-25T22:21:35.987+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_kalerkantho scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:21:35.996+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_kalerkantho scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:21:35.997+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T22:21:36.010+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_kalerkantho> on 2023-11-25 21:00:00+00:00
+[2023-11-25T22:21:36.017+0000] {standard_task_runner.py:57} INFO - Started process 1426 to run task
+[2023-11-25T22:21:36.021+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_kalerkantho', 'scheduled__2023-11-25T21:00:00+00:00', '--job-id', '415', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmpokm26os0']
+[2023-11-25T22:21:36.024+0000] {standard_task_runner.py:85} INFO - Job 415: Subtask extract_kalerkantho
+[2023-11-25T22:21:36.071+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_kalerkantho scheduled__2023-11-25T21:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T22:21:36.136+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_kalerkantho' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T21:00:00+00:00'
+[2023-11-25T22:21:37.141+0000] {extract.py:55} INFO - Extracted URLs from Kaler Kantho. Total URLs: 308
+[2023-11-25T22:21:37.141+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T22:21:37.148+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_kalerkantho, execution_date=20231125T210000, start_date=20231125T222135, end_date=20231125T222137
+[2023-11-25T22:21:37.199+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T22:21:37.220+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

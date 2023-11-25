@@ -2,6 +2,7 @@ import newspaper
 import logging
 from deep_translator import GoogleTranslator
 import random 
+import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -20,6 +21,7 @@ NEWS_CATEGORIES = [
 ]
 
 def scrape_data_from_url(url):
+    date = datetime.now().strftime("%Y-%m-%d")
     try:
         article = newspaper.Article(url)
         article.download()
@@ -34,6 +36,7 @@ def scrape_data_from_url(url):
         logger.info(f"Scraped data from URL: {url}")
 
         return {
+            'date': date,
             'url': url,
             'title': title,
             'text': text,
@@ -45,6 +48,7 @@ def scrape_data_from_url(url):
     except Exception as e:
         logger.error(f"Could not scrape data due to error: {str(e)}")
         return {
+            'date': date,
             'url': url,
             'title': None,
             'text': None,
