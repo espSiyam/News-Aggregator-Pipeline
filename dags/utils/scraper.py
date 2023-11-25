@@ -33,11 +33,13 @@ def scrape_data_from_url(url):
         translated_text = GoogleTranslator(source='auto', target='en').translate(text)
         top_image = article.top_image
         category = random.choice(NEWS_CATEGORIES)
+        website = url.split('.')[1]
 
         logger.info(f"Scraped data from URL: {url}")
 
         return {
             'date': date,
+            'website': website,
             'url': url,
             'title': title,
             'text': text,

@@ -43,7 +43,7 @@ def transform_data():
         combined_data = prothomalo_urls + jugantor_urls + kalerkantho_urls
 
         data_list = []
-        numbers_of_urls_to_scrape = 10
+        numbers_of_urls_to_scrape = None
         if numbers_of_urls_to_scrape:
             if numbers_of_urls_to_scrape > len(combined_data):
                 numbers_of_urls_to_scrape = len(combined_data)
