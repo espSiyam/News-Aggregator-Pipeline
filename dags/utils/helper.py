@@ -14,7 +14,7 @@ KALER_KANTHO_URL_LIST = "dags/data/kalerkantho_urls_list.pkl"
 date = datetime.now().strftime("%Y-%m-%d")
 TRANSFORMED_DATA_CSV = f"dags/data/scraped_data_{date}.csv"
 GCP_PROJECT_ID = 'concured-playground'
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "dags/utils/news_gcp_project.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "dags/data/news_gcp_project.json"
 
 logger = logging.getLogger(__name__)
 
@@ -43,7 +43,7 @@ def transform_data():
         combined_data = prothomalo_urls + jugantor_urls + kalerkantho_urls
 
         data_list = []
-        numbers_of_urls_to_scrape = None
+        numbers_of_urls_to_scrape = 10
         if numbers_of_urls_to_scrape:
             if numbers_of_urls_to_scrape > len(combined_data):
                 numbers_of_urls_to_scrape = len(combined_data)
@@ -65,7 +65,7 @@ def load_to_gcp():
     storage_client = storage.Client(project=GCP_PROJECT_ID)
 
     bucket_name = 'sementic_assignment'  
-    file_name = 'news_data.csv'
+    file_name = f'news_data_{date}.csv'
     local_file_path = TRANSFORMED_DATA_CSV
 
     # Upload the local file to GCS
