@@ -12,8 +12,7 @@ JUGANTOR_URL_LIST = "dags/data/jugantor_urls_list.pkl"
 KALER_KANTHO_URL_LIST = "dags/data/kalerkantho_urls_list.pkl"
 TRANSFORMED_DATA_CSV = "dags/data/scraped_data.csv"
 GCP_PROJECT_ID = 'concured-playground'
-json_key_path = "/home/siyam/Documents/concured-playground-3e0db480e82a.json"
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = json_key_path
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "dags/utils/news_gcp_project.json"
 
 logger = logging.getLogger(__name__)
 
@@ -42,8 +41,15 @@ def transform_data():
         combined_data = prothomalo_urls + jugantor_urls + kalerkantho_urls
 
         data_list = []
-        for url in tqdm(combined_data[:10], desc="Scraping Progress"):
-            data_list.append(scrape_data_from_url(url))
+        numbers_of_urls_to_scrape = None
+        if numbers_of_urls_to_scrape:
+            if numbers_of_urls_to_scrape > len(combined_data):
+                numbers_of_urls_to_scrape = len(combined_data)
+            for url in tqdm(combined_data[:numbers_of_urls_to_scrape], desc="Scraping Progress"):
+                data_list.append(scrape_data_from_url(url))
+        else:
+            for url in tqdm(combined_data, desc="Scraping Progress"):
+                data_list.append(scrape_data_from_url(url))
 
         df = pd.DataFrame(data_list)
         df.to_csv(TRANSFORMED_DATA_CSV, index=False)
@@ -51,17 +57,19 @@ def transform_data():
     
     except Exception as e:
         logger.error(f"Could not transform data due to error: {str(e)}")
+        raise Exception(f"Could not transform data due to error: {str(e)}")
 
 def load_to_gcp():
-    # storage_client = storage.Client(project=GCP_PROJECT_ID)
+    storage_client = storage.Client(project=GCP_PROJECT_ID)
 
-    bucket_name = 'etl_pipeline_practice'  
+    bucket_name = 'sementic_assignment'  
     file_name = 'news_data.csv'
-    local_file_path = 'dags/data/scraped_data.csv'
+    local_file_path = TRANSFORMED_DATA_CSV
 
     # Upload the local file to GCS
-    # bucket = storage_client.bucket(bucket_name)
-    # blob = bucket.blob(file_name)
-    # blob.upload_from_filename(local_file_path)
+    bucket = storage_client.bucket(bucket_name)
+    blob = bucket.blob(file_name)
+    blob.upload_from_filename(local_file_path)
 
     logger.info(f"File {file_name} uploaded to {bucket_name} successfully!")
+    

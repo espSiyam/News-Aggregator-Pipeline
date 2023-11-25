@@ -1,0 +1,84 @@
+[2023-11-25T21:00:24.613+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:00:24.641+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:00:24.641+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:00:24.688+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:00:24.709+0000] {standard_task_runner.py:57} INFO - Started process 70 to run task
+[2023-11-25T21:00:24.725+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '375', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp4co5pl_7']
+[2023-11-25T21:00:24.728+0000] {standard_task_runner.py:85} INFO - Job 375: Subtask extract_jugantor
+[2023-11-25T21:00:24.844+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:00:25.003+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:00:26.152+0000] {extract.py:48} INFO - Extracted URLs from Jugantor. Total URLs: 105
+[2023-11-25T21:00:26.152+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:00:26.160+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20231125T200000, start_date=20231125T210024, end_date=20231125T210026
+[2023-11-25T21:00:26.192+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:00:26.209+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T21:03:30.437+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:03:30.465+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:03:30.466+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:03:30.488+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:03:30.496+0000] {standard_task_runner.py:57} INFO - Started process 127 to run task
+[2023-11-25T21:03:30.503+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '380', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp2hz94m1y']
+[2023-11-25T21:03:30.505+0000] {standard_task_runner.py:85} INFO - Job 380: Subtask extract_jugantor
+[2023-11-25T21:03:30.558+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:03:30.636+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:03:31.384+0000] {extract.py:48} INFO - Extracted URLs from Jugantor. Total URLs: 105
+[2023-11-25T21:03:31.384+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:03:31.391+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20231125T200000, start_date=20231125T210330, end_date=20231125T210331
+[2023-11-25T21:03:31.436+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:03:31.460+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T21:12:45.178+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:12:45.187+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:12:45.188+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:12:45.205+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:12:45.215+0000] {standard_task_runner.py:57} INFO - Started process 289 to run task
+[2023-11-25T21:12:45.218+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '386', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmpgt_zjshj']
+[2023-11-25T21:12:45.220+0000] {standard_task_runner.py:85} INFO - Job 386: Subtask extract_jugantor
+[2023-11-25T21:12:45.279+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:12:45.349+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:12:46.123+0000] {extract.py:48} INFO - Extracted URLs from Jugantor. Total URLs: 105
+[2023-11-25T21:12:46.123+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:12:46.131+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20231125T200000, start_date=20231125T211245, end_date=20231125T211246
+[2023-11-25T21:12:46.157+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:12:46.177+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T21:15:14.138+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:15:14.154+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:15:14.155+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:15:14.194+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:15:14.202+0000] {standard_task_runner.py:57} INFO - Started process 333 to run task
+[2023-11-25T21:15:14.211+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '389', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp8ldcaji6']
+[2023-11-25T21:15:14.214+0000] {standard_task_runner.py:85} INFO - Job 389: Subtask extract_jugantor
+[2023-11-25T21:15:14.284+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:15:14.459+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:15:15.237+0000] {extract.py:48} INFO - Extracted URLs from Jugantor. Total URLs: 105
+[2023-11-25T21:15:15.237+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:15:15.244+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20231125T200000, start_date=20231125T211514, end_date=20231125T211515
+[2023-11-25T21:15:15.268+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:15:15.291+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T21:38:23.780+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:38:23.792+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:38:23.793+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:38:23.814+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:38:23.826+0000] {standard_task_runner.py:57} INFO - Started process 714 to run task
+[2023-11-25T21:38:23.843+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '397', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp__ddotey']
+[2023-11-25T21:38:23.850+0000] {standard_task_runner.py:85} INFO - Job 397: Subtask extract_jugantor
+[2023-11-25T21:38:23.939+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:38:24.038+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:38:25.257+0000] {extract.py:48} INFO - Extracted URLs from Jugantor. Total URLs: 105
+[2023-11-25T21:38:25.258+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:38:25.264+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20231125T200000, start_date=20231125T213823, end_date=20231125T213825
+[2023-11-25T21:38:25.308+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:38:25.324+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-25T21:41:29.021+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:41:29.035+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [queued]>
+[2023-11-25T21:41:29.036+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T21:41:29.059+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-11-25 20:00:00+00:00
+[2023-11-25T21:41:29.067+0000] {standard_task_runner.py:57} INFO - Started process 780 to run task
+[2023-11-25T21:41:29.071+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-11-25T20:00:00+00:00', '--job-id', '402', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmposqt6_21']
+[2023-11-25T21:41:29.074+0000] {standard_task_runner.py:85} INFO - Job 402: Subtask extract_jugantor
+[2023-11-25T21:41:29.148+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-11-25T20:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T21:41:29.236+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T20:00:00+00:00'
+[2023-11-25T21:41:30.020+0000] {extract.py:48} INFO - Extracted URLs from Jugantor. Total URLs: 105
+[2023-11-25T21:41:30.020+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-25T21:41:30.026+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20231125T200000, start_date=20231125T214129, end_date=20231125T214130
+[2023-11-25T21:41:30.047+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-25T21:41:30.059+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

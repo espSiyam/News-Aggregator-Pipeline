@@ -1,0 +1,46 @@
+[2023-11-25T22:21:38.033+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:21:38.042+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:21:38.042+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T22:21:38.054+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform_data> on 2023-11-25 21:00:00+00:00
+[2023-11-25T22:21:38.060+0000] {standard_task_runner.py:57} INFO - Started process 1438 to run task
+[2023-11-25T22:21:38.063+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'transform_data', 'scheduled__2023-11-25T21:00:00+00:00', '--job-id', '418', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp1w68s3nn']
+[2023-11-25T22:21:38.065+0000] {standard_task_runner.py:85} INFO - Job 418: Subtask transform_data
+[2023-11-25T22:21:38.109+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.transform_data scheduled__2023-11-25T21:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T22:21:38.167+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T21:00:00+00:00'
+[2023-11-25T22:21:38.173+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   0%|          | 0/657 [00:00<?, ?it/s]
+[2023-11-25T22:21:39.231+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.haal.fashion/food/507xwtq366
+[2023-11-25T22:21:39.232+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   0%|          | 1/657 [00:01<11:34,  1.06s/it]
+[2023-11-25T22:21:39.589+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/9em8r34hrs
+[2023-11-25T22:21:39.590+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   0%|          | 2/657 [00:01<07:03,  1.55it/s]
+[2023-11-25T22:21:39.927+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/qnl002x85t
+[2023-11-25T22:21:39.930+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   0%|          | 3/657 [00:01<05:31,  1.97it/s]
+[2023-11-25T22:21:40.261+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/a5nskxanm6
+[2023-11-25T22:21:40.265+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|          | 4/657 [00:02<04:46,  2.28it/s]
+[2023-11-25T22:21:40.632+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/apuicf4ang
+[2023-11-25T22:21:40.635+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|          | 5/657 [00:02<04:29,  2.42it/s]
+[2023-11-25T22:21:41.033+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/1epk0e436k
+[2023-11-25T22:21:41.037+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|          | 6/657 [00:02<04:26,  2.44it/s]
+[2023-11-25T22:21:41.486+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/football/kjz3p5t0dt
+[2023-11-25T22:21:41.490+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|1         | 7/657 [00:03<04:35,  2.36it/s]
+[2023-11-25T22:21:41.833+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/0kcylhv78c
+[2023-11-25T22:21:41.836+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|1         | 8/657 [00:03<04:19,  2.50it/s]
+[2023-11-25T22:21:42.287+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/tv/uzqjcr15c4
+[2023-11-25T22:21:42.289+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|1         | 9/657 [00:04<04:29,  2.40it/s]
+[2023-11-25T22:21:42.637+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/opinion/letter/fnxvwsecwj
+[2023-11-25T22:21:42.639+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|1         | 10/657 [00:04<04:15,  2.53it/s]
+[2023-11-25T22:21:42.968+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/song/tkkfuxx76n
+[2023-11-25T22:21:42.972+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|1         | 11/657 [00:04<04:03,  2.66it/s]
+[2023-11-25T22:21:43.308+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/nd4qzr9oro
+[2023-11-25T22:21:43.310+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|1         | 12/657 [00:05<03:55,  2.74it/s]
+[2023-11-25T22:21:43.649+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/tt1hfwobpe
+[2023-11-25T22:21:43.652+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|1         | 13/657 [00:05<03:50,  2.79it/s]
+[2023-11-25T22:21:44.006+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/wyju04u3g0
+[2023-11-25T22:21:44.009+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|2         | 14/657 [00:05<03:49,  2.80it/s]
+[2023-11-25T22:21:44.368+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/ott/ugt7klvj1z
+[2023-11-25T22:21:44.370+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|2         | 15/657 [00:06<03:50,  2.79it/s]
+[2023-11-25T22:21:44.740+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.bondhushava.com/writings/7bq4d5dyyj
+[2023-11-25T22:21:44.743+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|2         | 16/657 [00:06<03:52,  2.75it/s]
+[2023-11-25T22:21:45.106+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/8ekeghvj63
+[2023-11-25T22:21:45.109+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   3%|2         | 17/657 [00:06<03:52,  2.75it/s]
+[2023-11-25T22:21:45.481+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/i17ywdco5s
+[2023-11-25T22:21:45.486+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   3%|2         | 18/657 [00:07<03:54,  2.72it/s]
