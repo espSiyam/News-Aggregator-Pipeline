@@ -2,7 +2,7 @@ import newspaper
 import logging
 from deep_translator import GoogleTranslator
 import random 
-import datetime
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 

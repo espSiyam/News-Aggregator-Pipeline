@@ -944,3 +944,159 @@
 [2023-11-25T22:29:11.499+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  71%|#######   | 465/657 [07:33<03:06,  1.03it/s]
 [2023-11-25T22:29:12.028+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/news/2023/11/24/1339474
 [2023-11-25T22:29:12.030+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  71%|#######   | 466/657 [07:33<02:40,  1.19it/s]
+[2023-11-25T22:29:12.431+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/news/2023/11/24/1339475
+[2023-11-25T22:29:12.432+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  71%|#######1  | 467/657 [07:34<02:14,  1.41it/s]
+[2023-11-25T22:29:12.785+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/news/2023/11/24/1339476
+[2023-11-25T22:29:12.786+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  71%|#######1  | 468/657 [07:34<01:53,  1.66it/s]
+[2023-11-25T22:29:13.279+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/news/2023/11/24/1339477
+[2023-11-25T22:29:13.282+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  71%|#######1  | 469/657 [07:35<01:47,  1.75it/s]
+[2023-11-25T22:29:13.808+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/news/2023/11/24/1339478
+[2023-11-25T22:29:13.810+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  72%|#######1  | 470/657 [07:35<01:44,  1.79it/s]
+[2023-11-25T22:29:15.446+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/country-news/2023/11/24/1339479
+[2023-11-25T22:29:15.448+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  72%|#######1  | 471/657 [07:37<02:43,  1.13it/s]
+[2023-11-25T22:29:17.203+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/country-news/2023/11/24/1339480
+[2023-11-25T22:29:17.204+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  72%|#######1  | 472/657 [07:39<03:31,  1.14s/it]
+[2023-11-25T22:29:18.323+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/news/2023/11/24/1339481
+[2023-11-25T22:29:18.325+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  72%|#######1  | 473/657 [07:40<03:29,  1.14s/it]
+[2023-11-25T22:29:18.850+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/news/2023/11/24/1339482
+[2023-11-25T22:29:18.851+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  72%|#######2  | 474/657 [07:40<02:54,  1.05it/s]
+[2023-11-25T22:29:19.561+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/country-news/2023/11/24/1339483
+[2023-11-25T22:29:19.563+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  72%|#######2  | 475/657 [07:41<02:40,  1.13it/s]
+[2023-11-25T22:29:21.076+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/news/2023/11/24/1339484
+[2023-11-25T22:29:21.079+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  72%|#######2  | 476/657 [07:42<03:13,  1.07s/it]
+[2023-11-25T22:29:21.611+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/first-page/2023/11/24/1339485
+[2023-11-25T22:29:21.613+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  73%|#######2  | 477/657 [07:43<02:43,  1.10it/s]
+[2023-11-25T22:29:22.143+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/first-page/2023/11/24/1339486
+[2023-11-25T22:29:22.145+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  73%|#######2  | 478/657 [07:43<02:22,  1.26it/s]
+[2023-11-25T22:29:22.650+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/first-page/2023/11/24/1339487
+[2023-11-25T22:29:22.652+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  73%|#######2  | 479/657 [07:44<02:06,  1.41it/s]
+[2023-11-25T22:29:23.224+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/first-page/2023/11/24/1339488
+[2023-11-25T22:29:23.227+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  73%|#######3  | 480/657 [07:45<01:58,  1.49it/s]
+[2023-11-25T22:29:23.775+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/first-page/2023/11/24/1339489
+[2023-11-25T22:29:23.778+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  73%|#######3  | 481/657 [07:45<01:51,  1.58it/s]
+[2023-11-25T22:29:24.310+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/first-page/2023/11/24/1339490
+[2023-11-25T22:29:24.313+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  73%|#######3  | 482/657 [07:46<01:45,  1.66it/s]
+[2023-11-25T22:29:26.017+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/first-page/2023/11/24/1339491
+[2023-11-25T22:29:26.017+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  74%|#######3  | 483/657 [07:47<02:42,  1.07it/s]
+[2023-11-25T22:29:26.554+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/last-page/2023/11/24/1339492
+[2023-11-25T22:29:26.557+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  74%|#######3  | 484/657 [07:48<02:21,  1.23it/s]
+[2023-11-25T22:29:27.112+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/last-page/2023/11/24/1339493
+[2023-11-25T22:29:27.115+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  74%|#######3  | 485/657 [07:48<02:07,  1.35it/s]
+[2023-11-25T22:29:27.639+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/last-page/2023/11/24/1339494
+[2023-11-25T22:29:27.640+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  74%|#######3  | 486/657 [07:49<01:55,  1.48it/s]
+[2023-11-25T22:29:29.346+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/last-page/2023/11/24/1339495
+[2023-11-25T22:29:29.347+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  74%|#######4  | 487/657 [07:51<02:47,  1.02it/s]
+[2023-11-25T22:29:29.932+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/last-page/2023/11/24/1339496
+[2023-11-25T22:29:29.934+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  74%|#######4  | 488/657 [07:51<02:26,  1.16it/s]
+[2023-11-25T22:29:31.777+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/last-page/2023/11/24/1339497
+[2023-11-25T22:29:31.778+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  74%|#######4  | 489/657 [07:53<03:14,  1.16s/it]
+[2023-11-25T22:29:33.458+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/last-page/2023/11/24/1339498
+[2023-11-25T22:29:33.459+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  75%|#######4  | 490/657 [07:55<03:39,  1.32s/it]
+[2023-11-25T22:29:33.979+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/last-page/2023/11/24/1339499
+[2023-11-25T22:29:33.980+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  75%|#######4  | 491/657 [07:55<02:58,  1.08s/it]
+[2023-11-25T22:29:35.659+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/last-page/2023/11/24/1339500
+[2023-11-25T22:29:35.660+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  75%|#######4  | 492/657 [07:57<03:27,  1.26s/it]
+[2023-11-25T22:29:36.199+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/last-page/2023/11/24/1339501
+[2023-11-25T22:29:36.200+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  75%|#######5  | 493/657 [07:58<02:50,  1.04s/it]
+[2023-11-25T22:29:36.901+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/Politics/2023/11/24/1339502
+[2023-11-25T22:29:36.903+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  75%|#######5  | 494/657 [07:58<02:33,  1.06it/s]
+[2023-11-25T22:29:38.611+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/first-page/2023/11/24/1339503
+[2023-11-25T22:29:38.612+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  75%|#######5  | 495/657 [08:00<03:09,  1.17s/it]
+[2023-11-25T22:29:39.228+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/national/2023/11/24/1339504
+[2023-11-25T22:29:39.231+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  75%|#######5  | 496/657 [08:01<02:41,  1.01s/it]
+[2023-11-25T22:29:40.912+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/world/2023/11/24/1339505
+[2023-11-25T22:29:40.913+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  76%|#######5  | 497/657 [08:02<03:13,  1.21s/it]
+[2023-11-25T22:29:42.638+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/world/2023/11/24/1339506
+[2023-11-25T22:29:42.639+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  76%|#######5  | 498/657 [08:04<03:36,  1.36s/it]
+[2023-11-25T22:29:43.181+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/national/2023/11/25/1339507
+[2023-11-25T22:29:43.183+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  76%|#######5  | 499/657 [08:05<02:56,  1.12s/it]
+[2023-11-25T22:29:43.712+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/national/2023/11/25/1339508
+[2023-11-25T22:29:43.714+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  76%|#######6  | 500/657 [08:05<02:27,  1.06it/s]
+[2023-11-25T22:29:44.446+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/national/2023/11/25/1339509
+[2023-11-25T22:29:44.449+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  76%|#######6  | 501/657 [08:06<02:17,  1.14it/s]
+[2023-11-25T22:29:44.997+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/Politics/2023/11/25/1339510
+[2023-11-25T22:29:44.998+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  76%|#######6  | 502/657 [08:06<02:00,  1.28it/s]
+[2023-11-25T22:29:45.501+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/world/2023/11/25/1339511
+[2023-11-25T22:29:45.503+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  77%|#######6  | 503/657 [08:07<01:47,  1.43it/s]
+[2023-11-25T22:29:46.047+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/national/2023/11/25/1339512
+[2023-11-25T22:29:46.050+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  77%|#######6  | 504/657 [08:07<01:39,  1.53it/s]
+[2023-11-25T22:29:46.598+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/national/2023/11/25/1339513
+[2023-11-25T22:29:46.600+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  77%|#######6  | 505/657 [08:08<01:34,  1.61it/s]
+[2023-11-25T22:29:47.144+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/miscellaneous/2023/11/25/1339514
+[2023-11-25T22:29:47.145+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  77%|#######7  | 506/657 [08:08<01:30,  1.67it/s]
+[2023-11-25T22:29:47.667+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/world/2023/11/25/1339515
+[2023-11-25T22:29:47.668+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  77%|#######7  | 507/657 [08:09<01:26,  1.74it/s]
+[2023-11-25T22:29:48.182+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/country-news/2023/11/25/1339516
+[2023-11-25T22:29:48.183+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  77%|#######7  | 508/657 [08:10<01:23,  1.79it/s]
+[2023-11-25T22:29:48.675+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/country-news/2023/11/25/1339517
+[2023-11-25T22:29:48.676+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  77%|#######7  | 509/657 [08:10<01:19,  1.86it/s]
+[2023-11-25T22:29:49.213+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/campus-online/2023/11/25/1339518
+[2023-11-25T22:29:49.216+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  78%|#######7  | 510/657 [08:11<01:19,  1.86it/s]
+[2023-11-25T22:29:49.761+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/country-news/2023/11/25/1339519
+[2023-11-25T22:29:49.763+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  78%|#######7  | 511/657 [08:11<01:19,  1.85it/s]
+[2023-11-25T22:29:50.342+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/world/2023/11/25/1339520
+[2023-11-25T22:29:50.345+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  78%|#######7  | 512/657 [08:12<01:20,  1.81it/s]
+[2023-11-25T22:29:50.891+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/country-news/2023/11/25/1339521
+[2023-11-25T22:29:50.894+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  78%|#######8  | 513/657 [08:12<01:19,  1.81it/s]
+[2023-11-25T22:29:51.441+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/shuvosangho/2023/11/25/1339522
+[2023-11-25T22:29:51.444+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  78%|#######8  | 514/657 [08:13<01:18,  1.81it/s]
+[2023-11-25T22:29:51.966+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/miscellaneous/2023/11/25/1339523
+[2023-11-25T22:29:51.968+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  78%|#######8  | 515/657 [08:13<01:17,  1.84it/s]
+[2023-11-25T22:29:52.513+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/miscellaneous/2023/11/25/1339524
+[2023-11-25T22:29:52.517+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  79%|#######8  | 516/657 [08:14<01:16,  1.84it/s]
+[2023-11-25T22:29:53.049+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/world/2023/11/25/1339525
+[2023-11-25T22:29:53.051+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  79%|#######8  | 517/657 [08:14<01:15,  1.85it/s]
+[2023-11-25T22:29:53.599+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/national/2023/11/25/1339526
+[2023-11-25T22:29:53.602+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  79%|#######8  | 518/657 [08:15<01:15,  1.84it/s]
+[2023-11-25T22:29:54.153+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/sport/2023/11/25/1339527
+[2023-11-25T22:29:54.155+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  79%|#######8  | 519/657 [08:15<01:15,  1.83it/s]
+[2023-11-25T22:29:54.863+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/world/2023/11/25/1339528
+[2023-11-25T22:29:54.865+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  79%|#######9  | 520/657 [08:16<01:21,  1.68it/s]
+[2023-11-25T22:29:55.369+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/country-news/2023/11/25/1339529
+[2023-11-25T22:29:55.370+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  79%|#######9  | 521/657 [08:17<01:17,  1.76it/s]
+[2023-11-25T22:29:55.961+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/sport/2023/11/25/1339530
+[2023-11-25T22:29:55.964+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  79%|#######9  | 522/657 [08:17<01:17,  1.74it/s]
+[2023-11-25T22:29:56.471+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/country-news/2023/11/25/1339531
+[2023-11-25T22:29:56.473+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  80%|#######9  | 523/657 [08:18<01:14,  1.80it/s]
+[2023-11-25T22:29:56.992+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/sport/2023/11/25/1339532
+[2023-11-25T22:29:56.994+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  80%|#######9  | 524/657 [08:18<01:12,  1.83it/s]
+[2023-11-25T22:29:57.512+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/online/world/2023/11/25/1339533
+[2023-11-25T22:29:57.513+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  80%|#######9  | 525/657 [08:19<01:10,  1.86it/s]
+[2023-11-25T22:29:57.536+0000] {process_utils.py:149} WARNING - process psutil.Process(pid=1438, name='airflow task ru', status='running', started='22:21:37') did not respond to SIGTERM. Trying SIGKILL
+[2023-11-25T22:29:57.537+0000] {process_utils.py:86} INFO - Sending the signal 9 to group 1438
+[2023-11-25T22:29:57.550+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1438, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='22:21:37') (1438) terminated with exit code -9
+[2023-11-25T22:29:57.551+0000] {standard_task_runner.py:172} ERROR - Job 418 was killed before it finished (likely due to running out of memory)
+[2023-11-25T22:30:56.125+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:30:56.132+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-11-25T21:00:00+00:00 [queued]>
+[2023-11-25T22:30:56.132+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-25T22:30:56.143+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform_data> on 2023-11-25 21:00:00+00:00
+[2023-11-25T22:30:56.149+0000] {standard_task_runner.py:57} INFO - Started process 1588 to run task
+[2023-11-25T22:30:56.151+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'transform_data', 'scheduled__2023-11-25T21:00:00+00:00', '--job-id', '422', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmpzlr0clqc']
+[2023-11-25T22:30:56.153+0000] {standard_task_runner.py:85} INFO - Job 422: Subtask transform_data
+[2023-11-25T22:30:56.188+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.transform_data scheduled__2023-11-25T21:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-25T22:30:56.242+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T21:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T21:00:00+00:00'
+[2023-11-25T22:30:56.247+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   0%|          | 0/657 [00:00<?, ?it/s]
+[2023-11-25T22:30:56.248+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   0%|          | 0/657 [00:00<?, ?it/s]
+[2023-11-25T22:30:56.248+0000] {helper.py:59} ERROR - Could not transform data due to error: module 'datetime' has no attribute 'now'
+[2023-11-25T22:30:56.248+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/utils/helper.py", line 52, in transform_data
+    data_list.append(scrape_data_from_url(url))
+  File "/opt/airflow/dags/utils/scraper.py", line 24, in scrape_data_from_url
+    date = datetime.now().strftime("%Y-%m-%d")
+AttributeError: module 'datetime' has no attribute 'now'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/helper.py", line 60, in transform_data
+    raise Exception(f"Could not transform data due to error: {str(e)}")
+Exception: Could not transform data due to error: module 'datetime' has no attribute 'now'
+[2023-11-25T22:30:56.253+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=transform_data, execution_date=20231125T210000, start_date=20231125T223056, end_date=20231125T223056
+[2023-11-25T22:30:56.262+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 422 for task transform_data (Could not transform data due to error: module 'datetime' has no attribute 'now'; 1588)
+[2023-11-25T22:30:56.283+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-25T22:30:56.302+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
