@@ -2,7 +2,7 @@ import newspaper
 import logging
 from deep_translator import GoogleTranslator
 import random 
-import datetime
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -29,17 +29,21 @@ def scrape_data_from_url(url):
 
         title = article.title
         text = article.meta_description
+        translated_title = GoogleTranslator(source='auto', target='en').translate(title)
         translated_text = GoogleTranslator(source='auto', target='en').translate(text)
         top_image = article.top_image
         category = random.choice(NEWS_CATEGORIES)
+        website = url.split('.')[1]
 
         logger.info(f"Scraped data from URL: {url}")
 
         return {
             'date': date,
+            'website': website,
             'url': url,
             'title': title,
             'text': text,
+            'translated_title': translated_title,
             'translated_text': translated_text,
             'category': category,
             'main_image': top_image

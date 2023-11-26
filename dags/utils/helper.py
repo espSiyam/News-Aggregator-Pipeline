@@ -5,14 +5,16 @@ import pandas as pd
 from utils.scraper import scrape_data_from_url
 from google.cloud import storage
 import os
+from datetime import datetime
 
 FILE_PATH = 'dags/data/urls_list.pkl'
 PROTHOM_ALO_URL_LIST = "dags/data/prothomalo_urls_list.pkl"
 JUGANTOR_URL_LIST = "dags/data/jugantor_urls_list.pkl"
 KALER_KANTHO_URL_LIST = "dags/data/kalerkantho_urls_list.pkl"
-TRANSFORMED_DATA_CSV = "dags/data/scraped_data.csv"
+date = datetime.now().strftime("%Y-%m-%d")
+TRANSFORMED_DATA_CSV = f"dags/data/scraped_data_{date}.csv"
 GCP_PROJECT_ID = 'concured-playground'
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "dags/utils/news_gcp_project.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "dags/data/news_gcp_project.json"
 
 logger = logging.getLogger(__name__)
 
@@ -63,7 +65,7 @@ def load_to_gcp():
     storage_client = storage.Client(project=GCP_PROJECT_ID)
 
     bucket_name = 'sementic_assignment'  
-    file_name = 'news_data.csv'
+    file_name = f'news_data_{date}.csv'
     local_file_path = TRANSFORMED_DATA_CSV
 
     # Upload the local file to GCS
