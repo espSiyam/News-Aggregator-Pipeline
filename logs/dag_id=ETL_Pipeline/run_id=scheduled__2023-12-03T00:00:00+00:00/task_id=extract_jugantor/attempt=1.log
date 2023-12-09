@@ -1,0 +1,23 @@
+[2023-12-04T10:53:00.433+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-12-03T00:00:00+00:00 [queued]>
+[2023-12-04T10:53:00.452+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-12-03T00:00:00+00:00 [queued]>
+[2023-12-04T10:53:00.453+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-04T10:53:00.506+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_jugantor> on 2023-12-03 00:00:00+00:00
+[2023-12-04T10:53:00.526+0000] {standard_task_runner.py:57} INFO - Started process 36317 to run task
+[2023-12-04T10:53:00.533+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_jugantor', 'scheduled__2023-12-03T00:00:00+00:00', '--job-id', '568', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmpl07bt_p6']
+[2023-12-04T10:53:00.549+0000] {standard_task_runner.py:85} INFO - Job 568: Subtask extract_jugantor
+[2023-12-04T10:53:00.729+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_jugantor scheduled__2023-12-03T00:00:00+00:00 [running]> on host 4012deabc79b
+[2023-12-04T10:53:01.035+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_jugantor' AIRFLOW_CTX_EXECUTION_DATE='2023-12-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-03T00:00:00+00:00'
+[2023-12-04T10:53:01.139+0000] {extract.py:22} ERROR - Could not fetch content due to error: 403 Client Error: Forbidden for url: https://www.jugantor.com/sitemap.xml
+[2023-12-04T10:53:01.141+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/extract.py", line 43, in parse_from_jugantor
+    all_links = sitemap_soup.find_all('loc')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+[2023-12-04T10:53:01.156+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=extract_jugantor, execution_date=20231203T000000, start_date=20231204T105300, end_date=20231204T105301
+[2023-12-04T10:53:01.176+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 568 for task extract_jugantor ('NoneType' object has no attribute 'find_all'; 36317)
+[2023-12-04T10:53:01.201+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-04T10:53:01.238+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

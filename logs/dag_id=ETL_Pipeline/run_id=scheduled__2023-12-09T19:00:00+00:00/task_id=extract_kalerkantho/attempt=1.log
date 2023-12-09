@@ -1,0 +1,28 @@
+[2023-12-09T19:10:02.862+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_kalerkantho scheduled__2023-12-09T19:00:00+00:00 [queued]>
+[2023-12-09T19:10:02.874+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_kalerkantho scheduled__2023-12-09T19:00:00+00:00 [queued]>
+[2023-12-09T19:10:02.875+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-09T19:10:02.895+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_kalerkantho> on 2023-12-09 19:00:00+00:00
+[2023-12-09T19:10:02.903+0000] {standard_task_runner.py:57} INFO - Started process 339 to run task
+[2023-12-09T19:10:02.911+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_kalerkantho', 'scheduled__2023-12-09T19:00:00+00:00', '--job-id', '617', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmpujog4nup']
+[2023-12-09T19:10:02.916+0000] {standard_task_runner.py:85} INFO - Job 617: Subtask extract_kalerkantho
+[2023-12-09T19:10:02.978+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_kalerkantho scheduled__2023-12-09T19:00:00+00:00 [running]> on host 6d2d80bfb03e
+[2023-12-09T19:10:03.062+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_kalerkantho' AIRFLOW_CTX_EXECUTION_DATE='2023-12-09T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-09T19:00:00+00:00'
+[2023-12-09T19:10:04.133+0000] {extract.py:55} INFO - Extracted URLs from Kaler Kantho. Total URLs: 309
+[2023-12-09T19:10:04.133+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-09T19:10:04.143+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_kalerkantho, execution_date=20231209T190000, start_date=20231209T191002, end_date=20231209T191004
+[2023-12-09T19:10:04.189+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-09T19:10:04.219+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-09T19:16:36.176+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_kalerkantho scheduled__2023-12-09T19:00:00+00:00 [queued]>
+[2023-12-09T19:16:36.197+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_kalerkantho scheduled__2023-12-09T19:00:00+00:00 [queued]>
+[2023-12-09T19:16:36.197+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-09T19:16:36.214+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_kalerkantho> on 2023-12-09 19:00:00+00:00
+[2023-12-09T19:16:36.224+0000] {standard_task_runner.py:57} INFO - Started process 462 to run task
+[2023-12-09T19:16:36.230+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_kalerkantho', 'scheduled__2023-12-09T19:00:00+00:00', '--job-id', '626', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp82gnz93v']
+[2023-12-09T19:16:36.233+0000] {standard_task_runner.py:85} INFO - Job 626: Subtask extract_kalerkantho
+[2023-12-09T19:16:36.290+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_kalerkantho scheduled__2023-12-09T19:00:00+00:00 [running]> on host 6d2d80bfb03e
+[2023-12-09T19:16:36.364+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_kalerkantho' AIRFLOW_CTX_EXECUTION_DATE='2023-12-09T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-09T19:00:00+00:00'
+[2023-12-09T19:16:37.649+0000] {extract.py:55} INFO - Extracted URLs from Kaler Kantho. Total URLs: 309
+[2023-12-09T19:16:37.650+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-09T19:16:37.665+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=ETL_Pipeline, task_id=extract_kalerkantho, execution_date=20231209T190000, start_date=20231209T191636, end_date=20231209T191637
+[2023-12-09T19:16:37.709+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-09T19:16:37.743+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

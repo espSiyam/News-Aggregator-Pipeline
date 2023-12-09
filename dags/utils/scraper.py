@@ -1,24 +1,20 @@
 import newspaper
 import logging
 from deep_translator import GoogleTranslator
-import random 
 from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
-# Define a list of news categories
-NEWS_CATEGORIES = [
-    'Politics',
-    'Business',
-    'Technology',
-    'Health',
-    'Entertainment',
-    'Science',
-    'Sports',
-    'World',
-    'Environment',
-    'Education'
-]
+def scrape_category_urls(url):
+    try:
+        if "kalerkantho" in url:
+            cat = url.split("/")[4]
+            return cat
+        else:
+            cat = url.split("/")[3]
+            return cat
+    except Exception as e:
+        logger.error(f"Could not scrape category due to error: {str(e)}")
 
 def scrape_data_from_url(url):
     date = datetime.now().strftime("%Y-%m-%d")
@@ -32,7 +28,7 @@ def scrape_data_from_url(url):
         translated_title = GoogleTranslator(source='auto', target='en').translate(title)
         translated_text = GoogleTranslator(source='auto', target='en').translate(text)
         top_image = article.top_image
-        category = random.choice(NEWS_CATEGORIES)
+        category = scrape_category_urls(url)
         website = url.split('.')[1]
 
         logger.info(f"Scraped data from URL: {url}")

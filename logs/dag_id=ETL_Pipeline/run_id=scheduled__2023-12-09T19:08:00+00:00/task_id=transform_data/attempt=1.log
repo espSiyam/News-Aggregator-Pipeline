@@ -1,0 +1,792 @@
+[2023-12-09T19:09:04.742+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-12-09T19:08:00+00:00 [queued]>
+[2023-12-09T19:09:04.751+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.transform_data scheduled__2023-12-09T19:08:00+00:00 [queued]>
+[2023-12-09T19:09:04.752+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-09T19:09:04.765+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform_data> on 2023-12-09 19:08:00+00:00
+[2023-12-09T19:09:04.774+0000] {standard_task_runner.py:57} INFO - Started process 314 to run task
+[2023-12-09T19:09:04.777+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'transform_data', 'scheduled__2023-12-09T19:08:00+00:00', '--job-id', '614', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp5pla0g0v']
+[2023-12-09T19:09:04.779+0000] {standard_task_runner.py:85} INFO - Job 614: Subtask transform_data
+[2023-12-09T19:09:04.815+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.transform_data scheduled__2023-12-09T19:08:00+00:00 [running]> on host 6d2d80bfb03e
+[2023-12-09T19:09:04.899+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-09T19:08:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-09T19:08:00+00:00'
+[2023-12-09T19:09:04.905+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   0%|          | 0/647 [00:00<?, ?it/s]
+[2023-12-09T19:09:05.473+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/capital/xnx1brj3dw
+[2023-12-09T19:09:05.475+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   0%|          | 1/647 [00:00<06:07,  1.76it/s]
+[2023-12-09T19:09:06.065+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/middle-east/1rvpnx7tj7
+[2023-12-09T19:09:06.068+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   0%|          | 2/647 [00:01<06:16,  1.72it/s]
+[2023-12-09T19:09:06.600+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/capital/wbur96181k
+[2023-12-09T19:09:06.603+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   0%|          | 3/647 [00:01<06:01,  1.78it/s]
+[2023-12-09T19:09:07.167+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/middle-east/j3hu971phv
+[2023-12-09T19:09:07.170+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|          | 4/647 [00:02<06:02,  1.77it/s]
+[2023-12-09T19:09:07.700+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/qenmtjhavp
+[2023-12-09T19:09:07.703+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|          | 5/647 [00:02<05:54,  1.81it/s]
+[2023-12-09T19:09:08.506+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/e1jgumg19d
+[2023-12-09T19:09:08.508+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|          | 6/647 [00:03<06:49,  1.57it/s]
+[2023-12-09T19:09:09.023+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/kk62twn5xm
+[2023-12-09T19:09:09.025+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|1         | 7/647 [00:04<06:23,  1.67it/s]
+[2023-12-09T19:09:09.518+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/a82bqd2zsj
+[2023-12-09T19:09:09.520+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|1         | 8/647 [00:04<06:01,  1.77it/s]
+[2023-12-09T19:09:10.202+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.haal.fashion/arrangement/event/jb9dla6fkr
+[2023-12-09T19:09:10.205+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   1%|1         | 9/647 [00:05<06:24,  1.66it/s]
+[2023-12-09T19:09:10.751+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/euh893st66
+[2023-12-09T19:09:10.753+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|1         | 10/647 [00:05<06:13,  1.71it/s]
+[2023-12-09T19:09:11.352+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/photo/bangladesh/ixr3kvqkh6
+[2023-12-09T19:09:11.355+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|1         | 11/647 [00:06<06:15,  1.69it/s]
+[2023-12-09T19:09:11.957+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/football/swbka3oj1q
+[2023-12-09T19:09:11.961+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|1         | 12/647 [00:07<06:18,  1.68it/s]
+[2023-12-09T19:09:12.507+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/drama/hvh5ltcu3s
+[2023-12-09T19:09:12.510+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|2         | 13/647 [00:07<06:08,  1.72it/s]
+[2023-12-09T19:09:13.057+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/be6mvcnslr
+[2023-12-09T19:09:13.061+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|2         | 14/647 [00:08<06:02,  1.75it/s]
+[2023-12-09T19:09:13.675+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/eyowqebca0
+[2023-12-09T19:09:13.678+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|2         | 15/647 [00:08<06:10,  1.71it/s]
+[2023-12-09T19:09:14.266+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/8uhqa382ip
+[2023-12-09T19:09:14.269+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   2%|2         | 16/647 [00:09<06:10,  1.70it/s]
+[2023-12-09T19:09:14.814+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/r5om3n9ion
+[2023-12-09T19:09:14.816+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   3%|2         | 17/647 [00:09<06:02,  1.74it/s]
+[2023-12-09T19:09:15.335+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/song/d00sum65xn
+[2023-12-09T19:09:15.338+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   3%|2         | 18/647 [00:10<05:51,  1.79it/s]
+[2023-12-09T19:09:15.956+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/6qtnd0p5do
+[2023-12-09T19:09:15.959+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   3%|2         | 19/647 [00:11<06:02,  1.73it/s]
+[2023-12-09T19:09:16.457+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/poll/nnv3b3amxm
+[2023-12-09T19:09:16.459+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   3%|3         | 20/647 [00:11<05:47,  1.80it/s]
+[2023-12-09T19:09:17.008+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/yxrawaumat
+[2023-12-09T19:09:17.011+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   3%|3         | 21/647 [00:12<05:46,  1.81it/s]
+[2023-12-09T19:09:17.596+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/mszigv2xq0
+[2023-12-09T19:09:17.599+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   3%|3         | 22/647 [00:12<05:52,  1.77it/s]
+[2023-12-09T19:09:18.163+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.bondhushava.com/writings/9di3jyevgp
+[2023-12-09T19:09:18.165+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   4%|3         | 23/647 [00:13<05:52,  1.77it/s]
+[2023-12-09T19:09:18.657+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/opinion/wobjlbeqbd
+[2023-12-09T19:09:18.660+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   4%|3         | 24/647 [00:13<05:38,  1.84it/s]
+[2023-12-09T19:09:19.184+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/tv/t0043lwzas
+[2023-12-09T19:09:19.187+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   4%|3         | 25/647 [00:14<05:35,  1.86it/s]
+[2023-12-09T19:09:19.816+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/rjtozlrz3u
+[2023-12-09T19:09:19.819+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   4%|4         | 26/647 [00:14<05:51,  1.76it/s]
+[2023-12-09T19:09:20.348+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/59y1db93c8
+[2023-12-09T19:09:20.353+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   4%|4         | 27/647 [00:15<05:45,  1.80it/s]
+[2023-12-09T19:09:20.938+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/j45f0xz6jk
+[2023-12-09T19:09:20.941+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   4%|4         | 28/647 [00:16<05:50,  1.77it/s]
+[2023-12-09T19:09:21.498+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/luh7uouvz4
+[2023-12-09T19:09:21.500+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   4%|4         | 29/647 [00:16<05:48,  1.77it/s]
+[2023-12-09T19:09:22.046+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/tv/jzc2ylzvq3
+[2023-12-09T19:09:22.049+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   5%|4         | 30/647 [00:17<05:45,  1.79it/s]
+[2023-12-09T19:09:22.564+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/ydftk8vory
+[2023-12-09T19:09:22.567+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   5%|4         | 31/647 [00:17<05:36,  1.83it/s]
+[2023-12-09T19:09:23.084+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/hmu2phdg7r
+[2023-12-09T19:09:23.087+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   5%|4         | 32/647 [00:18<05:31,  1.86it/s]
+[2023-12-09T19:09:23.638+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/xa2wj8gtku
+[2023-12-09T19:09:23.642+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   5%|5         | 33/647 [00:18<05:33,  1.84it/s]
+[2023-12-09T19:09:24.258+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/tn8f7zilw5
+[2023-12-09T19:09:24.260+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   5%|5         | 34/647 [00:19<05:46,  1.77it/s]
+[2023-12-09T19:09:24.888+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/capital/kdtweveg4o
+[2023-12-09T19:09:24.890+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   5%|5         | 35/647 [00:19<05:58,  1.71it/s]
+[2023-12-09T19:09:25.434+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/8gcbp8g5yx
+[2023-12-09T19:09:25.439+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   6%|5         | 36/647 [00:20<05:50,  1.74it/s]
+[2023-12-09T19:09:25.994+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/y1hq3azcps
+[2023-12-09T19:09:25.996+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   6%|5         | 37/647 [00:21<05:47,  1.76it/s]
+[2023-12-09T19:09:26.519+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/bangladesh/e9c77q7vrz
+[2023-12-09T19:09:26.521+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   6%|5         | 38/647 [00:21<05:38,  1.80it/s]
+[2023-12-09T19:09:27.104+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/dz4mc9oeec
+[2023-12-09T19:09:27.106+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   6%|6         | 39/647 [00:22<05:43,  1.77it/s]
+[2023-12-09T19:09:27.663+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/middle-east/iz995milbp
+[2023-12-09T19:09:27.665+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   6%|6         | 40/647 [00:22<05:41,  1.78it/s]
+[2023-12-09T19:09:28.173+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/1ciwh059pz
+[2023-12-09T19:09:28.178+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   6%|6         | 41/647 [00:23<05:32,  1.83it/s]
+[2023-12-09T19:09:28.693+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/xz0uqdv8yt
+[2023-12-09T19:09:28.696+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   6%|6         | 42/647 [00:23<05:26,  1.86it/s]
+[2023-12-09T19:09:29.289+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/bollywood/hoakmi6gsf
+[2023-12-09T19:09:29.292+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   7%|6         | 43/647 [00:24<05:35,  1.80it/s]
+[2023-12-09T19:09:29.797+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.bondhushava.com/writings/asgnc4olev
+[2023-12-09T19:09:29.799+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   7%|6         | 44/647 [00:24<05:26,  1.85it/s]
+[2023-12-09T19:09:30.421+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/international/wthp46rp7d
+[2023-12-09T19:09:30.423+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   7%|6         | 45/647 [00:25<05:40,  1.77it/s]
+[2023-12-09T19:09:31.005+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/business/industry/31qkzbnq5d
+[2023-12-09T19:09:31.014+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   7%|7         | 46/647 [00:26<05:44,  1.74it/s]
+[2023-12-09T19:09:31.617+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/opinion/column/0kxyw8qinv
+[2023-12-09T19:09:31.620+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   7%|7         | 47/647 [00:26<05:49,  1.71it/s]
+[2023-12-09T19:09:32.219+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/technology/56m7jjcvx3
+[2023-12-09T19:09:32.222+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   7%|7         | 48/647 [00:27<05:52,  1.70it/s]
+[2023-12-09T19:09:32.837+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/dwrcdeq7b0
+[2023-12-09T19:09:32.840+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   8%|7         | 49/647 [00:27<05:57,  1.67it/s]
+[2023-12-09T19:09:33.445+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/oabow94suz
+[2023-12-09T19:09:33.448+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   8%|7         | 50/647 [00:28<05:58,  1.66it/s]
+[2023-12-09T19:09:33.971+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/x3zbsc6fyu
+[2023-12-09T19:09:33.973+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   8%|7         | 51/647 [00:29<05:44,  1.73it/s]
+[2023-12-09T19:09:34.726+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/middle-east/1wf10mkxt6
+[2023-12-09T19:09:34.728+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   8%|8         | 52/647 [00:29<06:15,  1.58it/s]
+[2023-12-09T19:09:35.289+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/ghv0vt3w2u
+[2023-12-09T19:09:35.291+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   8%|8         | 53/647 [00:30<06:02,  1.64it/s]
+[2023-12-09T19:09:35.861+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/l1rxmpgi8y
+[2023-12-09T19:09:35.893+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   8%|8         | 54/647 [00:30<05:55,  1.67it/s]
+[2023-12-09T19:09:36.438+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/cjx111v7gb
+[2023-12-09T19:09:36.443+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   9%|8         | 55/647 [00:31<05:51,  1.69it/s]
+[2023-12-09T19:09:37.132+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kishoralo.com/letter/k6zo3v8iq7
+[2023-12-09T19:09:37.135+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   9%|8         | 56/647 [00:32<06:08,  1.61it/s]
+[2023-12-09T19:09:37.754+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/international/f6ocevt7w4
+[2023-12-09T19:09:37.758+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   9%|8         | 57/647 [00:32<06:07,  1.61it/s]
+[2023-12-09T19:09:38.298+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/5pzqvixsk0
+[2023-12-09T19:09:38.302+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   9%|8         | 58/647 [00:33<05:53,  1.67it/s]
+[2023-12-09T19:09:39.189+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.haal.fashion/lifestyle/406vd5a6ov
+[2023-12-09T19:09:39.198+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   9%|9         | 59/647 [00:34<06:44,  1.45it/s]
+[2023-12-09T19:09:39.931+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/bdhjkge2dc
+[2023-12-09T19:09:39.933+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   9%|9         | 60/647 [00:35<06:52,  1.42it/s]
+[2023-12-09T19:09:40.586+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/photo/bangladesh/t93r4xlwmm
+[2023-12-09T19:09:40.590+0000] {logging_mixin.py:154} WARNING - Scraping Progress:   9%|9         | 61/647 [00:35<06:43,  1.45it/s]
+[2023-12-09T19:09:41.186+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/asia/r6co4khdqb
+[2023-12-09T19:09:41.188+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  10%|9         | 62/647 [00:36<06:27,  1.51it/s]
+[2023-12-09T19:09:41.762+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/dhallywood/kda0arcsct
+[2023-12-09T19:09:41.766+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  10%|9         | 63/647 [00:36<06:11,  1.57it/s]
+[2023-12-09T19:09:42.351+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/ytn9w98sq5
+[2023-12-09T19:09:42.358+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  10%|9         | 64/647 [00:37<06:02,  1.61it/s]
+[2023-12-09T19:09:43.081+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/whzvmpnirc
+[2023-12-09T19:09:43.085+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  10%|#         | 65/647 [00:38<06:20,  1.53it/s]
+[2023-12-09T19:09:43.645+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/yc6d03uyva
+[2023-12-09T19:09:43.647+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  10%|#         | 66/647 [00:38<06:04,  1.60it/s]
+[2023-12-09T19:09:44.267+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/m2ovor95y7
+[2023-12-09T19:09:44.269+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  10%|#         | 67/647 [00:39<06:02,  1.60it/s]
+[2023-12-09T19:09:44.793+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/c1uvr951fn
+[2023-12-09T19:09:44.796+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  11%|#         | 68/647 [00:39<05:44,  1.68it/s]
+[2023-12-09T19:09:45.511+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/lifestyle/recipe/cfqznja6pi
+[2023-12-09T19:09:45.514+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  11%|#         | 69/647 [00:40<06:05,  1.58it/s]
+[2023-12-09T19:09:46.152+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/bangladesh/ghchxoe34o
+[2023-12-09T19:09:46.155+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  11%|#         | 70/647 [00:41<06:06,  1.58it/s]
+[2023-12-09T19:09:46.732+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/3c3l8nvwul
+[2023-12-09T19:09:46.735+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  11%|#         | 71/647 [00:41<05:56,  1.62it/s]
+[2023-12-09T19:09:47.260+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/india/53yenarg3m
+[2023-12-09T19:09:47.263+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  11%|#1        | 72/647 [00:42<05:39,  1.69it/s]
+[2023-12-09T19:09:47.756+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/finx9nambj
+[2023-12-09T19:09:47.758+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  11%|#1        | 73/647 [00:42<05:22,  1.78it/s]
+[2023-12-09T19:09:48.317+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/tv/i2cokk32kb
+[2023-12-09T19:09:48.320+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  11%|#1        | 74/647 [00:43<05:22,  1.78it/s]
+[2023-12-09T19:09:48.948+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.bondhushava.com/writings/9qrusjcrh9
+[2023-12-09T19:09:48.950+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  12%|#1        | 75/647 [00:44<05:33,  1.72it/s]
+[2023-12-09T19:09:49.502+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/international/f605dcb310
+[2023-12-09T19:09:49.505+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  12%|#1        | 76/647 [00:44<05:27,  1.74it/s]
+[2023-12-09T19:09:50.113+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/yfulag6nwl
+[2023-12-09T19:09:50.115+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  12%|#1        | 77/647 [00:45<05:33,  1.71it/s]
+[2023-12-09T19:09:50.657+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/qp4v0k58zz
+[2023-12-09T19:09:50.659+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  12%|#2        | 78/647 [00:45<05:25,  1.75it/s]
+[2023-12-09T19:09:51.185+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/0wgk7t8ynr
+[2023-12-09T19:09:51.188+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  12%|#2        | 79/647 [00:46<05:17,  1.79it/s]
+[2023-12-09T19:09:51.717+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/wc4iwbdqu9
+[2023-12-09T19:09:51.721+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  12%|#2        | 80/647 [00:46<05:12,  1.81it/s]
+[2023-12-09T19:09:52.224+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/rgfi0r93gf
+[2023-12-09T19:09:52.227+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  13%|#2        | 81/647 [00:47<05:04,  1.86it/s]
+[2023-12-09T19:09:52.775+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/bs8hag16cu
+[2023-12-09T19:09:52.779+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  13%|#2        | 82/647 [00:47<05:06,  1.84it/s]
+[2023-12-09T19:09:53.249+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/entertainment/rtbazfpi0b
+[2023-12-09T19:09:53.253+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  13%|#2        | 83/647 [00:48<04:54,  1.92it/s]
+[2023-12-09T19:09:53.779+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/onnoalo/interview/8rlhren60r
+[2023-12-09T19:09:53.784+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  13%|#2        | 84/647 [00:48<04:55,  1.91it/s]
+[2023-12-09T19:09:54.309+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/technology/gadget/c3ekez19um
+[2023-12-09T19:09:54.311+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  13%|#3        | 85/647 [00:49<04:55,  1.90it/s]
+[2023-12-09T19:09:54.821+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kishoralo.com/letter/uz4hmx18qq
+[2023-12-09T19:09:54.822+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  13%|#3        | 86/647 [00:49<04:52,  1.92it/s]
+[2023-12-09T19:09:55.419+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/lifestyle/5dhaaavdb5
+[2023-12-09T19:09:55.421+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  13%|#3        | 87/647 [00:50<05:04,  1.84it/s]
+[2023-12-09T19:09:56.008+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/chakri/chakri-news/gnn04rd8c1
+[2023-12-09T19:09:56.011+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  14%|#3        | 88/647 [00:51<05:11,  1.79it/s]
+[2023-12-09T19:09:56.595+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/6bkjunqk54
+[2023-12-09T19:09:56.598+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  14%|#3        | 89/647 [00:51<05:16,  1.76it/s]
+[2023-12-09T19:09:57.249+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/opinion/column/oyz8foklzg
+[2023-12-09T19:09:57.253+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  14%|#3        | 90/647 [00:52<05:30,  1.69it/s]
+[2023-12-09T19:09:57.973+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/69ujwoezzy
+[2023-12-09T19:09:57.975+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  14%|#4        | 91/647 [00:53<05:51,  1.58it/s]
+[2023-12-09T19:09:58.560+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/sve8fjj8bf
+[2023-12-09T19:09:58.565+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  14%|#4        | 92/647 [00:53<05:43,  1.62it/s]
+[2023-12-09T19:09:59.100+0000] {scraper.py:34} INFO - Scraped data from URL: https://trust.prothomalo.com/activities/alor-school/fecr77mawg
+[2023-12-09T19:09:59.101+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  14%|#4        | 93/647 [00:54<05:29,  1.68it/s]
+[2023-12-09T19:09:59.646+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/09au8m3l23
+[2023-12-09T19:09:59.649+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  15%|#4        | 94/647 [00:54<05:20,  1.72it/s]
+[2023-12-09T19:10:00.239+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/879ftxoatr
+[2023-12-09T19:10:00.246+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  15%|#4        | 95/647 [00:55<05:23,  1.71it/s]
+[2023-12-09T19:10:01.303+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/bangladesh/l3v3um2y68
+[2023-12-09T19:10:01.306+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  15%|#4        | 96/647 [00:56<06:40,  1.37it/s]
+[2023-12-09T19:10:02.154+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/technology/wts5ttiwuc
+[2023-12-09T19:10:02.164+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  15%|#4        | 97/647 [00:57<07:01,  1.31it/s]
+[2023-12-09T19:10:02.968+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/entertainment-interview/27i5e44hw0
+[2023-12-09T19:10:02.970+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  15%|#5        | 98/647 [00:58<07:07,  1.28it/s]
+[2023-12-09T19:10:03.585+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/international/ohhm8y15sh
+[2023-12-09T19:10:03.590+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  15%|#5        | 99/647 [00:58<06:40,  1.37it/s]
+[2023-12-09T19:10:04.185+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.bondhushava.com/writings/br02enr63e
+[2023-12-09T19:10:04.187+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  15%|#5        | 100/647 [00:59<06:17,  1.45it/s]
+[2023-12-09T19:10:04.884+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/religion/islam/4932btxfth
+[2023-12-09T19:10:04.887+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  16%|#5        | 101/647 [00:59<06:18,  1.44it/s]
+[2023-12-09T19:10:05.595+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/o2jdcdtg6u
+[2023-12-09T19:10:05.599+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  16%|#5        | 102/647 [01:00<06:20,  1.43it/s]
+[2023-12-09T19:10:06.129+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/middle-east/favh8koujl
+[2023-12-09T19:10:06.132+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  16%|#5        | 103/647 [01:01<05:53,  1.54it/s]
+[2023-12-09T19:10:06.634+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/v7fz12skpl
+[2023-12-09T19:10:06.636+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  16%|#6        | 104/647 [01:01<05:29,  1.65it/s]
+[2023-12-09T19:10:08.162+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/usa/xun9270hjk
+[2023-12-09T19:10:08.167+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  16%|#6        | 105/647 [01:03<07:58,  1.13it/s]
+[2023-12-09T19:10:08.736+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/7mbwzni4vb
+[2023-12-09T19:10:08.740+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  16%|#6        | 106/647 [01:03<07:07,  1.27it/s]
+[2023-12-09T19:10:09.313+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/ha54579ov1
+[2023-12-09T19:10:09.316+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  17%|#6        | 107/647 [01:04<06:32,  1.38it/s]
+[2023-12-09T19:10:09.839+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/yhyq2ekvqk
+[2023-12-09T19:10:09.843+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  17%|#6        | 108/647 [01:04<05:59,  1.50it/s]
+[2023-12-09T19:10:10.381+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/india/9geor0fzeb
+[2023-12-09T19:10:10.389+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  17%|#6        | 109/647 [01:05<05:38,  1.59it/s]
+[2023-12-09T19:10:11.037+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/chakri/chakri-suggestion/lef1in541o
+[2023-12-09T19:10:11.041+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  17%|#7        | 110/647 [01:06<05:41,  1.57it/s]
+[2023-12-09T19:10:11.592+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/entertainment/s7p9qz09m7
+[2023-12-09T19:10:11.597+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  17%|#7        | 111/647 [01:06<05:28,  1.63it/s]
+[2023-12-09T19:10:12.227+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/lifestyle/health/7hve1g2psi
+[2023-12-09T19:10:12.230+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  17%|#7        | 112/647 [01:07<05:30,  1.62it/s]
+[2023-12-09T19:10:12.864+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kishoralo.com/comics/qv9opjycfz
+[2023-12-09T19:10:12.874+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  17%|#7        | 113/647 [01:07<05:34,  1.60it/s]
+[2023-12-09T19:10:13.387+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/photo/glimpse/292chf9nz2
+[2023-12-09T19:10:13.389+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  18%|#7        | 114/647 [01:08<05:16,  1.69it/s]
+[2023-12-09T19:10:13.949+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/middle-east/uydvycx5a6
+[2023-12-09T19:10:13.950+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  18%|#7        | 115/647 [01:09<05:10,  1.71it/s]
+[2023-12-09T19:10:14.552+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/1ddut1xd2o
+[2023-12-09T19:10:14.555+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  18%|#7        | 116/647 [01:09<05:13,  1.70it/s]
+[2023-12-09T19:10:15.109+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/scholarship/y62fjwl9yg
+[2023-12-09T19:10:15.110+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  18%|#8        | 117/647 [01:10<05:07,  1.73it/s]
+[2023-12-09T19:10:15.621+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/c1swpzw134
+[2023-12-09T19:10:15.627+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  18%|#8        | 118/647 [01:10<04:56,  1.78it/s]
+[2023-12-09T19:10:16.179+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/9wcz5s02m8
+[2023-12-09T19:10:16.181+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  18%|#8        | 119/647 [01:11<04:55,  1.79it/s]
+[2023-12-09T19:10:16.790+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/bollywood/mmdbjc01d5
+[2023-12-09T19:10:16.792+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  19%|#8        | 120/647 [01:11<05:02,  1.74it/s]
+[2023-12-09T19:10:17.457+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/lifestyle/nnv8isbko0
+[2023-12-09T19:10:17.462+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  19%|#8        | 121/647 [01:12<05:17,  1.66it/s]
+[2023-12-09T19:10:18.072+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.bigganchinta.com/sciencefiction/0jdncd6yxj
+[2023-12-09T19:10:18.084+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  19%|#8        | 122/647 [01:13<05:19,  1.64it/s]
+[2023-12-09T19:10:18.725+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/football/ouqsbx9qzl
+[2023-12-09T19:10:18.731+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  19%|#9        | 123/647 [01:13<05:25,  1.61it/s]
+[2023-12-09T19:10:19.471+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/business/uzw082bjcz
+[2023-12-09T19:10:19.474+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  19%|#9        | 124/647 [01:14<05:43,  1.52it/s]
+[2023-12-09T19:10:20.018+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/bangladesh/6wrckx7wag
+[2023-12-09T19:10:20.020+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  19%|#9        | 125/647 [01:15<05:25,  1.60it/s]
+[2023-12-09T19:10:20.563+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/69oxwk0epv
+[2023-12-09T19:10:20.565+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  19%|#9        | 126/647 [01:15<05:12,  1.67it/s]
+[2023-12-09T19:10:21.133+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/crime/3m3v42iul1
+[2023-12-09T19:10:21.135+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  20%|#9        | 127/647 [01:16<05:07,  1.69it/s]
+[2023-12-09T19:10:21.724+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/opinion/column/7s81owfz7h
+[2023-12-09T19:10:21.727+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  20%|#9        | 128/647 [01:16<05:06,  1.69it/s]
+[2023-12-09T19:10:22.410+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/technology/science/cndqws2fr4
+[2023-12-09T19:10:22.414+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  20%|#9        | 129/647 [01:17<05:21,  1.61it/s]
+[2023-12-09T19:10:22.964+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kishoralo.com/feature/8sd4cd1dmi
+[2023-12-09T19:10:22.967+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  20%|##        | 130/647 [01:18<05:10,  1.67it/s]
+[2023-12-09T19:10:23.728+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.bondhushava.com/writings/m9sjlldpu0
+[2023-12-09T19:10:23.730+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  20%|##        | 131/647 [01:18<05:34,  1.54it/s]
+[2023-12-09T19:10:24.617+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/2xhl6lts8z
+[2023-12-09T19:10:24.620+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  20%|##        | 132/647 [01:19<06:11,  1.39it/s]
+[2023-12-09T19:10:25.280+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/95cb61i2kk
+[2023-12-09T19:10:25.285+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  21%|##        | 133/647 [01:20<06:01,  1.42it/s]
+[2023-12-09T19:10:25.850+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/chakri/employment/ggj56aaat2
+[2023-12-09T19:10:25.855+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  21%|##        | 134/647 [01:20<05:40,  1.51it/s]
+[2023-12-09T19:10:26.550+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/68eylfjzn6
+[2023-12-09T19:10:26.553+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  21%|##        | 135/647 [01:21<05:45,  1.48it/s]
+[2023-12-09T19:10:27.253+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/q1wl6jb96i
+[2023-12-09T19:10:27.263+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  21%|##1       | 136/647 [01:22<05:49,  1.46it/s]
+[2023-12-09T19:10:28.031+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/business/092x597f4h
+[2023-12-09T19:10:28.033+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  21%|##1       | 137/647 [01:23<06:02,  1.41it/s]
+[2023-12-09T19:10:28.700+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/south-america/dyingaot7f
+[2023-12-09T19:10:28.707+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  21%|##1       | 138/647 [01:23<05:55,  1.43it/s]
+[2023-12-09T19:10:29.280+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/i1wbfgo2qe
+[2023-12-09T19:10:29.282+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  21%|##1       | 139/647 [01:24<05:36,  1.51it/s]
+[2023-12-09T19:10:29.865+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/bollywood/p1e64uynoe
+[2023-12-09T19:10:29.871+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  22%|##1       | 140/647 [01:24<05:24,  1.56it/s]
+[2023-12-09T19:10:30.488+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/6hpmg8ohur
+[2023-12-09T19:10:30.493+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  22%|##1       | 141/647 [01:25<05:21,  1.58it/s]
+[2023-12-09T19:10:31.025+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/9h1e2niigt
+[2023-12-09T19:10:31.027+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  22%|##1       | 142/647 [01:26<05:05,  1.65it/s]
+[2023-12-09T19:10:31.574+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/middle-east/a87kolgn2x
+[2023-12-09T19:10:31.576+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  22%|##2       | 143/647 [01:26<04:56,  1.70it/s]
+[2023-12-09T19:10:32.156+0000] {scraper.py:34} INFO - Scraped data from URL: https://nagorik.prothomalo.com/durporobash/t9j0i0k4yn
+[2023-12-09T19:10:32.162+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  22%|##2       | 144/647 [01:27<04:55,  1.70it/s]
+[2023-12-09T19:10:32.654+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/796puik4n3
+[2023-12-09T19:10:32.656+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  22%|##2       | 145/647 [01:27<04:40,  1.79it/s]
+[2023-12-09T19:10:33.294+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/usa/wcjyooba8a
+[2023-12-09T19:10:33.297+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  23%|##2       | 146/647 [01:28<04:52,  1.71it/s]
+[2023-12-09T19:10:33.898+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kishoralo.com/other/9r2fbq5pdd
+[2023-12-09T19:10:33.900+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  23%|##2       | 147/647 [01:28<04:54,  1.70it/s]
+[2023-12-09T19:10:34.459+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/534fnzq6rf
+[2023-12-09T19:10:34.462+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  23%|##2       | 148/647 [01:29<04:50,  1.72it/s]
+[2023-12-09T19:10:35.030+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/environment/01m26zmdzy
+[2023-12-09T19:10:35.034+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  23%|##3       | 149/647 [01:30<04:48,  1.73it/s]
+[2023-12-09T19:10:35.555+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/v399fzn0tv
+[2023-12-09T19:10:35.556+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  23%|##3       | 150/647 [01:30<04:39,  1.78it/s]
+[2023-12-09T19:10:35.919+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/study/8c6n0xtjt9
+[2023-12-09T19:10:35.924+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  23%|##3       | 151/647 [01:31<04:09,  1.99it/s]
+[2023-12-09T19:10:36.493+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/chakri/employment/f3uthk7bpx
+[2023-12-09T19:10:36.495+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  23%|##3       | 152/647 [01:31<04:19,  1.91it/s]
+[2023-12-09T19:10:37.093+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/bollywood/odsq3r4l8d
+[2023-12-09T19:10:37.096+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  24%|##3       | 153/647 [01:32<04:30,  1.83it/s]
+[2023-12-09T19:10:37.591+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/technology/mj1xe9p0lq
+[2023-12-09T19:10:37.594+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  24%|##3       | 154/647 [01:32<04:22,  1.88it/s]
+[2023-12-09T19:10:38.160+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/8smbp4mta9
+[2023-12-09T19:10:38.162+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  24%|##3       | 155/647 [01:33<04:27,  1.84it/s]
+[2023-12-09T19:10:38.741+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/bm7tq40916
+[2023-12-09T19:10:38.744+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  24%|##4       | 156/647 [01:33<04:32,  1.80it/s]
+[2023-12-09T19:10:39.378+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/uhwgwy4yt5
+[2023-12-09T19:10:39.381+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  24%|##4       | 157/647 [01:34<04:43,  1.73it/s]
+[2023-12-09T19:10:40.092+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.haal.fashion/celeb/xd9cpgs1no
+[2023-12-09T19:10:40.093+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  24%|##4       | 158/647 [01:35<05:02,  1.61it/s]
+[2023-12-09T19:10:40.679+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/b6d3ggbq6d
+[2023-12-09T19:10:40.681+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  25%|##4       | 159/647 [01:35<04:57,  1.64it/s]
+[2023-12-09T19:10:41.232+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/lifestyle/6lqr0jt7jn
+[2023-12-09T19:10:41.234+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  25%|##4       | 160/647 [01:36<04:48,  1.69it/s]
+[2023-12-09T19:10:41.765+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.bondhushava.com/writings/b6b6834o9m
+[2023-12-09T19:10:41.766+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  25%|##4       | 161/647 [01:36<04:39,  1.74it/s]
+[2023-12-09T19:10:42.694+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/religion/islam/506o2ofkjf
+[2023-12-09T19:10:42.695+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  25%|##5       | 162/647 [01:37<05:30,  1.47it/s]
+[2023-12-09T19:10:43.230+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/opinion/column/qlqgoosk22
+[2023-12-09T19:10:43.233+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  25%|##5       | 163/647 [01:38<05:08,  1.57it/s]
+[2023-12-09T19:10:43.789+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/opinion/column/k66v22rn2a
+[2023-12-09T19:10:43.790+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  25%|##5       | 164/647 [01:38<04:56,  1.63it/s]
+[2023-12-09T19:10:44.372+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/j7mgisj0zb
+[2023-12-09T19:10:44.377+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  26%|##5       | 165/647 [01:39<04:51,  1.65it/s]
+[2023-12-09T19:10:44.912+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/4nctq3eid9
+[2023-12-09T19:10:44.916+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  26%|##5       | 166/647 [01:40<04:41,  1.71it/s]
+[2023-12-09T19:10:45.526+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/5ae9g5fahn
+[2023-12-09T19:10:45.531+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  26%|##5       | 167/647 [01:40<04:45,  1.68it/s]
+[2023-12-09T19:10:46.136+0000] {scraper.py:34} INFO - Scraped data from URL: https://trust.prothomalo.com/activities/drug-abuse/jkg5x2icgq
+[2023-12-09T19:10:46.137+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  26%|##5       | 168/647 [01:41<04:46,  1.67it/s]
+[2023-12-09T19:10:46.694+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/lifestyle/health/86g26oejry
+[2023-12-09T19:10:46.697+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  26%|##6       | 169/647 [01:41<04:40,  1.70it/s]
+[2023-12-09T19:10:47.254+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/frajiwgj0g
+[2023-12-09T19:10:47.258+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  26%|##6       | 170/647 [01:42<04:36,  1.73it/s]
+[2023-12-09T19:10:47.790+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/fexrkueifk
+[2023-12-09T19:10:47.794+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  26%|##6       | 171/647 [01:42<04:29,  1.77it/s]
+[2023-12-09T19:10:48.331+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/z57hvg3a31
+[2023-12-09T19:10:48.335+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  27%|##6       | 172/647 [01:43<04:25,  1.79it/s]
+[2023-12-09T19:10:48.864+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/business/026zrsdn2b
+[2023-12-09T19:10:48.867+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  27%|##6       | 173/647 [01:43<04:21,  1.82it/s]
+[2023-12-09T19:10:49.395+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/bqf03bfu2c
+[2023-12-09T19:10:49.398+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  27%|##6       | 174/647 [01:44<04:17,  1.84it/s]
+[2023-12-09T19:10:50.116+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/football/e5to4shvcf
+[2023-12-09T19:10:50.118+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  27%|##7       | 175/647 [01:45<04:41,  1.67it/s]
+[2023-12-09T19:10:50.667+0000] {scraper.py:34} INFO - Scraped data from URL: https://nagorik.prothomalo.com/ayojon/8gmaq699gh
+[2023-12-09T19:10:50.668+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  27%|##7       | 176/647 [01:45<04:34,  1.71it/s]
+[2023-12-09T19:10:51.213+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/w1orp35pok
+[2023-12-09T19:10:51.216+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  27%|##7       | 177/647 [01:46<04:29,  1.75it/s]
+[2023-12-09T19:10:51.841+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/lifestyle/health/yg6iudset1
+[2023-12-09T19:10:51.845+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  28%|##7       | 178/647 [01:46<04:36,  1.70it/s]
+[2023-12-09T19:10:53.066+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.haal.fashion/fashion/style/uts64dw592
+[2023-12-09T19:10:53.067+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  28%|##7       | 179/647 [01:48<06:04,  1.28it/s]
+[2023-12-09T19:10:53.573+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/bangladesh/l8m3695i8o
+[2023-12-09T19:10:53.576+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  28%|##7       | 180/647 [01:48<05:26,  1.43it/s]
+[2023-12-09T19:10:54.135+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/fun/hgpqwdcy5q
+[2023-12-09T19:10:54.139+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  28%|##7       | 181/647 [01:49<05:06,  1.52it/s]
+[2023-12-09T19:10:54.634+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.bigganchinta.com/technology/u2sce1miyj
+[2023-12-09T19:10:54.638+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  28%|##8       | 182/647 [01:49<04:43,  1.64it/s]
+[2023-12-09T19:10:55.317+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/technology/hiff3w1e07
+[2023-12-09T19:10:55.320+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  28%|##8       | 183/647 [01:50<04:53,  1.58it/s]
+[2023-12-09T19:10:55.859+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/onnoalo/arts/17a95wv4j0
+[2023-12-09T19:10:55.863+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  28%|##8       | 184/647 [01:50<04:40,  1.65it/s]
+[2023-12-09T19:10:56.421+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/vsb7mh0swl
+[2023-12-09T19:10:56.424+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  29%|##8       | 185/647 [01:51<04:33,  1.69it/s]
+[2023-12-09T19:10:57.013+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/asia/ei5scbx86i
+[2023-12-09T19:10:57.016+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  29%|##8       | 186/647 [01:52<04:32,  1.69it/s]
+[2023-12-09T19:10:57.572+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/evnyjz6w6t
+[2023-12-09T19:10:57.575+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  29%|##8       | 187/647 [01:52<04:27,  1.72it/s]
+[2023-12-09T19:10:58.096+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/zo60f5gn7y
+[2023-12-09T19:10:58.098+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  29%|##9       | 188/647 [01:53<04:19,  1.77it/s]
+[2023-12-09T19:10:58.615+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/scholarship/137ritbska
+[2023-12-09T19:10:58.618+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  29%|##9       | 189/647 [01:53<04:12,  1.81it/s]
+[2023-12-09T19:10:59.165+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/drama/n5xus7bsvz
+[2023-12-09T19:10:59.167+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  29%|##9       | 190/647 [01:54<04:11,  1.82it/s]
+[2023-12-09T19:10:59.656+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/chakri/employment/o14t8xd95k
+[2023-12-09T19:10:59.659+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  30%|##9       | 191/647 [01:54<04:02,  1.88it/s]
+[2023-12-09T19:11:00.656+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.haal.fashion/face-to-face/3sibvq4itc
+[2023-12-09T19:11:00.659+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  30%|##9       | 192/647 [01:55<05:06,  1.49it/s]
+[2023-12-09T19:11:01.199+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/study/uyosxxtofk
+[2023-12-09T19:11:01.200+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  30%|##9       | 193/647 [01:56<04:47,  1.58it/s]
+[2023-12-09T19:11:01.747+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/world/middle-east/638q5lkz85
+[2023-12-09T19:11:01.749+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  30%|##9       | 194/647 [01:56<04:35,  1.64it/s]
+[2023-12-09T19:11:02.294+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/5ckh9ibfba
+[2023-12-09T19:11:02.296+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  30%|###       | 195/647 [01:57<04:26,  1.70it/s]
+[2023-12-09T19:11:02.823+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/lrt120kkio
+[2023-12-09T19:11:02.828+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  30%|###       | 196/647 [01:57<04:18,  1.75it/s]
+[2023-12-09T19:11:03.416+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/study/3979j32nhi
+[2023-12-09T19:11:03.419+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  30%|###       | 197/647 [01:58<04:20,  1.73it/s]
+[2023-12-09T19:11:03.928+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.bondhushava.com/writings/q0kbpzaxxp
+[2023-12-09T19:11:03.929+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  31%|###       | 198/647 [01:59<04:10,  1.79it/s]
+[2023-12-09T19:11:04.475+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/lifestyle/health/gizoxpy740
+[2023-12-09T19:11:04.478+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  31%|###       | 199/647 [01:59<04:08,  1.80it/s]
+[2023-12-09T19:11:04.988+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.haal.fashion/ampstories/fashion/k95wc391v2
+[2023-12-09T19:11:04.989+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  31%|###       | 200/647 [02:00<04:02,  1.85it/s]
+[2023-12-09T19:11:05.577+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/entertainment/8lpgy5xtgp
+[2023-12-09T19:11:05.578+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  31%|###1      | 201/647 [02:00<04:08,  1.80it/s]
+[2023-12-09T19:11:06.102+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/football/ltpxnl76jb
+[2023-12-09T19:11:06.104+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  31%|###1      | 202/647 [02:01<04:03,  1.83it/s]
+[2023-12-09T19:11:06.646+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/environment/jzj12d3z91
+[2023-12-09T19:11:06.647+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  31%|###1      | 203/647 [02:01<04:02,  1.83it/s]
+[2023-12-09T19:11:07.147+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/study/ip1v6avio1
+[2023-12-09T19:11:07.149+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  32%|###1      | 204/647 [02:02<03:55,  1.88it/s]
+[2023-12-09T19:11:07.684+0000] {scraper.py:34} INFO - Scraped data from URL: https://nagorik.prothomalo.com/ayojon/lxkqm772x2
+[2023-12-09T19:11:07.684+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  32%|###1      | 205/647 [02:02<03:55,  1.87it/s]
+[2023-12-09T19:11:08.211+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/cricket/5u79yu59v8
+[2023-12-09T19:11:08.213+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  32%|###1      | 206/647 [02:03<03:54,  1.88it/s]
+[2023-12-09T19:11:08.924+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/study/0k6vnr0edi
+[2023-12-09T19:11:08.928+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  32%|###1      | 207/647 [02:04<04:18,  1.70it/s]
+[2023-12-09T19:11:09.531+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/politics/7jz7tvuixz
+[2023-12-09T19:11:09.533+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  32%|###2      | 208/647 [02:04<04:20,  1.69it/s]
+[2023-12-09T19:11:10.040+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/opinion/editorial/s4d4ikcw2c
+[2023-12-09T19:11:10.042+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  32%|###2      | 209/647 [02:05<04:08,  1.76it/s]
+[2023-12-09T19:11:10.533+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/study/i6xlhshzv5
+[2023-12-09T19:11:10.535+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  32%|###2      | 210/647 [02:05<03:58,  1.83it/s]
+[2023-12-09T19:11:11.086+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kishoralo.com/feature/48v93dvhl7
+[2023-12-09T19:11:11.090+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  33%|###2      | 211/647 [02:06<03:58,  1.82it/s]
+[2023-12-09T19:11:11.641+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/religion/islam/rjvfatytgh
+[2023-12-09T19:11:11.643+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  33%|###2      | 212/647 [02:06<03:59,  1.82it/s]
+[2023-12-09T19:11:12.126+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/fun/2sf8vrwfb9
+[2023-12-09T19:11:12.129+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  33%|###2      | 213/647 [02:07<03:50,  1.89it/s]
+[2023-12-09T19:11:12.699+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/bangladesh/mw8pjnyt6i
+[2023-12-09T19:11:12.704+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  33%|###3      | 214/647 [02:07<03:55,  1.84it/s]
+[2023-12-09T19:11:13.264+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/lifestyle/health/fzwox2b6r2
+[2023-12-09T19:11:13.272+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  33%|###3      | 215/647 [02:08<03:57,  1.82it/s]
+[2023-12-09T19:11:13.835+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kishoralo.com/sports/re3rxlo42v
+[2023-12-09T19:11:13.838+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  33%|###3      | 216/647 [02:08<03:59,  1.80it/s]
+[2023-12-09T19:11:14.399+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/technology/flrpdcixxd
+[2023-12-09T19:11:14.401+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  34%|###3      | 217/647 [02:09<04:00,  1.79it/s]
+[2023-12-09T19:11:14.907+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/chakri/employment/9m3l0zkker
+[2023-12-09T19:11:14.909+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  34%|###3      | 218/647 [02:10<03:52,  1.84it/s]
+[2023-12-09T19:11:15.426+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/opinion/editorial/cujivit6sc
+[2023-12-09T19:11:15.429+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  34%|###3      | 219/647 [02:10<03:49,  1.87it/s]
+[2023-12-09T19:11:15.953+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/study/8df2npwebc
+[2023-12-09T19:11:15.959+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  34%|###4      | 220/647 [02:11<03:48,  1.87it/s]
+[2023-12-09T19:11:16.491+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/football/xqfxxaipst
+[2023-12-09T19:11:16.495+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  34%|###4      | 221/647 [02:11<03:47,  1.87it/s]
+[2023-12-09T19:11:17.084+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/district/n60z8tevfh
+[2023-12-09T19:11:17.087+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  34%|###4      | 222/647 [02:12<03:54,  1.81it/s]
+[2023-12-09T19:11:17.687+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/study/hdwfnpmv55
+[2023-12-09T19:11:17.688+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  34%|###4      | 223/647 [02:12<04:00,  1.76it/s]
+[2023-12-09T19:11:18.263+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/study/x7m9xcfjqq
+[2023-12-09T19:11:18.265+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  35%|###4      | 224/647 [02:13<04:00,  1.76it/s]
+[2023-12-09T19:11:18.780+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/opinion/column/cdzr389o5a
+[2023-12-09T19:11:18.782+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  35%|###4      | 225/647 [02:13<03:53,  1.80it/s]
+[2023-12-09T19:11:19.287+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/fun/lkai4a3fvf
+[2023-12-09T19:11:19.292+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  35%|###4      | 226/647 [02:14<03:47,  1.85it/s]
+[2023-12-09T19:11:19.782+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/video/entertainment/8wjfh9mv50
+[2023-12-09T19:11:19.787+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  35%|###5      | 227/647 [02:14<03:41,  1.90it/s]
+[2023-12-09T19:11:20.296+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/entertainment/ott/nrvj7w1fo8
+[2023-12-09T19:11:20.299+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  35%|###5      | 228/647 [02:15<03:38,  1.91it/s]
+[2023-12-09T19:11:20.826+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/lifestyle/fashion/rugp830wef
+[2023-12-09T19:11:20.830+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  35%|###5      | 229/647 [02:15<03:39,  1.90it/s]
+[2023-12-09T19:11:21.367+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/football/7rx5jzlvxz
+[2023-12-09T19:11:21.369+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  36%|###5      | 230/647 [02:16<03:40,  1.89it/s]
+[2023-12-09T19:11:21.897+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/bangladesh/h0304ivta9
+[2023-12-09T19:11:21.899+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  36%|###5      | 231/647 [02:16<03:40,  1.89it/s]
+[2023-12-09T19:11:22.428+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/education/scholarship/hxd0cjf214
+[2023-12-09T19:11:22.430+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  36%|###5      | 232/647 [02:17<03:39,  1.89it/s]
+[2023-12-09T19:11:22.982+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.prothomalo.com/sports/6777bicj53
+[2023-12-09T19:11:22.985+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  36%|###6      | 233/647 [02:18<03:42,  1.86it/s]
+[2023-12-09T19:11:24.276+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/features/stay-well
+[2023-12-09T19:11:24.277+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  36%|###6      | 234/647 [02:19<05:15,  1.31it/s]
+[2023-12-09T19:11:25.562+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/editorial/508642/%E0%A6%8F%E0%A6%B8%E0%A6%BF%E0%A6%86%E0%A6%B0-%E0%A6%AA%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%A8
+[2023-12-09T19:11:25.563+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  36%|###6      | 235/647 [02:20<06:19,  1.09it/s]
+[2023-12-09T19:11:27.177+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/various/508847/%E0%A6%9B%E0%A7%9F-%E0%A6%B8%E0%A6%BF%E0%A6%82%E0%A6%B9%E0%A7%80-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%A4%E0%A6%B0%E0%A7%81%E0%A6%A3%E0%A7%80%E0%A6%B0-%E0%A6%95%E0%A6%BE%E0%A6%A3%E0%A7%8D%E0%A6%A1%E0%A7%87-%E0%A6%A4%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%9C%E0%A6%AC-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%A6%E0%A7%81%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A6%BE-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93
+[2023-12-09T19:11:27.181+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  36%|###6      | 236/647 [02:22<07:44,  1.13s/it]
+[2023-12-09T19:11:30.750+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/country-news/508972/%E0%A6%B9%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%B2%E0%A7%81%E0%A6%95%E0%A6%BF-%E0%A6%B9%E0%A6%BE%E0%A6%93%E0%A7%9C%E0%A7%87-%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%9F%E0%A6%A8-%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%BF%E0%A6%A4-%E0%A6%B9%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%8F%E0%A6%AE%E0%A6%AA%E0%A6%BF-%E0%A6%B9%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%AC
+[2023-12-09T19:11:30.752+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  37%|###6      | 237/647 [02:25<12:43,  1.86s/it]
+[2023-12-09T19:11:33.033+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/it-world/508343/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B9%E0%A7%80%E0%A6%B0-%E0%A6%AA%E0%A6%A6-%E0%A6%9B%E0%A6%BE%E0%A7%9C%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%B8%E0%A6%BF%E0%A6%97%E0%A6%A8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%B7%E0%A7%8D%E0%A6%A0%E0%A6%BE%E0%A6%A4%E0%A6%BE
+[2023-12-09T19:11:33.036+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  37%|###6      | 238/647 [02:28<13:33,  1.99s/it]
+[2023-12-09T19:11:35.393+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/first-page/508980/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%9A%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%B6%E0%A7%87%E0%A6%B7%E0%A6%A6%E0%A6%BF%E0%A6%A8%E0%A7%87-%E0%A6%B6%E0%A7%8B%E0%A6%A1%E0%A6%BE%E0%A6%89%E0%A6%A8
+[2023-12-09T19:11:35.395+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  37%|###6      | 239/647 [02:30<14:16,  2.10s/it]
+[2023-12-09T19:11:36.973+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/everyday/503377/%E0%A7%A9%E0%A7%A6-%E0%A6%A1%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A7%87%E0%A6%B0-%E0%A6%9F%E0%A6%BF%E0%A6%AD%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%86%E0%A6%9C%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%96%E0%A7%87%E0%A6%B2%E0%A6%BE-%E0%A6%B8%E0%A7%82%E0%A6%9A%E0%A6%BF
+[2023-12-09T19:11:36.976+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  37%|###7      | 240/647 [02:32<13:11,  1.94s/it]
+[2023-12-09T19:11:39.502+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/international/508948/%E0%A6%AB%E0%A7%81%E0%A6%B2-%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%AE%E0%A6%BF%E0%A6%B2%E0%A6%B2-%E0%A7%A9-%E0%A6%95%E0%A7%87%E0%A6%9C%E0%A6%BF-%E0%A6%93%E0%A6%9C%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A7%8B%E0%A6%AE%E0%A6%BE
+[2023-12-09T19:11:39.506+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  37%|###7      | 241/647 [02:34<14:20,  2.12s/it]
+[2023-12-09T19:11:41.964+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/islam-life/508794/%E0%A6%AE%E0%A6%B9%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A7%87%E0%A6%B0-%E0%A6%9A%E0%A6%B0%E0%A6%AE-%E0%A6%AC%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%AE%E0%A7%9F-%E0%A6%AA%E0%A6%AC%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%B0-%E0%A6%95%E0%A7%81%E0%A6%B0%E0%A6%86%E0%A6%A8
+[2023-12-09T19:11:41.967+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  37%|###7      | 242/647 [02:37<15:00,  2.22s/it]
+[2023-12-09T19:11:43.259+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/economics/508457/%E0%A6%B8%E0%A7%82%E0%A6%9A%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%89%E0%A6%A4%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A7%87-%E0%A6%9A%E0%A6%B2%E0%A6%9B%E0%A7%87-%E0%A6%AA%E0%A7%81%E0%A6%81%E0%A6%9C%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%B2%E0%A7%87%E0%A6%A8%E0%A6%A6%E0%A7%87%E0%A6%A8
+[2023-12-09T19:11:43.262+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  38%|###7      | 243/647 [02:38<13:05,  1.94s/it]
+[2023-12-09T19:11:44.639+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/city/509011/%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%9C%E0%A6%A8%E0%A7%80%E0%A6%A8-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80-%E0%A6%AE%E0%A7%87%E0%A7%9F%E0%A6%B0-%E0%A6%B9%E0%A7%8B%E0%A6%95-%E0%A6%B8%E0%A7%87%E0%A6%9F%E0%A6%BE%E0%A6%87-%E0%A6%9A%E0%A6%BE%E0%A6%87-%E0%A6%AD%E0%A6%AC%E0%A6%BE%E0%A6%A8%E0%A7%80-%E0%A6%B6%E0%A6%99%E0%A7%8D%E0%A6%95%E0%A6%B0-%E0%A6%B0%E0%A6%BE%E0%A7%9F
+[2023-12-09T19:11:44.641+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  38%|###7      | 244/647 [02:39<11:55,  1.77s/it]
+[2023-12-09T19:11:45.964+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/entertainment/508886/%E0%A6%B6%E0%A6%BF%E0%A6%B2%E0%A7%8D%E0%A6%AA%E0%A7%80-%E0%A6%B8%E0%A6%AE%E0%A6%BF%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%9A%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%AF%E0%A6%BE-%E0%A6%AC%E0%A6%B2%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%A1%E0%A6%BF%E0%A6%AA%E0%A6%9C%E0%A6%B2-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93
+[2023-12-09T19:11:45.965+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  38%|###7      | 245/647 [02:41<10:59,  1.64s/it]
+[2023-12-09T19:11:48.226+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/video-gallery/bangladesh/165/%E0%A6%B6%E0%A7%80%E0%A6%A4%E0%A7%87-%E0%A6%95%E0%A6%BE%E0%A6%81%E0%A6%AA%E0%A6%9B%E0%A7%87-%E0%A6%A6%E0%A7%87%E0%A6%B6
+[2023-12-09T19:11:48.229+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  38%|###8      | 246/647 [02:43<12:12,  1.83s/it]
+[2023-12-09T19:11:49.537+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/exile/508911/%E0%A6%A8%E0%A6%AC%E0%A6%97%E0%A6%A0%E0%A6%BF%E0%A6%A4-%E0%A6%87%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF-%E0%A6%86%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%AE%E0%A7%80-%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%A6%E0%A7%87%E0%A6%B6-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AC%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%A8-%E0%A6%A6%E0%A6%BF%E0%A6%AC%E0%A6%B8-%E0%A6%AA%E0%A6%BE%E0%A6%B2%E0%A6%A8
+[2023-12-09T19:11:49.539+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  38%|###8      | 247/647 [02:44<11:08,  1.67s/it]
+[2023-12-09T19:11:50.828+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/politics/508588/%E0%A6%B9%E0%A6%A0%E0%A6%BE%E0%A7%8E-%E0%A6%B0%E0%A6%BE%E0%A6%A4%E0%A7%87-%E0%A6%A8%E0%A6%BE.%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C-%E0%A6%A1%E0%A6%BF%E0%A6%B8%E0%A6%BF-%E0%A6%85%E0%A6%AB%E0%A6%BF%E0%A6%B8%E0%A7%87-%E0%A6%86.%E0%A6%B2%E0%A7%80%E0%A6%97%E0%A7%87%E0%A6%B0-%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A7%9F-%E0%A6%A8%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BE
+[2023-12-09T19:11:50.830+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  38%|###8      | 248/647 [02:45<10:21,  1.56s/it]
+[2023-12-09T19:11:53.768+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/doctor-available/508442/%E0%A6%A6%E0%A6%BE%E0%A6%81%E0%A6%A4-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%AA%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%86%E0%A6%A7%E0%A7%81%E0%A6%A8%E0%A6%BF%E0%A6%95-%E0%A6%AA%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%A4%E0%A6%BF-%E0%A6%95%E0%A7%8B%E0%A6%A8%E0%A6%9F%E0%A6%BF
+[2023-12-09T19:11:53.771+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  38%|###8      | 249/647 [02:48<13:05,  1.97s/it]
+[2023-12-09T19:11:55.913+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/features/stay-well/509140/%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A7%82%E0%A6%B2%E0%A6%A4%E0%A6%BE-%E0%A6%95%E0%A6%A4%E0%A6%9F%E0%A6%BE-%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%AE%E0%A6%95
+[2023-12-09T19:11:55.916+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  39%|###8      | 250/647 [02:51<13:23,  2.02s/it]
+[2023-12-09T19:11:57.116+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/little-talk/509002/%E0%A6%86%E0%A6%AA%E0%A6%B8%E0%A6%B9%E0%A7%80%E0%A6%A8%E0%A6%A4%E0%A6%BE%E0%A6%87-%E0%A6%95%E0%A6%BE%E0%A6%B2-%E0%A6%B9%E0%A7%9F-%E0%A6%A4%E0%A6%BE%E0%A6%B0
+[2023-12-09T19:11:57.118+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  39%|###8      | 251/647 [02:52<11:43,  1.78s/it]
+[2023-12-09T19:11:58.274+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/window/509007/%E0%A6%A6%E0%A7%81%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A7%9F%E0%A7%87%E0%A6%B0-%E0%A6%9A%E0%A6%BF%E0%A6%A0%E0%A6%BF
+[2023-12-09T19:11:58.276+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  39%|###8      | 252/647 [02:53<10:28,  1.59s/it]
+[2023-12-09T19:11:59.684+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/ten-horizon/509024/%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A7%9F-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%BE-%E0%A6%A8%E0%A7%80%E0%A6%A4%E0%A6%BF-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B6-%E0%A6%95%E0%A6%B0%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%87%E0%A6%AE%E0%A6%B0%E0%A6%BE%E0%A6%A8
+[2023-12-09T19:11:59.686+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  39%|###9      | 253/647 [02:54<10:05,  1.54s/it]
+[2023-12-09T19:12:06.598+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/politics/bnp/508935/%E0%A6%AB%E0%A6%96%E0%A6%B0%E0%A7%81%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A6%AC%E0%A6%BE%E0%A6%87-%E0%A6%95%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE-%E0%A6%86%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4
+[2023-12-09T19:12:06.601+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  39%|###9      | 254/647 [03:01<20:38,  3.15s/it]
+[2023-12-09T19:12:08.185+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/doctor-available/507716/%E0%A6%B6%E0%A6%BF%E0%A6%B6%E0%A7%81%E0%A6%B0-%E0%A6%8F%E0%A6%A1%E0%A6%BF%E0%A6%A8%E0%A7%9F%E0%A7%87%E0%A6%A1%E0%A7%87%E0%A6%B0-%E0%A6%B2%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%A3-%E0%A6%95%E0%A6%96%E0%A6%A8-%E0%A6%85%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%AA%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%A8%C2%A0
+[2023-12-09T19:12:08.187+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  39%|###9      | 255/647 [03:03<17:31,  2.68s/it]
+[2023-12-09T19:12:09.521+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/entertainment/508978/%E0%A6%AD%E0%A7%9F%E0%A6%82%E0%A6%95%E0%A6%B0-%E0%A6%B6%E0%A7%81%E0%A6%9F%E0%A6%BF%E0%A6%82-%E0%A6%95%E0%A6%B0%E0%A7%87%E0%A6%9B%E0%A7%87%E0%A6%A8-%E0%A6%B8%E0%A6%9E%E0%A7%8D%E0%A6%9C%E0%A7%9F-%E0%A6%A6%E0%A6%A4%E0%A7%8D%E0%A6%A4
+[2023-12-09T19:12:09.524+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  40%|###9      | 256/647 [03:04<14:50,  2.28s/it]
+[2023-12-09T19:12:11.068+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/it-world/508340/%E0%A6%AE%E0%A7%87%E0%A6%9F%E0%A6%BE%E0%A6%B0-%E0%A6%AD%E0%A6%BF%E0%A6%86%E0%A6%B0%E0%A7%87-%E0%A6%B6%E0%A6%BF%E0%A6%B6%E0%A7%81-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%BE-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%B6%E0%A6%99%E0%A7%8D%E0%A6%95%E0%A6%BE%E0%A7%9F-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%95%E0%A6%B0%E0%A6%BE
+[2023-12-09T19:12:11.071+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  40%|###9      | 257/647 [03:06<13:22,  2.06s/it]
+[2023-12-09T19:12:12.410+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/entertainment/508963/%E0%A6%AB%E0%A7%8B%E0%A6%95-%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%AD%E0%A7%87-%E0%A6%B8%E0%A6%BE%E0%A6%97%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%89%E0%A6%B2-%E0%A6%93-%E0%A6%9C%E0%A7%87%E0%A6%B8%E0%A6%BF-%E0%A6%AE%E0%A7%8B%E0%A6%B6%E0%A6%BE%E0%A6%B0%E0%A6%B0%E0%A6%AB
+[2023-12-09T19:12:12.411+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  40%|###9      | 258/647 [03:07<11:57,  1.84s/it]
+[2023-12-09T19:12:14.322+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/islam-life/508169/%E0%A6%AE%E0%A6%BE%E0%A6%93%E0%A6%B2%E0%A6%BE%E0%A6%A8%E0%A6%BE-%E0%A6%93%E0%A6%AC%E0%A6%BE%E0%A7%9F%E0%A6%A6%E0%A7%81%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9-%E0%A6%B8%E0%A6%BF%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A6%BF%E0%A6%B0-%E0%A6%87%E0%A6%B8%E0%A6%B2%E0%A6%BE%E0%A6%AE-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%B9%E0%A6%A3-%E0%A6%93-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%A8
+[2023-12-09T19:12:14.326+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  40%|####      | 259/647 [03:09<12:03,  1.86s/it]
+[2023-12-09T19:12:15.627+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/national/others/508971/%E0%A6%95%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%B0%E0%A6%BE%E0%A6%A4%E0%A7%87%E0%A6%93-%E0%A6%B8%E0%A6%AE%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%B0-%E0%A6%9B%E0%A7%81%E0%A6%81%E0%A7%9F%E0%A7%87-%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A6%AC%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%A8
+[2023-12-09T19:12:15.629+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  40%|####      | 260/647 [03:10<10:56,  1.70s/it]
+[2023-12-09T19:12:17.674+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/sports/509045/%E0%A6%B9%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%9F%E0%A7%87-%E0%A6%B9%E0%A7%87%E0%A6%A1%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F%E0%A7%87-%E0%A6%AE%E0%A6%BE%E0%A6%A5%E0%A6%BE-%E0%A6%89%E0%A6%81%E0%A6%9A%E0%A7%81-%E0%A6%85%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B2%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B0
+[2023-12-09T19:12:17.677+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  40%|####      | 261/647 [03:12<11:35,  1.80s/it]
+[2023-12-09T19:12:19.917+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/capital/508975/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B6%E0%A6%BF%E0%A6%A4-%E0%A6%B8%E0%A6%82%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%AC%E0%A6%BE%E0%A6%A6
+[2023-12-09T19:12:19.919+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  40%|####      | 262/647 [03:15<12:24,  1.93s/it]
+[2023-12-09T19:12:21.200+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/islam-life/507822/%E0%A6%9A%E0%A6%B2%E0%A6%A8%E0%A7%8D%E0%A6%A4-%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%87-%E0%A6%A8%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A6%9C-%E0%A6%86%E0%A6%A6%E0%A6%BE%E0%A7%9F-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%AF%E0%A6%BE%E0%A6%AC%E0%A7%87
+[2023-12-09T19:12:21.201+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  41%|####      | 263/647 [03:16<11:07,  1.74s/it]
+[2023-12-09T19:12:24.905+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/country-news/508959/%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B2-%E0%A6%95%E0%A6%BF%E0%A6%B2%E0%A6%BE%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%89%E0%A6%B2-%E0%A6%B9%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A6%B2-%E0%A6%AC%E0%A6%97%E0%A7%81%E0%A7%9C%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A6%97%E0%A6%BE%E0%A6%B0%E0%A7%87
+[2023-12-09T19:12:24.909+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  41%|####      | 264/647 [03:20<14:51,  2.33s/it]
+[2023-12-09T19:12:28.412+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/city/509010/%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A7%9F%E0%A6%A3%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C%E0%A7%87-%E0%A6%AD%E0%A7%8B%E0%A6%9F%E0%A6%AF%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A7%87-%E0%A7%A9%E0%A7%AC-%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A7%80-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80
+[2023-12-09T19:12:28.414+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  41%|####      | 265/647 [03:23<17:04,  2.68s/it]
+[2023-12-09T19:12:29.844+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/ten-horizon/509019/%E0%A6%AB%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%B8%E0%A7%87-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%95-%E0%A6%A7%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%98%E0%A6%9F-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%87%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A7%81%E0%A6%B2-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7
+[2023-12-09T19:12:29.845+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  41%|####1     | 266/647 [03:24<14:38,  2.31s/it]
+[2023-12-09T19:12:31.109+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/sub-editorial/509005/%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A7%80%E0%A6%A3-%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%A8%E0%A7%87-%E0%A6%AF%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%AD%E0%A6%BE%E0%A6%AC
+[2023-12-09T19:12:31.110+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  41%|####1     | 267/647 [03:26<12:37,  1.99s/it]
+[2023-12-09T19:12:33.359+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/ten-horizon/509020/%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A6%9F%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0-%E0%A6%A4%E0%A6%B2%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A7%83%E0%A6%B9%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%AE-%E0%A6%AE%E0%A7%8E%E0%A6%B8%E0%A7%8D%E0%A6%AF-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%9C%E0%A6%A8%E0%A6%A8-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%87%E0%A6%A4%E0%A7%8D%E0%A6%B0
+[2023-12-09T19:12:33.360+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  41%|####1     | 268/647 [03:28<13:04,  2.07s/it]
+[2023-12-09T19:12:35.011+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/doctor-available/508078/%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A6%BE-%E0%A6%AF%E0%A7%87%E0%A6%B8%E0%A6%AC-%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%AC%E0%A7%87%E0%A6%B6%E0%A6%BF-%E0%A6%86%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4-%E0%A6%B9%E0%A6%A8
+[2023-12-09T19:12:35.012+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  42%|####1     | 269/647 [03:30<12:15,  1.95s/it]
+[2023-12-09T19:12:36.529+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/international/508956/%E0%A6%85%E0%A6%A4%E0%A6%BF%E0%A6%A5%E0%A6%BF%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%9A%E0%A6%B2%E0%A7%87-%E0%A6%AF%E0%A7%87%E0%A6%A4%E0%A7%87-%E0%A6%AC%E0%A6%B2%E0%A7%87%E0%A6%93-%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%BF%E0%A6%9C%E0%A7%87%E0%A6%A8%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%A8-%E0%A6%95%E0%A6%BE%E0%A7%9C%E0%A6%B2-%E0%A6%B8%E0%A7%8C%E0%A6%A6%E0%A6%BF-%E0%A6%AC%E0%A6%BE%E0%A6%B2%E0%A6%95-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93
+[2023-12-09T19:12:36.531+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  42%|####1     | 270/647 [03:31<11:25,  1.82s/it]
+[2023-12-09T19:12:38.354+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/video-gallery/bangladesh/166/%E0%A6%AA%E0%A7%82%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%9A%E0%A6%B2%E0%A7%87-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE-%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE-%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95-%E0%A6%AC%E0%A6%BE%E0%A6%A3%E0%A6%BF%E0%A6%9C%E0%A7%8D%E0%A6%AF%E0%A6%AE%E0%A7%87%E0%A6%B2%E0%A6%BE
+[2023-12-09T19:12:38.357+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  42%|####1     | 271/647 [03:33<11:24,  1.82s/it]
+[2023-12-09T19:12:40.799+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/entertainment/508859/%E0%A6%A1%E0%A6%BF%E0%A6%AD%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%B8-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%AE%E0%A7%81%E0%A6%96-%E0%A6%96%E0%A7%81%E0%A6%B2%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%99%E0%A7%8D%E0%A6%95%E0%A6%BE
+[2023-12-09T19:12:40.803+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  42%|####2     | 272/647 [03:35<12:32,  2.01s/it]
+[2023-12-09T19:12:43.332+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/international/508590/%E0%A6%AC%E0%A7%83%E0%A6%B9%E0%A7%8E-%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%B8%E0%A6%B0%E0%A7%87-%E0%A6%AF%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%A7-%E0%A6%AC%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%A8-%E0%A6%89%E0%A7%8E%E0%A6%AA%E0%A6%BE%E0%A6%A6%E0%A6%A8%E0%A7%87-%E0%A6%AF%E0%A6%BE%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%A4%E0%A7%81%E0%A6%B0%E0%A6%B8%E0%A7%8D%E0%A6%95%C2%A0
+[2023-12-09T19:12:43.335+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  42%|####2     | 273/647 [03:38<13:29,  2.17s/it]
+[2023-12-09T19:12:44.950+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/international/507797/%E0%A6%AA%E0%A7%87%E0%A6%81%E0%A6%AA%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A7%80%E0%A6%B0-%E0%A6%8F-%E0%A6%95%E0%A7%87%E0%A6%AE%E0%A6%A8-%E0%A6%86%E0%A6%9A%E0%A6%B0%E0%A6%A3-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93
+[2023-12-09T19:12:44.951+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  42%|####2     | 274/647 [03:40<12:26,  2.00s/it]
+[2023-12-09T19:12:46.106+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/sports/509047/%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%9F-%E0%A6%A6%E0%A6%BF%E0%A6%AC%E0%A6%B8-%E0%A6%AD%E0%A6%B2%E0%A6%BF%E0%A6%AC%E0%A6%B2
+[2023-12-09T19:12:46.109+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  43%|####2     | 275/647 [03:41<10:50,  1.75s/it]
+[2023-12-09T19:12:47.404+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/politics/awami-league/508888/%E0%A6%AC%E0%A6%BF%E0%A6%A8%E0%A6%BE-%E0%A6%AC%E0%A6%BF%E0%A6%9A%E0%A6%BE%E0%A6%B0%E0%A7%87-%E0%A6%AC%E0%A6%B9%E0%A7%81-%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%B0%E0%A6%BF%E0%A6%95-%E0%A6%85%E0%A6%AB%E0%A6%BF%E0%A6%B8%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A7%8B%E0%A7%9F%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%87-%E0%A6%AB%E0%A6%BE%E0%A6%81%E0%A6%B8%E0%A6%BF-%E0%A6%A6%E0%A7%87%E0%A6%93%E0%A7%9F%E0%A6%BE-%E0%A6%B9%E0%A7%9F%E0%A7%87%E0%A6%9B%E0%A7%87
+[2023-12-09T19:12:47.407+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  43%|####2     | 276/647 [03:42<09:58,  1.61s/it]
+[2023-12-09T19:12:48.747+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/international/508947/%E0%A6%AB%E0%A6%BF%E0%A6%B2%E0%A7%8D%E0%A6%AE%E0%A6%BF-%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%87%E0%A6%B2%E0%A7%87-%E0%A6%9A%E0%A7%8B%E0%A6%B0-%E0%A6%A7%E0%A6%B0%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%AA%E0%A7%81%E0%A6%B2%E0%A6%BF%E0%A6%B6-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93
+[2023-12-09T19:12:48.749+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  43%|####2     | 277/647 [03:43<09:26,  1.53s/it]
+[2023-12-09T19:12:50.181+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/window/509008/%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AE%E0%A7%82%E0%A6%B2%E0%A7%8D%E0%A6%AF-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A7%87-%E0%A6%95%E0%A7%87%E0%A6%A8
+[2023-12-09T19:12:50.184+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  43%|####2     | 278/647 [03:45<09:14,  1.50s/it]
+[2023-12-09T19:12:51.476+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/it-world/508341/%E0%A6%87%E0%A6%89%E0%A6%9F%E0%A6%BF%E0%A6%89%E0%A6%AC%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%BF%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0%E0%A6%87%E0%A6%A8%E0%A6%AA%E0%A6%BF%E0%A6%95%E0%A6%9A%E0%A6%BE%E0%A6%B0-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%89%E0%A6%AA%E0%A6%BE%E0%A7%9F
+[2023-12-09T19:12:51.480+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  43%|####3     | 279/647 [03:46<08:50,  1.44s/it]
+[2023-12-09T19:12:52.690+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/it-world/509057/%E0%A6%AE%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%B8%E0%A6%AB%E0%A6%9F%E0%A7%87%E0%A6%B0-%E0%A6%8F%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AC%E0%A6%95%E0%A7%8D%E0%A6%B8-%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%A8%E0%A6%B8%E0%A7%8B%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%89%E0%A7%8E%E0%A6%AA%E0%A6%BE%E0%A6%A6%E0%A6%A8-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7
+[2023-12-09T19:12:52.691+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  43%|####3     | 280/647 [03:47<08:23,  1.37s/it]
+[2023-12-09T19:12:55.362+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/country-news/508979/%E0%A6%B6%E0%A7%87%E0%A6%B7-%E0%A6%B8%E0%A6%AE%E0%A7%9F%E0%A7%87-%E0%A6%B8%E0%A6%82%E0%A6%AC%E0%A6%BE%E0%A6%A6-%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AE%E0%A7%87%E0%A6%B2%E0%A6%A8%E0%A7%87-%E0%A6%AF%E0%A7%87-%E0%A6%B6%E0%A6%99%E0%A7%8D%E0%A6%95%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%A5%E0%A6%BE-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%A4%E0%A7%88%E0%A6%AE%E0%A7%81%E0%A6%B0-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93
+[2023-12-09T19:12:55.367+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  43%|####3     | 281/647 [03:50<10:45,  1.76s/it]
+[2023-12-09T19:12:57.800+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/international/507702/%E0%A6%AF%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80%E0%A6%AC%E0%A6%BE%E0%A6%B9%E0%A7%80-%E0%A6%AC%E0%A6%BE%E0%A6%B8-%E0%A6%A0%E0%A7%87%E0%A6%B2%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%97%E0%A7%87%E0%A6%B2-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%AF-%E0%A6%B9%E0%A6%BE%E0%A6%A4%E0%A6%BF-%E0%A6%AD%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%93
+[2023-12-09T19:12:57.804+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  44%|####3     | 282/647 [03:52<11:57,  1.97s/it]
+[2023-12-09T19:13:01.356+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/country-news/508973/%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%9F-%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%81%E0%A6%A8%E0%A6%BF%E0%A6%B6%E0%A7%8D%E0%A6%9A%E0%A6%BF%E0%A6%A4-%E0%A6%86%E0%A6%87%E0%A6%AD%E0%A7%80
+[2023-12-09T19:13:01.360+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  44%|####3     | 283/647 [03:56<14:49,  2.44s/it]
+[2023-12-09T19:13:03.673+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/it-world/508342/%E0%A6%86%E0%A6%87%E0%A6%AE%E0%A7%87%E0%A6%B8%E0%A7%87%E0%A6%9C-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A6%B2%E0%A6%95%E0%A7%87%E0%A6%87-%E0%A6%A6%E0%A7%81%E0%A6%B7%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%97%E0%A7%81%E0%A6%97%E0%A6%B2-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B9%E0%A7%80
+[2023-12-09T19:13:03.675+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  44%|####3     | 284/647 [03:58<14:32,  2.40s/it]
+[2023-12-09T19:13:06.211+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/features/islam-and-life/506034/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%AE%E0%A7%80%E0%A6%B0-%E0%A6%89%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A6%BE%E0%A6%A7%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0-%E0%A6%93-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%A6%E0%A6%95%E0%A6%BE-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87
+[2023-12-09T19:13:06.214+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  44%|####4     | 285/647 [04:01<14:45,  2.44s/it]
+[2023-12-09T19:13:11.786+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/country-news/508951/%E0%A6%A8%E0%A6%BF%E0%A6%9C%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%82%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A6%BF%E0%A6%95%E0%A7%87-%E0%A6%A4%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%87-%E0%A6%A8%E0%A6%BE%E0%A6%87-%E0%A6%86%E0%A6%AA%E0%A6%A8%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE-%E0%A6%95%E0%A6%B0%E0%A7%87-%E0%A6%97%E0%A7%87%E0%A6%9B%E0%A6%BF-%E0%A6%86%E0%A6%87%E0%A6%AD%E0%A7%80
+[2023-12-09T19:13:11.790+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  44%|####4     | 286/647 [04:06<20:21,  3.38s/it]
+[2023-12-09T19:13:13.427+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/economics/bank/508512/%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A7%9F%E0%A6%A3%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C%E0%A6%B8%E0%A6%B9-%E0%A6%AC%E0%A7%87%E0%A6%B6-%E0%A6%95%E0%A7%9F%E0%A7%87%E0%A6%95%E0%A6%9F%E0%A6%BF-%E0%A6%8F%E0%A6%B2%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A7%9F-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%82%E0%A6%95-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7-%E0%A6%B0%E0%A7%8B%E0%A6%AC%E0%A6%AC%E0%A6%BE%E0%A6%B0
+[2023-12-09T19:13:13.429+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  44%|####4     | 287/647 [04:08<17:09,  2.86s/it]
+[2023-12-09T19:13:14.714+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/national/508928/%E0%A6%AC%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A7%81%E0%A6%B0-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%AA%E0%A7%8D%E0%A6%A8-%E0%A6%9B%E0%A6%BF%E0%A6%B2-%E0%A6%A6%E0%A7%8D%E0%A6%AC%E0%A7%80%E0%A6%AA%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%80%E0%A6%B0-%E0%A6%89%E0%A6%A8%E0%A7%8D%E0%A6%A8%E0%A6%AF%E0%A6%BC%E0%A6%A8-%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%9F%E0%A6%A8-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80
+[2023-12-09T19:13:14.716+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  45%|####4     | 288/647 [04:09<14:17,  2.39s/it]
+[2023-12-09T19:13:16.054+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/sports/508964/%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A7%80-%E0%A6%AD%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A7%87-%E0%A6%9B%E0%A6%AC%E0%A6%BF-%E0%A6%A8%E0%A6%BE-%E0%A6%A4%E0%A7%8B%E0%A6%B2%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%A3-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%B0%E0%A6%BF%E0%A6%9C%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%A8
+[2023-12-09T19:13:16.056+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  45%|####4     | 289/647 [04:11<12:22,  2.07s/it]
+[2023-12-09T19:13:18.355+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/editorial/509004/%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%AE%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A6%BE%E0%A6%87%E0%A6%B2%E0%A6%9F%E0%A6%BF%E0%A6%82
+[2023-12-09T19:13:18.356+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  45%|####4     | 290/647 [04:13<12:44,  2.14s/it]
+[2023-12-09T19:13:20.417+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/last-page/508994/%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%87-%E0%A6%AF%E0%A7%87%E0%A6%96%E0%A6%BE%E0%A6%A8%E0%A7%87-%E0%A6%A6%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0-%E0%A6%A4%E0%A6%A6%E0%A6%AC%E0%A6%BF%E0%A6%B0-%E0%A6%9A%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AC-%E0%A6%AA%E0%A6%B0%E0%A6%B0%E0%A6%BE%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A7%8D%E0%A6%B0%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%80
+[2023-12-09T19:13:20.420+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  45%|####4     | 291/647 [04:15<12:34,  2.12s/it]
+[2023-12-09T19:13:21.612+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/last-page/508995/%E0%A6%B2%E0%A6%BE%E0%A6%AB%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%B2%E0%A6%BE%E0%A6%AB%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%9B%E0%A7%87-%E0%A6%95%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE
+[2023-12-09T19:13:21.615+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  45%|####5     | 292/647 [04:16<10:53,  1.84s/it]
+[2023-12-09T19:13:22.821+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/last-page/508997/%E0%A6%B8%E0%A6%BF%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B2-%E0%A6%95%E0%A6%BF%E0%A6%B2%E0%A6%BE%E0%A6%B0-%E0%A6%B9%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%9C%E0%A7%80%E0%A6%AC%E0%A6%A8-%E0%A6%B0%E0%A7%82%E0%A6%AA%E0%A6%95%E0%A6%A5%E0%A6%BE%E0%A6%B0-%E0%A6%AE%E0%A6%A4%E0%A7%8B
+[2023-12-09T19:13:22.822+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  45%|####5     | 293/647 [04:17<09:44,  1.65s/it]
+[2023-12-09T19:13:25.244+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/international/508969/%E0%A6%8F%E0%A6%95-%E0%A6%B8%E0%A7%87%E0%A6%B2%E0%A6%AB%E0%A6%BF-%E0%A6%AC%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BF-%E0%A6%B9%E0%A6%B2%E0%A7%8B-%E0%A6%B8%E0%A6%BE%E0%A7%9C%E0%A7%87-%E0%A6%86%E0%A6%9F-%E0%A6%95%E0%A7%8B%E0%A6%9F%E0%A6%BF%E0%A6%A4%E0%A7%87
+[2023-12-09T19:13:25.248+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  45%|####5     | 294/647 [04:20<11:04,  1.88s/it]
+[2023-12-09T19:13:27.432+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/editorial/508279/%E0%A6%9C%E0%A6%BE%E0%A6%B2-%E0%A6%A8%E0%A7%8B%E0%A6%9F%E0%A7%87%E0%A6%B0-%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%AC%E0%A6%BE%E0%A6%B0
+[2023-12-09T19:13:27.435+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  46%|####5     | 295/647 [04:22<11:35,  1.97s/it]
+[2023-12-09T19:13:28.774+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/everyday/499980/%E0%A7%A8%E0%A7%A6-%E0%A6%A1%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0-%E0%A6%9F%E0%A6%BF%E0%A6%AD%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%86%E0%A6%9C%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%96%E0%A7%87%E0%A6%B2%E0%A6%BE-%E0%A6%B8%E0%A7%82%E0%A6%9A%E0%A6%BF
+[2023-12-09T19:13:28.775+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  46%|####5     | 296/647 [04:23<10:26,  1.78s/it]
+[2023-12-09T19:13:32.237+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/last-page/508991/%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%B0%E0%A7%87-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A6%BE-%E0%A6%86%E0%A6%9B%E0%A7%87-%E0%A6%B8%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%AE%E0%A6%A4%E0%A6%BE-%E0%A6%A8%E0%A7%87%E0%A6%87
+[2023-12-09T19:13:32.239+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  46%|####5     | 297/647 [04:27<13:20,  2.29s/it]
+[2023-12-09T19:13:34.562+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/city/509009/%E0%A7%A7%E0%A7%AA%E0%A7%AE-%E0%A6%95%E0%A6%BE%E0%A6%89%E0%A6%A8%E0%A7%8D%E0%A6%B8%E0%A6%BF%E0%A6%B2%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A7%80-%E0%A6%B2%E0%A7%9C%E0%A6%AC%E0%A7%87%E0%A6%A8-%E0%A7%A8%E0%A7%AD-%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A7%87
+[2023-12-09T19:13:34.565+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  46%|####6     | 298/647 [04:29<13:22,  2.30s/it]
+[2023-12-09T19:13:38.067+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/bangla-face/509061/%E0%A6%97%E0%A6%AB%E0%A6%B0%E0%A6%97%E0%A6%BE%E0%A6%81%E0%A6%93%E0%A7%9F%E0%A7%87-%E0%A6%97%E0%A7%83%E0%A6%B9%E0%A6%AC%E0%A6%A7%E0%A7%82%E0%A6%95%E0%A7%87-%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A6%B0%E0%A7%8B%E0%A6%A7%E0%A7%87-%E0%A6%B9%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0-%E0%A6%85%E0%A6%AD%E0%A6%BF%E0%A6%AF%E0%A7%8B%E0%A6%97
+[2023-12-09T19:13:38.070+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  46%|####6     | 299/647 [04:33<15:26,  2.66s/it]
+[2023-12-09T19:13:39.370+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/everyday/501334/%E0%A7%A8%E0%A7%AA-%E0%A6%A1%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0-%E0%A6%9F%E0%A6%BF%E0%A6%AD%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%86%E0%A6%9C%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%96%E0%A7%87%E0%A6%B2%E0%A6%BE-%E0%A6%B8%E0%A7%82%E0%A6%9A%E0%A6%BF
+[2023-12-09T19:13:39.374+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  46%|####6     | 300/647 [04:34<13:02,  2.25s/it]
+[2023-12-09T19:13:42.450+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/politics/508877/%E0%A7%A9%E0%A7%A8-%E0%A6%9C%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A7%9F-%E0%A6%B8%E0%A6%AE%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A6%96-%E0%A6%AA%E0%A7%81%E0%A6%A8%E0%A6%B0%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A7%E0%A6%BE%E0%A6%B0%E0%A6%A3-%E0%A6%95%E0%A6%B0%E0%A6%AC%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%8F%E0%A6%A8%E0%A6%AA%E0%A6%BF
+[2023-12-09T19:13:42.452+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  47%|####6     | 301/647 [04:37<14:25,  2.50s/it]
+[2023-12-09T19:13:43.783+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/doctor-available/508082/%E0%A6%B9%E0%A6%BE%E0%A7%9C-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%9F%E0%A7%87-%E0%A6%AF%E0%A7%87%E0%A6%B8%E0%A6%AC-%E0%A6%9D%E0%A7%81%E0%A6%81%E0%A6%95%E0%A6%BF-%E0%A6%B8%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%BF-%E0%A6%B9%E0%A7%9F-%E0%A6%B6%E0%A6%B0%E0%A7%80%E0%A6%B0%E0%A7%87-%E0%A6%95%E0%A6%B0%E0%A6%A3%E0%A7%80%E0%A7%9F
+[2023-12-09T19:13:43.784+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  47%|####6     | 302/647 [04:38<12:21,  2.15s/it]
+[2023-12-09T19:13:45.112+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/everyday/501995/%E0%A7%A8%E0%A7%AC-%E0%A6%A1%E0%A6%BF%E0%A6%B8%E0%A7%87%E0%A6%AE%E0%A7%8D%E0%A6%AC%E0%A6%B0-%E0%A6%9F%E0%A6%BF%E0%A6%AD%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%86%E0%A6%9C%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%96%E0%A7%87%E0%A6%B2%E0%A6%BE-%E0%A6%B8%E0%A7%82%E0%A6%9A%E0%A6%BF
+[2023-12-09T19:13:45.114+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  47%|####6     | 303/647 [04:40<10:55,  1.90s/it]
+[2023-12-09T19:13:46.710+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/sub-editorial/508644/%E0%A6%89%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A6%A3-%E0%A6%98%E0%A6%9F%E0%A7%87%E0%A6%9B%E0%A7%87-%E0%A6%AF%E0%A7%87%E0%A6%AE%E0%A6%A8-%E0%A6%9A%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%9E%E0%A7%8D%E0%A6%9C%E0%A6%93-%E0%A6%AC%E0%A7%87%E0%A7%9C%E0%A7%87%E0%A6%9B%E0%A7%87-%E0%A6%A4%E0%A7%87%E0%A6%AE%E0%A6%A8
+[2023-12-09T19:13:46.712+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  47%|####6     | 304/647 [04:41<10:21,  1.81s/it]
+[2023-12-09T19:13:48.025+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/visibility/507939/%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A1%E0%A6%BE%E0%A6%B0--%E0%A6%AA%E0%A6%A6%E0%A7%8B%E0%A6%A8%E0%A7%8D%E0%A6%A8%E0%A6%A4%E0%A6%BF-%E0%A6%A8%E0%A7%9F-%E0%A6%B7%E0%A6%B7%E0%A7%8D%E0%A6%A0-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%A1-%E0%A6%9A%E0%A6%BE%E0%A6%87
+[2023-12-09T19:13:48.028+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  47%|####7     | 305/647 [04:43<09:28,  1.66s/it]
+[2023-12-09T19:13:50.675+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/last-page/508992/%E0%A6%85%E0%A6%A8%E0%A7%87%E0%A6%95%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A7%87%E0%A6%B9%E0%A7%87-%E0%A6%B2%E0%A7%8B%E0%A6%B9%E0%A6%BE%E0%A6%B0-%E0%A6%B9%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A7%8B-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%B0-%E0%A6%9F%E0%A7%81%E0%A6%95%E0%A6%B0%E0%A7%8B
+[2023-12-09T19:13:50.677+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  47%|####7     | 306/647 [04:45<11:08,  1.96s/it]
+[2023-12-09T19:13:52.362+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/sports/508976/%E0%A6%8F%E0%A6%AC%E0%A6%BE%E0%A6%B0-%E0%A6%86%E0%A6%B0-%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A1-%E0%A6%97%E0%A7%9C%E0%A6%BE-%E0%A6%B9%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%A8%E0%A6%BE-%E0%A6%9C%E0%A6%95%E0%A7%8B%E0%A6%AD%E0%A6%BF%E0%A6%9A%E0%A7%87%E0%A6%B0
+[2023-12-09T19:13:52.364+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  47%|####7     | 307/647 [04:47<10:38,  1.88s/it]
+[2023-12-09T19:13:53.530+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/ten-horizon/509030/%E0%A6%A6%E0%A7%81%E0%A6%A6%E0%A6%AB%E0%A6%BE%E0%A7%9F-%E0%A6%AC%E0%A6%B8%E0%A6%AC%E0%A7%87-%E0%A6%AD%E0%A6%BE%E0%A6%B0%E0%A6%A4%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A7%87%E0%A6%9F-%E0%A6%85%E0%A6%A7%E0%A6%BF%E0%A6%AC%E0%A7%87%E0%A6%B6%E0%A6%A8
+[2023-12-09T19:13:53.531+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  48%|####7     | 308/647 [04:48<09:24,  1.66s/it]
+[2023-12-09T19:13:56.862+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/sports/509048/%E0%A6%B8%E0%A7%87%E0%A6%A8%E0%A6%BE%E0%A6%AC%E0%A6%BE%E0%A6%B9%E0%A6%BF%E0%A6%A8%E0%A7%80-%E0%A6%9A%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%BF%E0%A7%9F%E0%A6%A8
+[2023-12-09T19:13:56.863+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  48%|####7     | 309/647 [04:51<12:11,  2.16s/it]
+[2023-12-09T19:14:00.362+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/national/others/508960/%E0%A6%86%E0%A6%AE%E0%A6%B0%E0%A6%BE-%E0%A6%8F%E0%A6%95%E0%A7%87-%E0%A6%85%E0%A6%AA%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%B9%E0%A6%BE%E0%A7%9F-%E0%A6%B9%E0%A6%AC-%E0%A6%B8%E0%A7%87%E0%A6%A8%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8
+[2023-12-09T19:14:00.365+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  48%|####7     | 310/647 [04:55<14:24,  2.57s/it]
+[2023-12-09T19:14:01.966+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/last-page/508272/%E0%A6%9A%E0%A6%B2%E0%A6%A4%E0%A6%BF-%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A6%AC%E0%A6%9B%E0%A6%B0%E0%A7%87-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A7%83%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%BF-%E0%A6%B9%E0%A6%AC%E0%A7%87-%E0%A7%AC.%E0%A7%AA-%E0%A6%B6%E0%A6%A4%E0%A6%BE%E0%A6%82%E0%A6%B6
+[2023-12-09T19:14:01.968+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  48%|####8     | 311/647 [04:57<12:45,  2.28s/it]
+[2023-12-09T19:14:05.412+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/doctor-available/508830/%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A6%9F%E0%A6%BE%E0%A6%A8-%E0%A6%89%E0%A6%A0%E0%A6%B2%E0%A7%87-%E0%A6%95%E0%A7%80-%E0%A6%95%E0%A6%B0%E0%A6%AC%E0%A7%87%E0%A6%A8-%C2%A0
+[2023-12-09T19:14:05.414+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  48%|####8     | 312/647 [05:00<14:40,  2.63s/it]
+[2023-12-09T19:14:07.228+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/country-news/508938/%E0%A6%AC%E0%A6%B9%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%97%E0%A6%A4%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%86%E0%A6%A8%E0%A6%BE-%E0%A6%B9%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A7%87-%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A6%BE%E0%A7%9F%E0%A6%A3%E0%A6%97%E0%A6%9E%E0%A7%8D%E0%A6%9C%E0%A7%87%E0%A6%B0-%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%81%E0%A6%B7-%E0%A6%B6%E0%A6%99%E0%A7%8D%E0%A6%95%E0%A6%BF%E0%A6%A4-%E0%A6%A4%E0%A7%88%E0%A6%AE%E0%A7%81%E0%A6%B0
+[2023-12-09T19:14:07.236+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  48%|####8     | 313/647 [05:02<13:16,  2.39s/it]
+[2023-12-09T19:14:09.823+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/first-page/508986/%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%B7%E0%A7%8D%E0%A6%A0%E0%A6%BE%E0%A6%A8%E0%A7%87-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%B6%E0%A6%AA%E0%A6%A5%E0%A6%AC%E0%A6%BE%E0%A6%95%E0%A7%8D%E0%A6%AF-%E0%A6%AA%E0%A6%BE%E0%A6%A0-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8B%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A6%A8%E0%A6%BE
+[2023-12-09T19:14:09.827+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  49%|####8     | 314/647 [05:04<13:34,  2.45s/it]
+[2023-12-09T19:14:12.234+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/international/508889/%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A7%87%E0%A6%AC%E0%A6%BE%E0%A6%A8-%E0%A6%95%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%AB%E0%A6%A4%E0%A6%BE%E0%A6%B0%E0%A6%95%E0%A7%87-%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0-%E0%A6%95%E0%A6%B0%E0%A7%87-%E0%A6%89%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B2-%E0%A6%86%E0%A6%AB%E0%A6%97%E0%A6%BE%E0%A6%A8%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%A8
+[2023-12-09T19:14:12.238+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  49%|####8     | 315/647 [05:07<13:28,  2.44s/it]
+[2023-12-09T19:14:13.495+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/ten-horizon/509021/%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%A1%E0%A7%87%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%9F%E0%A6%BF%E0%A6%95%E0%A6%BE-%E0%A6%86%E0%A6%A6%E0%A7%87%E0%A6%B6-%E0%A6%AC%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%B2
+[2023-12-09T19:14:13.498+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  49%|####8     | 316/647 [05:08<11:29,  2.08s/it]
+[2023-12-09T19:14:14.825+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/editorial/508641/%E0%A6%AC%E0%A6%BF%E0%A6%A7%E0%A6%BF%E0%A6%A8%E0%A6%BF%E0%A6%B7%E0%A7%87%E0%A6%A7-%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%AC%E0%A6%BE%E0%A7%9F%E0%A6%A8-%E0%A6%A8%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%B9%E0%A6%AC%E0%A7%87-%E0%A6%B8%E0%A6%AE%E0%A6%A8%E0%A7%8D%E0%A6%AC%E0%A6%BF%E0%A6%A4-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AF%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%AE
+[2023-12-09T19:14:14.827+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  49%|####8     | 317/647 [05:09<10:12,  1.86s/it]
+[2023-12-09T19:14:17.138+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/it-world/509056/%E0%A6%B8%E0%A6%BE%E0%A6%AC%E0%A6%A7%E0%A6%BE%E0%A6%A8--%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AE-%E0%A6%AC%E0%A6%BE%E0%A7%9C%E0%A6%9B%E0%A7%87-%E0%A6%95%E0%A6%BF%E0%A6%89%E0%A6%86%E0%A6%B0-%E0%A6%95%E0%A7%8B%E0%A6%A1%E0%A7%87
+[2023-12-09T19:14:17.140+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  49%|####9     | 318/647 [05:12<10:56,  1.99s/it]
+[2023-12-09T19:14:18.444+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/politics/bnp/508950/%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%AE%E0%A6%A4%E0%A6%BE-%E0%A6%9C%E0%A6%A8%E0%A6%97%E0%A6%A3%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A7%81%E0%A6%9D%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%A6%E0%A7%87%E0%A6%AC%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%8F%E0%A6%A8%E0%A6%AA%E0%A6%BF
+[2023-12-09T19:14:18.447+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  49%|####9     | 319/647 [05:13<09:46,  1.79s/it]
+[2023-12-09T19:14:20.022+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/national/others/508927/%E0%A6%B6%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%B0%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%AE%E0%A6%BF%E0%A6%B6%E0%A6%A8%E0%A7%87-%E0%A6%97%E0%A7%87%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A7%A7%E0%A7%AA%E0%A7%A6-%E0%A6%AA%E0%A7%81%E0%A6%B2%E0%A6%BF%E0%A6%B6-%E0%A6%B8%E0%A6%A6%E0%A6%B8%E0%A7%8D%E0%A6%AF
+[2023-12-09T19:14:20.025+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  49%|####9     | 320/647 [05:15<09:24,  1.72s/it]
+[2023-12-09T19:14:23.522+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/politics/508844/%E0%A6%A4%E0%A7%88%E0%A6%AE%E0%A7%81%E0%A6%B0-%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%AC%E0%A6%BE%E0%A6%AC%E0%A6%BE%E0%A6%B0-%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A7%80-%E0%A6%9B%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%86%E0%A6%87%E0%A6%AD%E0%A7%80
+[2023-12-09T19:14:23.525+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  50%|####9     | 321/647 [05:18<12:15,  2.26s/it]
+[2023-12-09T19:14:24.750+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/deate-aniverary/509039/%E0%A6%B9%E0%A6%BF%E0%A6%B2%E0%A6%BE%E0%A6%B2%E0%A7%80-%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%A6%E0%A7%81%E0%A6%A6-%E0%A6%9A%E0%A7%8C%E0%A6%A7%E0%A7%81%E0%A6%B0%E0%A7%80
+[2023-12-09T19:14:24.753+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  50%|####9     | 322/647 [05:19<10:33,  1.95s/it]
+[2023-12-09T19:14:25.994+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/photo-gallery/country/207/%E0%A7%A7%E0%A7%A9-%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A7%81%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%BF-%E0%A7%A8%E0%A7%A6%E0%A7%A8%E0%A7%A8
+[2023-12-09T19:14:25.997+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  50%|####9     | 323/647 [05:21<09:22,  1.74s/it]
+[2023-12-09T19:14:29.441+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/national/508941/%E0%A6%AE%E0%A6%BE%E0%A6%9C%E0%A6%BF%E0%A6%A6%E0%A7%81%E0%A6%B2%E0%A6%95%E0%A7%87-%E0%A6%AC%E0%A6%BE%E0%A6%81%E0%A6%9A%E0%A6%BE%E0%A6%A4%E0%A7%87-%E0%A6%8F%E0%A6%97%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A7%87-%E0%A6%86%E0%A6%B8%E0%A7%81%E0%A6%A8
+[2023-12-09T19:14:29.443+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  50%|#####     | 324/647 [05:24<12:06,  2.25s/it]
+[2023-12-09T19:14:30.741+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/islam-life/507460/%E0%A6%95%E0%A7%81%E0%A6%B0%E0%A6%86%E0%A6%A8-%E0%A6%A8%E0%A6%BE-%E0%A6%AC%E0%A7%81%E0%A6%9D%E0%A7%87-%E0%A6%AA%E0%A7%9C%E0%A6%B2%E0%A7%87-%E0%A6%95%E0%A6%BF-%E0%A6%B8%E0%A6%93%E0%A7%9F%E0%A6%BE%E0%A6%AC-%E0%A6%B9%E0%A6%AC%E0%A7%87
+[2023-12-09T19:14:30.744+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  50%|#####     | 325/647 [05:25<10:32,  1.97s/it]
+[2023-12-09T19:14:33.262+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/window/508283/%E0%A6%85%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%97%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%AA%E0%A6%A5%E0%A7%87-%E0%A6%A1%E0%A6%BF%E0%A6%9C%E0%A6%BF%E0%A6%9F%E0%A6%BE%E0%A6%B2-%E0%A6%B2%E0%A7%87%E0%A6%A8%E0%A6%A6%E0%A7%87%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%97%E0%A7%81%E0%A6%B0%E0%A7%81%E0%A6%A4%E0%A7%8D%E0%A6%AC
+[2023-12-09T19:14:33.265+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  50%|#####     | 326/647 [05:28<11:24,  2.13s/it]
+[2023-12-09T19:14:34.459+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/features/stay-well/509141/%E0%A6%93%E0%A6%AE%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%B2%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%A3-%E0%A6%93-%E0%A6%A4%E0%A7%80%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BE
+[2023-12-09T19:14:34.461+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  51%|#####     | 327/647 [05:29<09:52,  1.85s/it]
+[2023-12-09T19:14:35.679+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/news/509099/%E0%A6%AE%E0%A7%9F%E0%A6%AE%E0%A6%A8%E0%A6%B8%E0%A6%BF%E0%A6%82%E0%A6%B9%E0%A7%87-%E0%A6%A4%E0%A6%BF%E0%A6%A8%E0%A6%9C%E0%A6%A8%E0%A6%B8%E0%A6%B9-%E0%A6%B8%E0%A7%9C%E0%A6%95%E0%A7%87-%E0%A7%A7%E0%A7%A8-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A3%E0%A6%B9%E0%A6%BE%E0%A6%A8%E0%A6%BF
+[2023-12-09T19:14:35.680+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  51%|#####     | 328/647 [05:30<08:50,  1.66s/it]
+[2023-12-09T19:14:37.093+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/national/government/508917/%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0-%E0%A6%B8%E0%A6%AC-%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%B7%E0%A7%8D%E0%A6%A0%E0%A6%BE%E0%A6%A8%E0%A7%87-%E0%A6%A8%E0%A6%A4%E0%A7%81%E0%A6%A8-%E0%A6%B6%E0%A6%AA%E0%A6%A5-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8B%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B6
+[2023-12-09T19:14:37.097+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  51%|#####     | 329/647 [05:32<08:24,  1.59s/it]
+[2023-12-09T19:14:38.459+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/politics/508932/%E0%A6%9A%E0%A7%81%E0%A6%A8%E0%A6%BE%E0%A6%B0%E0%A7%81%E0%A6%98%E0%A6%BE%E0%A6%9F%E0%A7%87-%E0%A6%89%E0%A6%AA%E0%A6%9C%E0%A7%87%E0%A6%B2%E0%A6%BE-%E0%A6%93-%E0%A6%AA%E0%A7%8C%E0%A6%B0-%E0%A6%AF%E0%A7%81%E0%A6%AC%E0%A6%A6%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%95%E0%A6%AE%E0%A6%BF%E0%A6%9F%E0%A6%BF-%E0%A6%97%E0%A6%A0%E0%A6%A8%C2%A0
+[2023-12-09T19:14:38.460+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  51%|#####1    | 330/647 [05:33<08:02,  1.52s/it]
+[2023-12-09T19:14:40.710+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/last-page/508996/%E0%A6%85%E0%A6%95%E0%A7%8D%E0%A6%B8%E0%A6%AB%E0%A7%8B%E0%A6%B0%E0%A7%8D%E0%A6%A1%E0%A7%87%E0%A6%B0-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%A8%E0%A7%87%E0%A6%B8-%E0%A6%B8%E0%A7%8D%E0%A6%95%E0%A7%81%E0%A6%B2%E0%A7%87%E0%A6%B0-%E0%A6%A6%E0%A6%BE%E0%A7%9F%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%AC%E0%A7%87-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE-%E0%A6%8F%E0%A6%95-%E0%A6%AC%E0%A6%BE%E0%A6%99%E0%A6%BE%E0%A6%B2%E0%A6%BF
+[2023-12-09T19:14:40.714+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  51%|#####1    | 331/647 [05:35<09:09,  1.74s/it]
+[2023-12-09T19:14:42.851+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/ten-horizon/509028/%E0%A6%A8%E0%A6%BF%E0%A6%B7%E0%A7%87%E0%A6%A7%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%9E%E0%A6%BE%E0%A6%B0-%E0%A6%9C%E0%A6%AC%E0%A6%BE%E0%A6%AC-%E0%A6%B9%E0%A6%AC%E0%A7%87-%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%87%E0%A6%AA%E0%A6%A3%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A7%87
+[2023-12-09T19:14:42.853+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  51%|#####1    | 332/647 [05:37<09:45,  1.86s/it]
+[2023-12-09T19:14:44.201+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/editorial/509003/%E0%A6%A8%E0%A6%BE%E0%A6%B8%E0%A6%BF%E0%A6%95-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%9A%E0%A6%A8%E0%A7%87%E0%A6%B0-%E0%A6%85%E0%A6%AA%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%B6%E0%A7%87%E0%A6%B7-%E0%A6%85%E0%A6%97%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE%E0%A7%9F-%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%9A%E0%A6%A8-%E0%A6%95%E0%A6%AE%E0%A6%BF%E0%A6%B6%E0%A6%A8
+[2023-12-09T19:14:44.203+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  51%|#####1    | 333/647 [05:39<08:56,  1.71s/it]
+[2023-12-09T19:14:46.648+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/exile/508921/%E0%A6%AC%E0%A6%BF%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A6%E0%A7%87%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A7%87%E0%A6%B6%E0%A7%87-%E0%A6%87%E0%A6%B2%E0%A6%95%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A6%BF%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A7%87%E0%A6%AE-%E0%A6%9A%E0%A6%BE%E0%A6%B2%E0%A7%81-%E0%A6%95%E0%A6%B0%E0%A6%AC%E0%A7%87-%E0%A6%AE%E0%A6%BE%E0%A6%B2%E0%A7%9F%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A7%9F%E0%A6%BE
+[2023-12-09T19:14:46.650+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  52%|#####1    | 334/647 [05:41<10:03,  1.93s/it]
+[2023-12-09T19:14:47.859+0000] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2023-12-09T19:14:47.863+0000] {process_utils.py:131} INFO - Sending 15 to group 314. PIDs of all processes in the group: [314]
+[2023-12-09T19:14:47.864+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 314
+[2023-12-09T19:14:47.864+0000] {taskinstance.py:1632} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-12-09T19:14:47.864+0000] {scraper.py:49} ERROR - Could not scrape data due to error: Task received SIGTERM signal
+[2023-12-09T19:14:47.867+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  52%|#####1    | 335/647 [05:42<08:55,  1.72s/it]
+[2023-12-09T19:14:49.971+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/news/509138/%E0%A6%B6%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B9%E0%A6%BE%E0%A6%A8%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A7%87-%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%B0-%E0%A6%98%E0%A7%8B%E0%A7%9C%E0%A6%A6%E0%A7%8C%E0%A7%9C-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A6%BF%E0%A6%A4%E0%A6%BE
+[2023-12-09T19:14:49.973+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  52%|#####1    | 336/647 [05:45<09:29,  1.83s/it]
+[2023-12-09T19:14:51.402+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/todays-paper/sports/509046/%E0%A6%AB%E0%A6%BF%E0%A6%B0%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A6%86%E0%A6%B2%E0%A6%AD%E0%A7%87%E0%A6%B8-%E0%A6%A8%E0%A7%87%E0%A6%87%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A6%95%E0%A7%87-%E0%A6%9B%E0%A6%BE%E0%A7%9C%E0%A6%BE%E0%A6%87-%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%BF%E0%A6%B2-%E0%A6%A6%E0%A6%B2
+[2023-12-09T19:14:51.404+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  52%|#####2    | 337/647 [05:46<08:50,  1.71s/it]
+[2023-12-09T19:14:52.701+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.jugantor.com/national/508916/%E0%A6%AC%E0%A6%99%E0%A7%8D%E0%A6%97%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A7%81%E0%A7%A8-%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F%E0%A7%87%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%9F-%E0%A6%A4%E0%A7%88%E0%A6%B0%E0%A6%BF%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%B8%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%AC-%E0%A6%A6%E0%A7%81%E0%A6%87-%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0
+[2023-12-09T19:14:52.703+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  52%|#####2    | 338/647 [05:47<08:10,  1.59s/it]
+[2023-12-09T19:14:53.572+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/feature/chakriache/2023/12/08/1343715
+[2023-12-09T19:14:53.574+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  52%|#####2    | 339/647 [05:48<07:02,  1.37s/it]
+[2023-12-09T19:14:54.287+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/feature/chakriache/2023/12/08/1343716
+[2023-12-09T19:14:54.289+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  53%|#####2    | 340/647 [05:49<06:00,  1.18s/it]
+[2023-12-09T19:14:55.309+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/feature/chakriache/2023/12/08/1343717
+[2023-12-09T19:14:55.310+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  53%|#####2    | 341/647 [05:50<05:45,  1.13s/it]
+[2023-12-09T19:14:55.982+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/feature/chakriache/2023/12/08/1343718
+[2023-12-09T19:14:55.984+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  53%|#####2    | 342/647 [05:51<05:02,  1.01it/s]
+[2023-12-09T19:14:56.648+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/feature/chakriache/2023/12/08/1343719
+[2023-12-09T19:14:56.652+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  53%|#####3    | 343/647 [05:51<04:32,  1.12it/s]
+[2023-12-09T19:14:57.398+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/feature/doctor-asen/2023/12/08/1343722
+[2023-12-09T19:14:57.401+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  53%|#####3    | 344/647 [05:52<04:18,  1.17it/s]
+[2023-12-09T19:14:59.133+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/feature/doctor-asen/2023/12/08/1343723
+[2023-12-09T19:14:59.134+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  53%|#####3    | 345/647 [05:54<05:37,  1.12s/it]
+[2023-12-09T19:15:00.817+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/feature/doctor-asen/2023/12/08/1343724
+[2023-12-09T19:15:00.818+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  53%|#####3    | 346/647 [05:55<06:27,  1.29s/it]
+[2023-12-09T19:15:02.503+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/feature/doctor-asen/2023/12/08/1343725
+[2023-12-09T19:15:02.505+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  54%|#####3    | 347/647 [05:57<07:01,  1.41s/it]
+[2023-12-09T19:15:03.166+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/shuvosongho/2023/12/08/1343726
+[2023-12-09T19:15:03.168+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  54%|#####3    | 348/647 [05:58<05:53,  1.18s/it]
+[2023-12-09T19:15:04.867+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/shuvosongho/2023/12/08/1343727
+[2023-12-09T19:15:04.867+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  54%|#####3    | 349/647 [05:59<06:38,  1.34s/it]
+[2023-12-09T19:15:05.716+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/shuvosongho/2023/12/08/1343728
+[2023-12-09T19:15:05.718+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  54%|#####4    | 350/647 [06:00<05:53,  1.19s/it]
+[2023-12-09T19:15:06.445+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/shuvosongho/2023/12/08/1343729
+[2023-12-09T19:15:06.446+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  54%|#####4    | 351/647 [06:01<05:11,  1.05s/it]
+[2023-12-09T19:15:07.131+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/shuvosongho/2023/12/08/1343730
+[2023-12-09T19:15:07.132+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  54%|#####4    | 352/647 [06:02<04:38,  1.06it/s]
+[2023-12-09T19:15:08.038+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/editorial/2023/12/08/1343743
+[2023-12-09T19:15:08.040+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  55%|#####4    | 353/647 [06:03<04:34,  1.07it/s]
+[2023-12-09T19:15:10.050+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/editorial/2023/12/08/1343744
+[2023-12-09T19:15:10.051+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  55%|#####4    | 354/647 [06:05<06:07,  1.26s/it]
+[2023-12-09T19:15:11.770+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/sub-editorial/2023/12/08/1343745
+[2023-12-09T19:15:11.771+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  55%|#####4    | 355/647 [06:06<06:47,  1.40s/it]
+[2023-12-09T19:15:12.496+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/sub-editorial/2023/12/08/1343746
+[2023-12-09T19:15:12.497+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  55%|#####5    | 356/647 [06:07<05:47,  1.19s/it]
+[2023-12-09T19:15:14.164+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/letters/2023/12/08/1343747
+[2023-12-09T19:15:14.165+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  55%|#####5    | 357/647 [06:09<06:27,  1.34s/it]
+[2023-12-09T19:15:15.955+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/islamic-life/2023/12/08/1343749
+[2023-12-09T19:15:15.955+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  55%|#####5    | 358/647 [06:11<07:05,  1.47s/it]
+[2023-12-09T19:15:16.702+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/islamic-life/2023/12/08/1343750
+[2023-12-09T19:15:16.704+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  55%|#####5    | 359/647 [06:11<06:01,  1.26s/it]
+[2023-12-09T19:15:17.361+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/islamic-life/2023/12/08/1343751
+[2023-12-09T19:15:17.364+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  56%|#####5    | 360/647 [06:12<05:08,  1.08s/it]
+[2023-12-09T19:15:19.038+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/islamic-life/2023/12/08/1343752
+[2023-12-09T19:15:19.039+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  56%|#####5    | 361/647 [06:14<05:59,  1.26s/it]
+[2023-12-09T19:15:19.718+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/islamic-life/2023/12/08/1343753
+[2023-12-09T19:15:19.720+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  56%|#####5    | 362/647 [06:14<05:08,  1.08s/it]
+[2023-12-09T19:15:21.369+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/islamic-life/2023/12/08/1343754
+[2023-12-09T19:15:21.370+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  56%|#####6    | 363/647 [06:16<05:56,  1.25s/it]
+[2023-12-09T19:15:22.112+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/islamic-life/2023/12/08/1343755
+[2023-12-09T19:15:22.114+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  56%|#####6    | 364/647 [06:17<05:11,  1.10s/it]
+[2023-12-09T19:15:22.788+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/rangberang/2023/12/08/1343757
+[2023-12-09T19:15:22.790+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  56%|#####6    | 365/647 [06:17<04:34,  1.03it/s]
+[2023-12-09T19:15:23.471+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/rangberang/2023/12/08/1343758
+[2023-12-09T19:15:23.473+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  57%|#####6    | 366/647 [06:18<04:09,  1.13it/s]
+[2023-12-09T19:15:24.109+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/rangberang/2023/12/08/1343759
+[2023-12-09T19:15:24.112+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  57%|#####6    | 367/647 [06:19<03:47,  1.23it/s]
+[2023-12-09T19:15:24.790+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/rangberang/2023/12/08/1343760
+[2023-12-09T19:15:24.792+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  57%|#####6    | 368/647 [06:19<03:35,  1.29it/s]
+[2023-12-09T19:15:25.420+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/rangberang/2023/12/08/1343761
+[2023-12-09T19:15:25.421+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  57%|#####7    | 369/647 [06:20<03:22,  1.37it/s]
+[2023-12-09T19:15:27.122+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/rangberang/2023/12/08/1343762
+[2023-12-09T19:15:27.122+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  57%|#####7    | 370/647 [06:22<04:42,  1.02s/it]
+[2023-12-09T19:15:27.812+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/rangberang/2023/12/08/1343763
+[2023-12-09T19:15:27.813+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  57%|#####7    | 371/647 [06:22<04:14,  1.08it/s]
+[2023-12-09T19:15:28.491+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/rangberang/2023/12/08/1343764
+[2023-12-09T19:15:28.493+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  57%|#####7    | 372/647 [06:23<03:53,  1.18it/s]
+[2023-12-09T19:15:30.460+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/deshe-deshe/2023/12/08/1343766
+[2023-12-09T19:15:30.461+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  58%|#####7    | 373/647 [06:25<05:24,  1.18s/it]
+[2023-12-09T19:15:31.106+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/sports/2023/12/08/1343767
+[2023-12-09T19:15:31.108+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  58%|#####7    | 374/647 [06:26<04:39,  1.02s/it]
+[2023-12-09T19:15:31.823+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/deshe-deshe/2023/12/08/1343768
+[2023-12-09T19:15:31.825+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  58%|#####7    | 375/647 [06:26<04:13,  1.07it/s]
+[2023-12-09T19:15:33.596+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/deshe-deshe/2023/12/08/1343769
+[2023-12-09T19:15:33.597+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  58%|#####8    | 376/647 [06:28<05:20,  1.18s/it]
+[2023-12-09T19:15:35.309+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/sports/2023/12/08/1343770
+[2023-12-09T19:15:35.310+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  58%|#####8    | 377/647 [06:30<06:02,  1.34s/it]
+[2023-12-09T19:15:37.192+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/deshe-deshe/2023/12/08/1343771
+[2023-12-09T19:15:37.192+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  58%|#####8    | 378/647 [06:32<06:44,  1.50s/it]
+[2023-12-09T19:15:37.844+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/sports/2023/12/08/1343772
+[2023-12-09T19:15:37.845+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  59%|#####8    | 379/647 [06:32<05:34,  1.25s/it]
+[2023-12-09T19:15:39.509+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/deshe-deshe/2023/12/08/1343773
+[2023-12-09T19:15:39.510+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  59%|#####8    | 380/647 [06:34<06:06,  1.37s/it]
+[2023-12-09T19:15:40.223+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/deshe-deshe/2023/12/08/1343774
+[2023-12-09T19:15:40.224+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  59%|#####8    | 381/647 [06:35<05:12,  1.18s/it]
+[2023-12-09T19:15:42.081+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/sports/2023/12/08/1343775
+[2023-12-09T19:15:42.083+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  59%|#####9    | 382/647 [06:37<06:05,  1.38s/it]
+[2023-12-09T19:15:42.826+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/deshe-deshe/2023/12/08/1343776
+[2023-12-09T19:15:42.827+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  59%|#####9    | 383/647 [06:37<05:14,  1.19s/it]
+[2023-12-09T19:15:44.523+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/sports/2023/12/08/1343777
+[2023-12-09T19:15:44.524+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  59%|#####9    | 384/647 [06:39<05:52,  1.34s/it]
+[2023-12-09T19:15:45.201+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/deshe-deshe/2023/12/08/1343778
+[2023-12-09T19:15:45.203+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  60%|#####9    | 385/647 [06:40<04:59,  1.14s/it]
+[2023-12-09T19:15:46.917+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/sports/2023/12/08/1343779
+[2023-12-09T19:15:46.918+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  60%|#####9    | 386/647 [06:42<05:43,  1.31s/it]
+[2023-12-09T19:15:47.571+0000] {scraper.py:34} INFO - Scraped data from URL: https://www.kalerkantho.com/print-edition/deshe-deshe/2023/12/08/1343780
+[2023-12-09T19:15:47.573+0000] {logging_mixin.py:154} WARNING - Scraping Progress:  60%|#####9    | 387/647 [06:42<04:50,  1.12s/it]
+[2023-12-09T19:15:47.898+0000] {process_utils.py:149} WARNING - process psutil.Process(pid=314, name='airflow task ru', status='sleeping', started='19:09:03') did not respond to SIGTERM. Trying SIGKILL
+[2023-12-09T19:15:47.900+0000] {process_utils.py:86} INFO - Sending the signal 9 to group 314
+[2023-12-09T19:15:47.927+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=314, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='19:09:03') (314) terminated with exit code -9
+[2023-12-09T19:15:47.928+0000] {standard_task_runner.py:172} ERROR - Job 614 was killed before it finished (likely due to running out of memory)

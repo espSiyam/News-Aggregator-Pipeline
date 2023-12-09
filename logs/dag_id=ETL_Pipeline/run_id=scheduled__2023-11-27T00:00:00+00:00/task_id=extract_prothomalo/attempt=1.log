@@ -1,0 +1,23 @@
+[2023-11-28T13:19:09.609+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-27T00:00:00+00:00 [queued]>
+[2023-11-28T13:19:09.620+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-27T00:00:00+00:00 [queued]>
+[2023-11-28T13:19:09.620+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-28T13:19:09.633+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): extract_prothomalo> on 2023-11-27 00:00:00+00:00
+[2023-11-28T13:19:09.640+0000] {standard_task_runner.py:57} INFO - Started process 6673 to run task
+[2023-11-28T13:19:09.643+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'ETL_Pipeline', 'extract_prothomalo', 'scheduled__2023-11-27T00:00:00+00:00', '--job-id', '518', '--raw', '--subdir', 'DAGS_FOLDER/ETL_Pipeline.py', '--cfg-path', '/tmp/tmp1fjiorfg']
+[2023-11-28T13:19:09.646+0000] {standard_task_runner.py:85} INFO - Job 518: Subtask extract_prothomalo
+[2023-11-28T13:19:09.690+0000] {task_command.py:416} INFO - Running <TaskInstance: ETL_Pipeline.extract_prothomalo scheduled__2023-11-27T00:00:00+00:00 [running]> on host 4012deabc79b
+[2023-11-28T13:19:09.770+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_Pipeline' AIRFLOW_CTX_TASK_ID='extract_prothomalo' AIRFLOW_CTX_EXECUTION_DATE='2023-11-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-27T00:00:00+00:00'
+[2023-11-28T13:19:09.775+0000] {extract.py:22} ERROR - Could not fetch content due to error: HTTPSConnectionPool(host='www.prothomalo.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f42e86846a0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+[2023-11-28T13:19:09.775+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/extract.py", line 35, in parse_from_prothomalo
+    latest_sitemap_url = initial_sitemap_soup.find("lastmod").find_next("loc").text
+AttributeError: 'NoneType' object has no attribute 'find'
+[2023-11-28T13:19:09.781+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=ETL_Pipeline, task_id=extract_prothomalo, execution_date=20231127T000000, start_date=20231128T131909, end_date=20231128T131909
+[2023-11-28T13:19:09.792+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 518 for task extract_prothomalo ('NoneType' object has no attribute 'find'; 6673)
+[2023-11-28T13:19:09.814+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-28T13:19:09.836+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
