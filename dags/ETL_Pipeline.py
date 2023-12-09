@@ -7,7 +7,7 @@ from utils.helper import transform_data, load_to_gcp
 default_args = {
     'owner': 'airflow',
     'start_date': datetime(2023, 7, 30),
-    'retries': 1,
+    'retries': 3,
     'retry_delay': timedelta(minutes=5),
 }
 
