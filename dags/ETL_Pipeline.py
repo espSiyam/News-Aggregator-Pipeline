@@ -14,7 +14,7 @@ default_args = {
 dag = DAG(
     'ETL_Pipeline',
     default_args=default_args,
-    schedule_interval='@daily',
+    schedule_interval='0 8 * * *', # Every day at 6:00 AM bangladesh time
     catchup=False
 )
 
