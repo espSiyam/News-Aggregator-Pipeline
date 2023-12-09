@@ -14,7 +14,7 @@ def scrape_category_urls(url):
             cat = url.split("/")[3]
             return cat
     except Exception as e:
-        logger.error(f"Could not scrape category due to error: {str(e)}")
+        logger.error(f"Could not scrape category due to error-: {str(e)}")
 
 def scrape_data_from_url(url):
     date = datetime.now().strftime("%Y-%m-%d")
