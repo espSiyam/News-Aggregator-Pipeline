@@ -1,4 +1,12 @@
-# Apache Airflow ETL Pipeline
+# AI News Generator Infrastructure
+
+* Designed ETL in a dockerized Apache Airflow that aggregates data by scraping and storing them in a GCP bucket. Deployed in GCP compute engine.
+* Created a Cloud Function trigger that inserts data to BigQuery if data is saved to the bucket by ETL.
+* Developing another pipeline that generates news from the extracted data by using OpenAI API and designing schema for that.
+* Done Ad-hoc analysis on Apache Spark (Databricks.)
+
+[Check Apache Spark (Databricks) Analysis](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4774212859842620/259519912264515/2637933785655485/latest.html)
+
 
 ![Apache Airflow Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/AirflowLogo.png/1200px-AirflowLogo.png)
 
