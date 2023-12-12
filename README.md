@@ -7,7 +7,10 @@
 
 [Check Apache Spark (Databricks) Analysis](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4774212859842620/259519912264515/2637933785655485/latest.html)
 
+**Designed Schema:**
+![image](https://github.com/espSiyam/News-Aggregator-Pipeline/assets/42336409/91b2d171-b26b-48d7-a545-b3ee94552a18)
 
+## Apache Airflow (ETL)
 ![Apache Airflow Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/AirflowLogo.png/1200px-AirflowLogo.png)
 
 This Apache Airflow project implements an ETL (Extract, Transform, Load) pipeline for scraping news articles from various websites, translating them, and loading the data into Google Cloud Storage.
