@@ -5,6 +5,9 @@
 * Developing another pipeline that generates news from the extracted data by using OpenAI API and designing schema for that.
 * Done Ad-hoc analysis on Apache Spark (Databricks.)
 
+## Architecture
+![Apache airflow png](https://github.com/espSiyam/News-Aggregator-Pipeline/assets/42336409/01c71cb0-669d-47a2-9f17-c50bd117c1a4)
+
 [Check Apache Spark (Databricks) Analysis](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4774212859842620/259519912264515/2637933785655485/latest.html)
 
 **Designed Schema:**
