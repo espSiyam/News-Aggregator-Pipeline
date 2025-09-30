@@ -1,0 +1,13 @@
+*:Zone.Identifier
+*.Identifier
+.DS_Store
+.DS_Store?
+ktop.ini
+__pycache__/
+.vscode/
+.env
+.env.local
+.env.*.local
+*.tmp
+*.temp
+*.log
