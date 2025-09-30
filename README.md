@@ -1,8 +1,7 @@
 # PySpark ETL Pipeline
 
 Simple ETL pipeline to convert product and order CSV data into dimension and fact tables using PySpark.
-![Data Modelling](image.png)
-## Quick Start
+![Data Modelling](image-1.png)## Quick Start
 
 1. Install dependencies:
 ```bash
